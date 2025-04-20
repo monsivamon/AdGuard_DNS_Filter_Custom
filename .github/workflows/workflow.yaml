@@ -4,6 +4,7 @@ on:
   push:
   schedule:
     - cron: '0 */6 * * *' # Every 6th hour
+  workflow_dispatch:
 
 env:
   NODE_VERSION: 18.x
@@ -19,7 +20,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ env.NODE_VERSION }}
-
+          
+      - name: Get File
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
+    
       - name: yarn
         run: |
           yarn install
@@ -38,3 +43,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          
+      - name: Upload new filter
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Filters/filter.txt
+          git commit -m "Build filter"
+          git push origin master
