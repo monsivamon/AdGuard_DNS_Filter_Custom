@@ -7,3 +7,4 @@ Anyone who uses my filters/rules shall be deemed to have agreed that I have no r
 
 If you want to subscribe, please set the following:
 
+https://github.com/monsivamon/AdGuard-DNS-Filter-Custom/master/Filters/filter.txt
