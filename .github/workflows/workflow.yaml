@@ -24,6 +24,8 @@ jobs:
       - name: Get File
         run: |
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
+          curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt -o Filters/exceptions.txt
+          curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
     
       - name: yarn
         run: |
