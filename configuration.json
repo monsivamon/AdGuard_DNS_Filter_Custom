@@ -304,7 +304,7 @@
       "source": "Filters/rules.txt",
       "type": "adblock",
       "transformations": [
-        "RemoveComments",
+        "RemoveModifiers",
         "Validate",
         "Sort",
         "Deduplicate"
@@ -315,7 +315,7 @@
       "source": "Filters/exceptions.txt",
       "type": "adblock",
       "transformations": [
-        "RemoveComments",
+        "RemoveModifiers",
         "Validate",
         "Sort",
         "Deduplicate"
@@ -326,7 +326,7 @@
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt",
       "type": "adblock",
       "transformations": [
-        "RemoveComments",
+        "RemoveModifiers",
         "Validate",
         "Sort",
         "Deduplicate"
