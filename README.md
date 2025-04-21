@@ -1,48 +1,31 @@
-# AdGuard-DNS-Filter-Custom
+# AdGuard DNS Filter - Custom Version
 
-This repository provides a customized DNS filter based on [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter).  
-It is intended for **personal use and experimentation**. Rules and filters may be edited or modified without notice.
+This repository provides a customized version of the AdGuard DNS filter.  
+It is intended for personal use and experimentation.  
 
-> ⚠️ I do not guarantee that these filters work perfectly.  
-> Any usage is at your own risk. I am not responsible for any costs, losses, or damages caused by using these filters.
+## Disclaimer
 
----
+This is a personal project created for learning and testing purposes.  
+I cannot guarantee that these filters will not cause issues.  
+By using these filters, you agree that I am not responsible for any problems, damages, or losses.
 
-## 🔧 Features
+## Filter Subscription
 
-- Customization of AdGuard DNS filter for personal use
-- Regular updates (planned every 6 hours)
-- Filter rules trimmed to suit individual preferences
-
----
-
-## 📥 How to Subscribe
-
-To use the custom DNS filter, set the following URL in your AdGuard or compatible DNS blocker:
+To subscribe to this filter, use the following URL:  
 https://raw.githubusercontent.com/monsivamon/AdGuard-DNS-Filter-Custom/master/Filters/main_filter.txt
 
----
+## License
 
-## 📜 License
+This project is based on the [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter),  
+which is licensed under the [GPLv3 License](https://github.com/AdguardTeam/AdGuardSDNSFilter/blob/master/LICENSE).
 
-This repository is a fork of  
-[AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter),  
-which is licensed under the [GNU General Public License v3.0 (GPLv3)](https://www.gnu.org/licenses/gpl-3.0.html).
+## Notes
 
-Therefore, **this repository and all derived filters are also distributed under GPLv3**.
+- This filter is rebuilt automatically every 6 hours using GitHub Actions.
+- The original AdGuard filters are fetched and customized in this project.
+- Please use it at your own risk.
 
-Please refer to the [LICENSE](https://github.com/AdguardTeam/AdGuardSDNSFilter/blob/master/LICENSE) file for details.
+## Credits
 
----
-
-## 🛠 Notes
-
-- This repository is not affiliated with AdGuard in any way.
-- Contributions are welcome, but this is primarily a personal sandbox.
-
----
-
-## 👤 Author
-
-Maintained by **[monsivamon](https://github.com/monsivamon)**  
-Feel free to open an issue if you encounter problems or have suggestions.
+- Original Filter Source: [AdGuardTeam](https://github.com/AdguardTeam/AdGuardSDNSFilter)
+- GitHub Actions: For automation and deployment
