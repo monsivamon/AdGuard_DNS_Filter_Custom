@@ -305,9 +305,7 @@
       "type": "adblock",
       "transformations": [
         "RemoveModifiers",
-        "Validate",
-        "Sort",
-        "Deduplicate"
+        "Validate"
       ]
     },
     {
@@ -316,9 +314,7 @@
       "type": "adblock",
       "transformations": [
         "RemoveModifiers",
-        "Validate",
-        "Sort",
-        "Deduplicate"
+        "Validate"
       ]
     },
     {
@@ -327,9 +323,7 @@
       "type": "adblock",
       "transformations": [
         "RemoveModifiers",
-        "Validate",
-        "Sort",
-        "Deduplicate"
+        "Validate"
       ]
     }
   ],
