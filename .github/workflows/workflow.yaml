@@ -35,7 +35,7 @@ jobs:
 
       - name: Clean up main_filter.txt
         run: |
-          head -n 10 Filters/main_filter.txt > Filters/tmp_head.txt
+          head -n 7 Filters/main_filter.txt > Filters/tmp_head.txt
           tail -n +11 Filters/main_filter.txt | awk '!/^\!/ && (/^\|\||^@@/) && !seen[$0]++' > Filters/tmp_body.txt
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
           rm Filters/tmp_head.txt Filters/tmp_body.txt
