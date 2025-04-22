@@ -35,15 +35,15 @@ jobs:
 
       - name: Clean up main_filter.txt
         run: |
-          tail -n +11 Filters/main_filter.txt | grep -v '^!' | awk '!seen[$0]++' > body.txt
-          head -n 10 Filters/main_filter.txt > header.txt
-          cat header.txt body.txt > Filters/main_filter.txt
-          rm header.txt body.txt
-          
+          head -n 10 main_filter.txt > tmp_head.txt
+          tail -n +11 main_filter.txt | awk '!/^\!/ && (/^\|\||^@@/) && !seen[$0]++' > tmp_body.txt
+          cat tmp_head.txt tmp_body.txt > main_filter.txt
+          rm tmp_head.txt tmp_body.txt
+
       - name: Upload new filter
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add Filters/*.txt
-          git commit -m "Build filter Success."
+          git commit -m "Updated filter successfully generated."
           git push origin master
