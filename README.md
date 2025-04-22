@@ -1,45 +1,57 @@
-# AdGuard DNS Filter - Custom Version
+# AdGuard DNS Filter (Custom)
 
-This repository provides a customized version of the AdGuard DNS filter.  
-It is intended for **personal use**, **experimentation**, and **learning purposes**.
+This is a **custom AdGuard DNS filter list**, created primarily for **personal learning and practice**.  
+Please note that I am still a beginner with GitHub and filter creation, so this repository may not follow best practices or deliver perfect results.
 
-## Overview
+---
 
-This project automatically fetches and combines multiple DNS filter lists,  
-including the official AdGuard DNS filter and trusted third-party filters.  
-It is rebuilt every 6 hours using GitHub Actions.
+## 📌 Important Notes
 
-## Filter Subscription
+- This filter is for **testing and personal use only**.
+- I do **not guarantee** its effectiveness in blocking ads, trackers, or harmful content.
+- Use at your **own risk**. I take **no responsibility** for any issues caused by its usage.
 
-To subscribe to the latest filter, use the following URL:
+---
+
+## 🔗 How to Use with AdGuard
+
+To use this filter in AdGuard (e.g., AdGuard Home, AdGuard DNS), add the following URL to your custom DNS filters:
 https://raw.githubusercontent.com/monsivamon/AdGuard-DNS-Filter-Custom/master/Filters/main_filter.txt
 
-## Included Filters
+---
 
-- [AdGuard DNS Filter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
-- [dns-unbreak.txt](https://github.com/Yuki2718/adblock2/blob/main/japanese/dns-unbreak.txt) by Yuki2718
+## 🔄 Update Policy
 
-These are fetched dynamically and processed into a single output file.
+- This filter is updated **automatically every 6 hours** using GitHub Actions.
+- Manual edits or commits may also occur at irregular intervals depending on development or testing needs.
+- Please refer to the commit history for details on recent changes.
 
-## Disclaimer
+---
 
-This is a personal project for testing purposes.  
-No warranty is provided for correctness, safety, or reliability.  
-Use at your own risk. I take no responsibility for any issues that may arise from using this filter.
+## 📝 Credits
 
-## License
+This filter includes references and ideas from the following outstanding projects:
 
-This project is based on the following open-source projects:
+- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)  
+  → An excellent collection of filters focused on Japanese sites and services.
 
-- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) (GPLv3 License)
-- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) (MIT License)
+- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)  
+  → The official AdGuard DNS filter. This project refers to some of its rules and structural ideas under the terms of the GPL.
 
-Please refer to each project’s license for detailed terms.
+Many thanks to the original authors and contributors of these projects.
 
-## Credits
+---
 
-- AdGuard DNS Filter by [AdGuardTeam](https://github.com/AdguardTeam)
-- `dns-unbreak.txt` by [Yuki2718](https://github.com/Yuki2718)
-- GitHub Actions for automation and deployment
+## ⚖️ License
 
-Special thanks to the authors and maintainers of the above projects for their contributions to the DNS filtering ecosystem.
+This project includes material from other GPL-licensed repositories.  
+Accordingly, this repository is distributed under the **GNU General Public License v3.0**.
+
+For more information, see:  
+📄 [LICENSE (GPL v3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+---
+
+Thank you for visiting this repository 🙌
+
+
