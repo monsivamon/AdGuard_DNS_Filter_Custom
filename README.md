@@ -29,3 +29,7 @@ which is licensed under the [GPLv3 License](https://github.com/AdguardTeam/AdGua
 
 - Original Filter Source: [AdGuardTeam](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - GitHub Actions: For automation and deployment
+- This project uses or integrates external filter sources under their respective licenses:
+- dns-unbreak.txt from Yuki2718/adblock2, licensed under the MIT License.
+- We thank the original author for their work and contribution to the filtering community.
+
