@@ -48,7 +48,7 @@ jobs:
           
       - name: Add License Comment to Filter
         run: |
-          for file in Filters/*.txt; do
+          for file in Filters/*_filter.txt; do
             echo "! Based on AdGuardTeam/AdGuardSDNSFilter - Licensed under MPL 2.0" | cat - "$file" > temp && mv temp "$file"
           done
           
