@@ -23,7 +23,7 @@ jobs:
           
       - name: Remove old filter
         run: |
-          git add Filters/*.txt
+          rm Filters/*.txt
           git push origin master
           
       - name: Get Latest File
