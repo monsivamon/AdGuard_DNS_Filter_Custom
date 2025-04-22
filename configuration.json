@@ -303,28 +303,19 @@
       "name": "Additional rules",
       "source": "Filters/rules.txt",
       "type": "adblock",
-      "transformations": [
-        "RemoveModifiers",
-        "Validate"
-      ]
+      "transformations": ["RemoveModifiers", "Validate"]
     },
     {
       "name": "Exception rules",
       "source": "Filters/exceptions.txt",
       "type": "adblock",
-      "transformations": [
-        "RemoveModifiers",
-        "Validate"
-      ]
+      "transformations": ["RemoveModifiers", "Validate"]
     },
     {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt",
       "type": "adblock",
-      "transformations": [
-        "RemoveModifiers",
-        "Validate"
-      ]
+      "transformations": ["RemoveModifiers", "Validate"]
     }
   ],
   "transformations": ["Compress", "Deduplicate"],
