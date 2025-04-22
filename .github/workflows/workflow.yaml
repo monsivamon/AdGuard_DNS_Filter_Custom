@@ -23,7 +23,7 @@ jobs:
           
       - name: Remove old filter
         run: |
-          rm Filters/*.txt
+          rm Filters/dns-unbreak.txt Filters/exceptions.txt Filters/exclusions.txt Filters/rules.txt
           git push origin master
           
       - name: Get Latest File
