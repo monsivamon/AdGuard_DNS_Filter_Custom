@@ -3,23 +3,9 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard-DNS-Filter-Custom
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-22T12:17:21.099Z
+! Last modified: 2025-04-22T12:24:42.382Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
-!
-!
-! Source name: AdGuard Base filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-! The rules with hints are at the end of file.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
 !
 !
 ||performoo.com^
@@ -669,29 +655,14 @@
 ||yesadvertising.com^
 ||zanox.com^
 ||zeti.com^
-!+ PLATFORM(ios, ext_safari)
-!+ NOT_OPTIMIZED
 ||o333o.com^
-!+ NOT_OPTIMIZED
 ||dianomi.com^
-!+ NOT_OPTIMIZED
 ||amazon-adsystem.com^
-!+ NOT_OPTIMIZED
 ||vipads.live^
-!+ NOT_OPTIMIZED
 ||api.smartnews-ads.com^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/201620
 ||154.199.255.184^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/196097
 ||tn.porngo.xxx^$badfilter
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/189721
-! Opera promo on third-party sites
 ||88.208.46.222^
-!
-! Fake KMS activators
 ||kms-full.com^
 ||Kmspico.io^
 ||kms-tool.com^
@@ -709,18 +680,13 @@
 ||kmsofficial.org^
 ||Kmspico-official.org^
 ||getintopc.today^
-!
-! Trillion
 ||103.224.182.210^
-! ClickAdu
 /^94\.242\.247\.(2[0-9]|3[0-2]):/
 /^94\.242\.247\.(2[0-9]|3[0-2])/
 /^23\.109\.170\.(18[7-9]|19[0-2])$/
 /^23\.109\.73\.\d{3}/
 /^188\.42\.84\.\d{1,3}/
 /^139\.45\.19[5-7]\.\d{1,3}/
-! https://github.com/AdguardTeam/AdguardFilters/issues/172400
-! PowerAds
 ||193.200.64.30^
 ||193.200.64.31^
 ||193.200.65.61^
@@ -730,15 +696,8 @@
 ||212.117.190.211^
 ||212.117.190.212^
 ||212.117.190.213^
-! https://github.com/AdguardTeam/AdguardFilters/issues/170063
-! spam ads
 ||91.204.226.224^
-! https://github.com/AdguardTeam/AdguardFilters/issues/155298
-! Frequently changed domains with the same IPs
 ||57.128.71.215^
-! https://github.com/AdguardTeam/AdguardFilters/issues/196657
-! https://github.com/AdguardTeam/AdguardFilters/issues/152407
-! Frequently changed domains with the same IPs
 ||172.240.108.68^
 ||172.240.108.76^
 ||172.240.108.84^
@@ -754,45 +713,13 @@
 ||194.63.140.103^
 ||194.63.143.61^
 ||194.63.143.96^
-! https://github.com/AdguardTeam/AdguardFilters/issues/151479
-! Frequently changed domains with the IP range
 /^142\.91\.159\.(1[5-9]\d|2[0-4]\d|250):(80|443)$/
-! Frequently changed domains with the same IP
-! For example: https://pornxp.com/videos/77778518360
 ||188.72.219.36^
 188.72.219.36^
-!
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/142
 ||stripe.rs-1028-a.com^
-!
-! Ads reinjection (For apps only)
-!+ NOT_PLATFORM(windows, mac, android)
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
-!+ NOT_PLATFORM(windows, mac, android)
-!+ NOT_OPTIMIZED PLATFORM(windows, mac, android)
 ||hub.fghtem.com^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/31688
-!
 ||d71e6dd31a026d45.com
-!
-! https://github.com/AdguardTeam/AdGuardHome/issues/1046
 ||samsungtvads.com^
-!
-! NOTE: CNAME disguised advertising networks
-! SECTION: CNAME disguised advertising networks
-!
-! This section contains the list of the rules are against CNAME disguised advertising networks.
-! We include rules from AdGuard's cname-tracker repo here, and add some additional rules,
-! which will be used during the optimization by /optimizeDomainBlockingRules option.
-!
-! https://github.com/AdguardTeam/FiltersRegistry/pull/937
-! To fix the issue with the CNAME trackers, add problematic domains here:
-! https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/exclusions.txt
-!
-! Adocean : adocean.pl disguised advertising networks
-!
-! Company name: Adocean
 ||a.actualno.com^
 ||ad.santa.lv^
 ||ad.services.tvn.pl^
@@ -830,10 +757,6 @@
 ||tools.wizaz.pl^
 ||tp.hit.stat24.com^
 ||zniwiarz.topagrar.pl^
-!
-! Ad Plus : stat-rock.com disguised advertising networks
-!
-! Company name: Ad Plus
 ||ad-serving.iocreate.cloud^
 ||adserving.menatech.net^
 ||dashboard.digita.media^
@@ -847,10 +770,6 @@
 ||serving.platformance.io^
 ||serving.srmg.com^
 ||serving.thebeglobal.com^
-!
-! Ad-Shield : ad-shield.cc disguised advertising networks
-!
-! Company name: Ad-Shield
 ||www.02952346.xyz^
 ||www.07443488.xyz^
 ||www.09284291.xyz^
@@ -883,11 +802,7 @@
 ||www.95534134.xyz^
 ||www.a2da0f64.xyz^
 ||www.e652a487.xyz^
-!
-! AdSpyglass : 0i0i0i0.com disguised advertising networks
 ||prettytube.net^
-!
-! Company name: AdSpyglass
 ||0.101tubeporn.com^
 ||0i.iqostaiwan.com^
 ||0i.sh-cdn.com^
@@ -1852,10 +1767,6 @@
 ||store4porn.com^
 ||topsexmovs.com^
 ||you75.youpornsexvideos.com^
-!
-! Aquaplatform : aquaplatform.com disguised advertising networks
-!
-! Company name: Aquaplatform
 ||adamsads.midtc.com^
 ||adconsole.bidspotter.co.uk^
 ||adconsole.eva.live^
@@ -2054,8 +1965,6 @@
 ||www.adimages.infotorg.se^
 ||www.cdn.metrike.com^
 ||www.proforums.com^
-!
-! ahacdn.me : cdn18685953.ahacdn.me disguised advertising networks
 ||freshalldaynews.com^
 ||groovinews.com^
 ||km14hkusz.com^
@@ -2083,8 +1992,6 @@
 ||7bkzlyfvl.com^
 ||x4q4g2zy7.com^
 ||4e8bjpldk.com^
-!
-! Company name: ahacdn.me
 ||0.cosmicnewspulse.com^
 ||0000.5clo0xmbf.com^
 ||0000.833enmhob.com^
@@ -3058,10 +2965,6 @@
 ||www.legitimatecurve.pro^
 ||www.shoddytown.pro^
 ||www.shrill-conclusion.pro^
-!
-! Clickaine : api.clickaine.com disguised advertising networks
-!
-! Company name: Clickaine
 ||0.clicks4me.fwh.is^
 ||39236100.lotre.io^
 ||a1.arabsex1.com^
@@ -3155,21 +3058,9 @@
 ||zone1.bestbdsm24.com^
 ||zone1.bestporn24.com^
 ||zvela.filegram.to^
-!
-! ads2.bid : ads.bid disguised advertising networks
-! Disabled, because doesnot contains any CNAME records
-! !#include https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/ads/ads2_bid.txt
-!
-! heleric.com : heleric.com disguised advertising networks
-!
-! Company name: heleric.com
 ||ge.chassnincom.com^
 ||sl.elinvarpayola.com^
 ||ui.marchesbragged.com^
-!
-! NameSilo : ab1n.net disguised advertising networks
-!
-! Company name: NameSilo
 ||*.exaapi.com^
 ||a.18ramp.com^
 ||a.advantageclicks.net^
@@ -3363,14 +3254,6 @@
 ||a.rocoads.net^
 ||a.santabrowser.com^
 ||a.traffic-gold.com^
-!
-! nonli.com : nonli.com disguised advertising networks
-! Disabled, because domains is used for legitimate purposes (Nonli is used like Bitly)
-! !#include https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/data/ads/nonli_com.txt
-!
-! PopCash : popcashjs.b-cdn.net disguised advertising networks
-!
-! Company name: PopCash
 ||cdn.afwpc.com^
 ||cdn.almacz.com^
 ||cdn.asdnow.xyz^
@@ -4450,8 +4333,6 @@
 ||sp.theladyshop.pk^
 ||thirty-good.lugg.com^
 ||gerbil.recipe-ipsum.com^
-!
-! Webair : ak-is2.net disguised advertising networks
 ||google-analyticals.com^
 ||bidmyqps.xyz^
 ||ctrtraffic.com^
@@ -4550,8 +4431,6 @@
 ||advlistings.com^
 ||minutelight-1.online^
 ||onemediawork.com^
-!
-! Company name: Webair
 ||adk.mybestclick.net^
 ||adkfilter.mybestclick.net^
 ||admin3.danarimedia.com^
@@ -5702,25 +5581,7 @@
 ||static-rtb2.programmatics.net^
 ||static-rtb2.torchad.com^
 ||static.rtb-serve.com^
-!
-! Rule for detecting hidden trackers when the main domain cannot be blocked.
 ||d162h6x3rxav67.cloudfront.net^
-!
-! NOTE: CNAME disguised advertisin networks end ⬆️
-! !SECTION: CNAME disguised advertising networks
-!
-! Source name: AdGuard Base filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||bundle.ppas.monster^
 ||adf.underhentai.net^
 ||donasi.lk21.de^
@@ -5984,13 +5845,7 @@
 ||d32r49xyei4vz6.cloudfront.net^
 ||d36sxvmjoflc2i.cloudfront.net^
 ||d6swopgiplmy0.cloudfront.net^
-!
-! Source name: AdGuard Base filter ad servers foreign
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/foreign.txt
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/17139
 ||gjc.gjirafa.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/182298
 ||rolpenszimocca.com^
 ||a.mabipa.com^
 ||klik-slider.morgancode.com^
@@ -6000,97 +5855,48 @@
 ||widget.admiral.hr^
 ||widgets.jutarnji.hr^
 ||widget.marktjagd.de^
-! https://github.com/AdguardTeam/AdguardFilters/issues/140344
 ||eph-adsjutarnji.cdn.sysbee.net^
-! https://github.com/AdguardTeam/AdguardFilters/issues/17278
 ||subs.vingd.com^
-!+ NOT_OPTIMIZED
 ||banner.mob.hr^
-! https://github.com/AdguardTeam/AdguardFilters/issues/45953
 ||rsz.sk^
-! https://github.com/AdguardTeam/AdguardFilters/issues/41373
 ||bannery.navratdoreality.cz^
 ||report.seznamzpravy.cz^
 ||ap.delfi.ee^
 ||ado.delfi.ee^
-! https://github.com/uBlockOrigin/uAssets/issues/14204
 ||es.ylilauta.org^
-! https://github.com/AdguardTeam/AdguardFilters/issues/151672
 ||sab.fast.ge^
-! https://github.com/AdguardTeam/AdguardFilters/issues/189226
-! https://github.com/AdguardTeam/AdguardFilters/issues/184829
 ||target.hidabroot.org^
-! https://github.com/AdguardTeam/AdguardFilters/issues/116912
 ||ban.bhol.co.il^
 ||ext.bhol.co.il^
 ||st1.bhol.co.il^
-! https://github.com/AdguardTeam/AdguardFilters/issues/19323
 ||pijama.*.elasticbeanstalk.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/114260
 ||head-clickfusion.com^
 ||headerbidding.services^
 ||3myad.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/97769
 ||cdn.234doo.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/58569
 ||a.b.napiszar.com^
 ||ad.citynews.it^
 ||planner.tiscali.it^
-!
-!---------------------------------------------------------------------
-!--------------------------- Luxembourgish ---------------------------
-!---------------------------------------------------------------------
-!
-! NOTE: Luxembourgish
-!
-! spellchecker.lu ad
 ||reklammen.spellchecker.lu^
 ||bn.gogo.mn^
-! https://github.com/AdguardTeam/AdguardFilters/issues/68502
 ||widget.tippebannere.no^
-!+ PLATFORM(ext_chromium_mv3)
 ||linksprf.com^$badfilter
 ||c2c24.pl^
-! https://github.com/AdguardTeam/AdguardFilters/issues/128653
 ||cdn.gallery^
-! https://github.com/AdguardTeam/AdguardFilters/issues/5103
 ||llog.pl^
-!
 ||bsxmuny.wp.pl^
 ||fusion.sydsvenskan.se^
-!
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/200270
 ||adsok.co^
-! https://github.com/AdguardTeam/AdguardFilters/issues/184497
 ||9king888.cc^
 ||imp.mgronline.com^
 ||newoneinoldoneout.pro^
 ||odds.vebo.xyz^
-! https://github.com/AdguardTeam/AdguardFilters/issues/162256
 ||1991482557.rsc.cdn77.org^
 ||static.adconnect.vn^
 ||kernh41.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/51547
 ||hbplatform.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/38159
 ||affiliate.k4.tinhte.vn^
-! https://github.com/AdguardTeam/AdguardFilters/issues/8077
-!+ NOT_PLATFORM(windows, mac, android)
 ||delivery.senvangvn.com^
-!---------------------------------------------------------------------
-!------------------------------ Fixing other filters -----------------
-!---------------------------------------------------------------------
-! SECTION: Fixing other filters
-! AdGuard platforms related only
-!
-! NOTE: Fixing other filters end ⬆️
-! !SECTION: Fixing other filters
-!
-! Source name: EasyList ad servers
-! Source: https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt
-!
-! Non-flagged (Generic blocks)
 ||00f8c4bb25.com^
 ||0127c96640.com^
 ||01counter.com^
@@ -32076,7 +31882,6 @@
 ||zyzqkbkeyqajw.top^
 ||zzaqqwecd.lat^
 ||zzrazrorjqlqw.top^
-! Anti-drainer eth phishing
 ||99bithcoins.com^
 ||appdevweb.com^
 ||cdnweb3.pages.dev^
@@ -32105,7 +31910,6 @@
 ||vnte9urn.click^
 ||whaleman.ru^
 ||world-claim.org^
-! $document blocks
 ||123-stream.org^
 ||5wzgtq8dpk.com^
 ||65spy7rgcu.com^
@@ -32139,7 +31943,6 @@
 ||vpn-offers.org^
 ||xstalkx.ru^
 ||zavirand.com^
-! Third-party
 ||123date.me^
 ||152media.com^
 ||2beon.co.kr^
@@ -33322,7 +33125,6 @@
 ||zemanta.com^
 ||zeropark.com^
 ||zwaar.org^
-! Chinese google (https://github.com/easylist/easylist/issues/15643)
 ||2mdn-cn.net^
 ||admob-cn.com^
 ||doubleclick-cn.net^
@@ -33330,7 +33132,6 @@
 ||googleadservices-cn.com^
 ||googleadsserving.cn^
 ||googlevads-cn.com^
-! ad-shield https://github.com/uBlockOrigin/uAssets/issues/26681
 ||00404850.xyz^
 ||00771944.xyz^
 ||00857731.xyz^
@@ -33534,26 +33335,19 @@
 ||ts28ll0tk23t2n9pl0n327.xyz^
 ||w9l4tr4013tn5mo27t0w.xyz^
 ||wqq881m8uwq1k5m-4p7lv7.xyz^
-! ad-shield https://github.com/List-KR/List-KR/pull/892
 ||img-load.com^
-! Samsung/LG/Philips smart-TV ad domains
 ||ad.lgappstv.com^
 ||ad.nettvservices.com^
 ||ads.samsung.com^
 ||lgad.cjpowercast.com.edgesuite.net^
 ||lgsmartad.com^
 ||samsungacr.com^
-! IP addresses
 /(https?:\/\/)213\.32\.115\..{100,}/
 /(https?:\/\/)217\.182\.11\..{100,}/
 /(https?:\/\/)51\.195\.31\..{100,}/
 ||158.247.208.
 ||23.109.82.
 ||23.109.87.
-!
-! Source name: EasyList ad servers third-party
-! Source: https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_thirdparty.txt
-!
 ||1080872514.rsc.cdn77.org^
 ||1187531871.rsc.cdn77.org^
 ||1208344341.rsc.cdn77.org^
@@ -34811,10 +34605,6 @@
 ||dzv1ekshu2vbs.cloudfront.net^
 ||dzxr711a4yw31.cloudfront.net^
 ||anti-adblock.herokuapp.com^
-!
-! Source name: EasyList adult ad servers third-party
-! Source: https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers.txt
-!
 ||18naked.com^
 ||4link.it^
 ||777-partner.com^
@@ -35221,10 +35011,6 @@
 ||xxxmatch.com^
 ||yourdatelink.com^
 ||yurivideo.com^
-!
-! Source name: EasyList adult ad servers popup
-! Source: https://raw.githubusercontent.com/easylist/easylist/master/easylist_adult/adult_adservers_popup.txt
-!
 ||1lzz.com^
 ||3questionsgetthegirl.com^
 ||9content.com^
@@ -35297,107 +35083,50 @@
 ||xpeeps.com^
 ||xxlargepop.com^
 ||zononi.com^
-!
-! Source name: AdGuard Mobile Ads filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/MobileFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains for mobile devices.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
-! ||mobileapptracking.com^ - don't block this domain with all subdomains. https://forum.adguard.com/index.php?threads/23917/
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/171494
 ||adx-open-service.youku.com^
 ||ad.youku.com^
 ||ykad-data.youku.com^
 ||cad.youku.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/148028
-! Dcard app
 ||dad-api.dcard.tw^
-! com.hktv.android.hktvmall
-! https://github.com/AdguardTeam/AdguardFilters/issues/146615
 ||ad-splash-tracking.hktvmall.com^
 ||ad-splash.hktvmall.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/121846
 ||advil.waze.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/74651
-! com.opera.app.newslite
 ||s-adx.op-mobile.opera.com^
-! Apps by Ketchapp
 ||ketchapp.org^
 ||cdn-ketchapp.akamaized.net^
-!
-! Samsung mobile ads
 ||sspapi-prd.samsungrs.com^
-!
-! Appnext
 ||api.appnxt.net^
 ||apis.appnxt.net^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/3933
-! Yandex apps
 ||banners-slb.mobile.yandex.net^
 ||banners.mobile.yandex.net^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/117115
-! Yahoo
 ||app.ssp.yahoo.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/54135
 ||adv0*.msa.cdn.mediaset.net^
-! Micromax India
 ||mimicromax.com^
-! Duodian
 ||bi.yeshen.com^
 ||launcher.us.yeshen.com^
-! iHandy
 ||search.adcaffe.com^
 ||monitor.adcaffe.com^
-! Hawk Internet (TCL)
 ||ad-api.ehawk.com^
 ||gwrtdp-tn690BFAdt.tclclouds.com^
-! MoboTap
 ||mobotoolpush.moboapps.io^
-! Duodian (Nox/Aiad)
 ||ssp.mediation.trnox.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/20567
 ||bu1.duba.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/11291
 ||behacdn.ksmobile.net^
 ||p-behacdn.ksmobile.net^
-! https://github.com/AdguardTeam/AdguardFilters/issues/8642
 ||crosspromotion.weplayer.cc^
 ||ad.weplayer.cc^
-! https://forum.adguard.com/index.php?threads/24268/
 ||mobile-campaigns.avast.com^
-! https://forum.adguard.com/index.php?threads/s-photo-editor-missed-ads-android.21096/
 ||adpush.goforandroid.com^
-! https://forum.adguard.com/index.php?threads/dodonpachi-unlimited-missed-ads-android.21000/
 ||dzpu6za66svjl.cloudfront.net^
-! https://github.com/AdguardTeam/AdguardFilters/issues/4757
 ||ad.flipboard.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/4645
 ||adserver.shadow.snapads.com^
 ||ads-chunks.prod.ihrhls.com^
-! Watch ABC
 ||api.ads.watchabc.go.com^
-! Supership.jp (also mobile ads)
-! Criteo mobile ads
 ||criteo.com^
 ||criteo.net^
-!
-! Appodeal
 ||appodeal.com^
-! ||a.320981a9244924ef86ebdbb9eb877e9f21ce83f1e3cc89b2c5e7c3ff.com^
 /^https:\/\/a\.[0-9a-f]{56}\.com$/
-! For DNS filtering
 /^a\.[0-9a-f]{56}\.com$/
-!
 ||ad.buzzvil.com^
 ||screen.buzzvil.com^
 ||adstrategy.biz.weibo.com^
@@ -35418,23 +35147,19 @@
 ||pasta.esfile.duapps.com^
 ||api.mobula.sdk.duapps.com^
 ||ad.duapps.com^
-! Ads on some Chinese smartphones
 ||ufz.doesxyz.com^
 ||xdrig.com^
 ||usp1.baidu.com^
 ||54.222.186.106^
 ||plugin.mobopay.baidu.com^
 ||mo.freeindoapp.com^
-! AfreecaTV
 ||vod-mplayer.sooplive.co.kr^
 ||reqde.sooplive.co.kr^
 ||adballoon.sooplive.co.kr^
 ||deapi.sooplive.co.kr^
-! Yandex ads in apps
 ||startup.mobile.yandex.net^
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
-!
 ||apishow.babybus.com^
 ||apppromoteapi.babybus.com^
 ||tiktokpangle.us^
@@ -36135,48 +35860,15 @@
 ||yandexadexchange.net^
 ||yc-ads.s3.amazonaws.com^
 ||youmi.net^
-!+ PLATFORM(ios)
 ||deloton.com$important
-!+ PLATFORM(ios)
 ||oclasrv.com$important
-!----- For HTTPS websites when HTTPS filtering is disabled ------
 ||n152adserv.com^
 ||smilered.com^
-!----------------------------------------------------------------
-!
-! Source name: AdGuard Spanish/Portuguese filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||ads-redis.ecn.cl^
 ||publi.elliberal.com.ar^
 ||xad.dnoticias.pt^
 ||adclient-uol.lp.uol.com.br^
 ||adv.r7.com^
-!
-! Source name: AdGuard Spanish/Portuguese filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
-! https://forum.adguard.com/index.php?threads/ivoox-com-podcasts-issues.29530/
-! ||addevweb.com^$third-party
-!
 ||upeex.com.br^
 ||upeex.com^
 ||adspublicidades.agency^
@@ -36299,19 +35991,6 @@
 ||yestorrents.org^
 ||zebestof.com^
 ||oecistbenton.com^
-!
-!
-! Source name: AdGuard common Cyrillic filters ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
 ||vvdrhe.win^
 ||adwadvert.com.ua^
 ||nanthou.life^
@@ -38433,62 +38112,20 @@
 ||zorkabiz.ru^
 ||zqizn.com^
 ||zqmwf.xyz^
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/200915
-! t.setAttribute("data-mrmn-tag"
 /62.76.25.2(7|8)/
-! AD Factor
 /193.200.64.24:/
 ||193.200.64.24^
-!
-! under.site
 ||206.54.181.250^
-!
 ||popvalk.com^
 193.200.65.61^
-!
 ||bjiuck.com^
 62.76.25.27^
 62.76.25.28^
-!
-! This IP hosts advertising domains that promote yandex.
 45.82.68.79^
-!
-!
-! Ads reinjection (For apps only)
-!
 ||greencuttlefish.com^
-!
-!+ PLATFORM(ios, ext_android_cb, ext_safari)
-!+ NOT_PLATFORM(ios, ext_android_cb, ext_safari)
-!
-! Source name: AdGuard common Cyrillic filters ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
 ||ad.cub.red^
 ||exad.smi2.ru^
 ||tgb.hsmedia.ru^
-!
-! Source name: AdGuard Russian filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/RussianFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||auraodin.com^
 ||ssp.rutube.ru^
 ||media-advcycle.imgsmail.ru^
@@ -38615,58 +38252,11 @@
 ||ukrsvit.ukrmir.info^
 ||vozer.voffka.com^
 ||vw.onlinia.net^
-!
-! Source name: AdGuard Ukrainian filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/UkrainianFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||stat.hdvbua.pro^
 ||exchange.informer.ua^
-!
-! Source name: AdGuard Belarusian language ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Belarusian/sections/filter.txt
-!
-!
-!
-! Source name: AdGuard Bulgarian language ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Bulgarian/sections/filter.txt
-!
-!
-! This section contains the list of rules that are supposed to work on Bulgarian websites.
-!
-! Good: any type of the rules will be good
-! Bad: @@||example.org^$stealth
-!
-! NOTE: Ad servers
-!
 ||ads2native.com^
 ||hdvmyo.com^
 ||adsy.mail.bg^
-!
-! Source name: AdGuard Kazakh language ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Kazakh/sections/filter.txt
-!
-!
-! Source name: AdGuard Turkish filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
 ||movturs.click^
 ||dontmakethem.club^
 ||subaxe.xyz^
@@ -38819,19 +38409,6 @@
 ||wonoddgiris.com^
 ||yedimedia.net^
 ||youtubesave.org^
-!
-! Source name: AdGuard Turkish filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||bitcasino365.b-cdn.net^
 ||r.yabancidizi.in^
 ||ads.dygdigital.com^
@@ -38883,19 +38460,6 @@
 ||savoy.cubecdn.net^
 ||tagsadvancenative-glb8iionio2cozc.netdna-ssl.com^
 ||ttauri.livescience.com^
-!
-! Source name: AdGuard French filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains. In that case domain should be added to the common rules.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
 ||proxy.ads.canalplus-bo.net^
 ||7bd92.v.fwmrm.net^
 ||7cbf2.v.fwmrm.net^
@@ -38904,27 +38468,9 @@
 ||7b9de.v.fwmrm.net^
 ||ads.dugwood.com^
 ||caraneoutraze.uno^
-!
-! Source name: AdGuard French filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||masdak.epsilonsoft.to^
 ||adserve.lasentinelle.mu^
 ||adserver.icimedias.ca^
-!
-! Source name: AdGuard Japanese filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt
-!
-!
 ||adandhub.com^
 ||getallmedia.com^
 ||ssdsp.smt.docomo.ne.jp^
@@ -39246,28 +38792,8 @@
 ||ov.yahoo.co.jp^
 ||yads.yahoo.co.jp^
 ||yads.yjtag.yahoo.co.jp^
-!
-!+ NOT_OPTIMIZED
 ||bance.jp^
-!
-! for Safari ('||' covers one sub-domain only)
-!
-! For Safari
-!
-! JP-specific scam
 ||94.130.167.163^
-!
-! Source name: AdGuard Japanese filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
 ||ad.datadeliver.net^
 ||ad.firestorage.jp^
 ||mbada.nan.co.jp^
@@ -39286,19 +38812,6 @@
 ||ad.abema.io^
 ||ad-hatena.com^
 ||advert.punyu.com^
-!
-! Source name: AdGuard German filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
 ||addefend-platform.com^
 ||remp-campaign.golem.de^
 ||web-ads.10sq.net^
@@ -39333,19 +38846,6 @@
 ||azol.de^
 ||twiago.com^
 ||bauernative.com^
-!
-! Source name: AdGuard Chinese filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
 ||mernrza.com^
 ||xjwhtz10.com^
 ||xjwhtz2.com^
@@ -39609,24 +39109,8 @@
 ||ulukaris.com^
 ||itadapi.ithome.com.tw^
 ||zjgfq.com^
-!
-! Banana ads
 ||207.148.44.179^
-! For DNS
 /^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.\w{2}\d{1,6}\w{4}\.com$/
-!
-! Source name: AdGuard Chinese filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||xmm.wxc.cc^
 ||srtb.msn.cn^
 ||ad*.on.cc^
@@ -39639,45 +39123,15 @@
 ||two.fsylr.com^
 ||ad.juksy.com^
 ||ads.tvb.com^
-!
-! Source name: AdGuard Dutch filter ad servers
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers.txt
-!
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-!
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
 ||proxy.optoutadserving.com^
 ||cryptosplash.care^
 ||pexi.nl^
 ||adconfigproxy.azurewebsites.net^
-!
-! Source name: AdGuard Dutch filter ad servers first-party
-! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers_firstparty.txt
-!
-!
-! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
-! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
-!
-! Good: ||ad.doubleclick.net^
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
-!
-!
 ||x9t7g4m2qk2.azurewebsites.net^
 ||kjdsfjisdfjr23.azurewebsites.net^
 ||content2.nrc.nl^
 ||aa.hwigroup.com^
 ||ab.hwigroup.com^
-!
-! Source name: EasyList Dutch ad servers third-party
-! Source: https://raw.githubusercontent.com/easylist/easylistdutch/master/easylistdutch/block_third_party_server.txt
-!
 ||2k19.nl^
 ||adrequest.net^
 ||adshim.com^
@@ -39707,11 +39161,6 @@
 ||trickyrock.com^
 ||vpscash.nl^
 ||xpartners.nl^
-!
-! Source name: EasyList Germany ad servers
-! Source: https://raw.githubusercontent.com/easylist/easylistgermany/master/easylistgermany/easylistgermany_adservers.txt
-!
-!
 ||adnx.de^
 ||bd742.com^
 ||f11-ads.com^
@@ -39722,7 +39171,6 @@
 ||windows-pro.net^
 ||wixnm.com^
 ||zazufi.com^
-!
 ||4rm.de^
 ||a.partner-versicherung.de^
 ||a3h.de^
@@ -39942,13 +39390,8 @@
 ||zieltracker.de^
 ||zuppelzockt.com^
 ||zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de^
-! Mobile
 ||avault.net^
 ||recognified.net^
-!
-! Source name: EasyList Hebrew ad servers
-! Source: https://raw.githubusercontent.com/easylist/EasyListHebrew/master/adguard_hosts.txt
-!
 # This lists only contains domains which are used for ads, tracking or popups. it does not block in-HTML elements.
 # For use, simply copy paste this into your computers' HOSTS file. See https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system
 ||07af698ea8a2a5a789b79c2d75ba83d3.com^
@@ -40320,10 +39763,6 @@
 ||zinovila.com^
 ||zipodita.com^
 ||zohar-trends.com^
-!
-! Source name: Frellwits Swedish Filter
-! Source: https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt
-!
 # A hosts file that aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites
 # ----
 # title:          Frellwit's Swedish Hosts File
@@ -41085,10 +40524,6 @@
 ||www.datadoghq-browser-agent.com^
 ||www.gymshark-sweden.com.se^
 ||yieldbird.com^
-!
-! Source name: EasyList Italy ad servers
-! Source: https://raw.githubusercontent.com/easylist/easylistitaly/master/easylistitaly/easylistitaly_adservers.txt
-!
 ||adasta.it^
 ||adbreak.ch^
 ||addendo.network^
@@ -41124,11 +40559,6 @@
 ||worldfilia.net^
 ||yobee.it^
 ||yohtads.com^
-!
-! Source name: ABPindo ad servers
-! Source: https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/adservers.txt
-!
-! Confirmed ad servers
 ||188affiliates.com^
 ||accesstrade.co.id^
 ||ad-loupe.com^
@@ -41217,7 +40647,6 @@
 ||useads.com^
 ||webiklan.com^
 ||yesads.com^
-! Potential ad servers
 ||64p3am9x95ct.com^
 ||a63t9o1azf.com^
 ||abrts.pro^
@@ -41232,10 +40661,6 @@
 ||midgerelativelyhoax.com^
 ||mousheen.net^
 ||ueuodgnrhb.com^
-!
-! Source name: ABPindo ad servers third-party
-! Source: https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/thirdparty.txt
-!
 ||c-stat.eu^
 ||cfs1.uzone.id^
 ||ktrackdata.com^
@@ -41247,25 +40672,6 @@
 ||tracker.lazada.co.id^
 ||trackingclick.net^
 ||traffic-monetizer.com^
-!
-! Source name: AdblockID adservers
-! Source: https://raw.githubusercontent.com/realodix/AdBlockID/master/src/adservers.adfl
-!
-! ---
-! Dihapus dalam beberapa bulan
-! 205.251.197.235, 205.251.198.251, 205.251.193.177, 205.251.195.134
-!
-! Source name: hostsVN ad servers
-! Source: https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers.txt
-!
-! Title: hostsVN
-! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 22 Apr 2025 09:12 UTC+7
-! Version: 2504220912
-! Blocked: 875 rules
-! Expires: 1 days (update frequency)
-! Homepage: https://bigdargon.github.io/hostsVN/
-!
 ||24h-ad.24hstatic.com^
 ||24h-ipad-ad.24hstatic.com^
 ||ad-us.24hstatic.com^
@@ -42096,18 +41502,6 @@
 ||za.baomoi.com^
 ||zigzag.vn^
 ||ztrck.me^
-!
-! Source name: hostsVN Threat
-! Source: https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/filter.txt
-!
-! Title: hostsVN Threat
-! Description: Only include threat domains
-! Last modified: 22 Apr 2025 09:12 UTC+7
-! Version: 2504220912
-! Blocked: 4.736 rules
-! Expires: 1 days (update frequency)
-! Homepage: https://bigdargon.github.io/hostsVN/
-!
 ||0088shop.com^
 ||009855.com^
 ||010172.com^
@@ -46702,10 +46096,6 @@
 ||zvietcombank.com^
 ||zvietnakello.weebly.com^
 ||zywjpypco.7hujk.de^
-!
-! Source name: EasyList China ad servers
-! Source: https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
-!
 ||asd8900.oss-*.aliyuncs.com^
 ||ky891.oss-*.aliyuncs.com^
 ||tupian888.*.bcebos.com^
@@ -51077,10 +50467,6 @@
 ||hdapp1003-a.akamaihd.net^
 ||hdapp1008-a.akamaihd.net^
 ||hdsrc-a.akamaihd.net^
-!
-! Source name: Persian Blocker Hosts
-! Source: https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt
-!
 # >> A <<
 ||adtodate.ir^
 ||adrooz.com^
@@ -51278,7 +50664,6 @@ analytics-*.aasaam.com
 ||yekbux.com^
 # >> Z <<
 ||zarad.net^
-# >> A <<
 # https://github.com/MasterKia/PersianBlocker/issues/210
 ||ads.aftab.cc^
 ||analytics.asiatech.ir^
@@ -51288,15 +50673,12 @@ analytics-*.aasaam.com
 ||ads.akaup.com^
 ||ads.alaatv.com^
 ||sentry.alaatv.com^
-# >> B <<
 ||sentry.bale.sh^
 ||posthog.basalam.com^
 ||sentry.basalam.com^
 ||metrix.behtarino.com^
 ||apm.bama.ir^
-# >> C <<
 ||sentry.cafebazaar.org^
-# >> D <<
 ||tadv.didestan.net^
 ||analytics.dunro.com^
 ||ads.dabi.ir^
@@ -51304,8 +50686,6 @@ analytics-*.aasaam.com
 ||new-sentry.digikala.com^
 ||sentry.divar.cloud^
 ||actionlog.divar.ir^
-# >> E <<
-# >> F <<
 ||analytics.fam.ir^
 ||sentry.fidibo.net^
 ||vast.filmnet.ir^
@@ -51315,25 +50695,18 @@ analytics-*.aasaam.com
 ||sentry.footballiapp.com^
 ||analysis.faradars.org^
 ||tracker.farsnews.ir^
-# >> G <<
-# >> H <<
 ||analytics.hostiran.net^
 ||hiads.hidoctor.ir^
-# >> I <<
 ||ipsite.ir^
 ||analytics.irancell.ir^
 ||apptracking.irancell.ir^
 ||websocket.ilna.ir^
-# >> J <<
 ||sentry.alibaba.ir^
 ||tracker.jabama.com^
-# >> K <<
 ||logapi.karbord.io^
 ||kar-sentry.karnameh.com^
 # https://github.com/MasterKia/PersianBlocker/issues/101
 ||websocket.khanefootball.com^
-# >> L <<
-# >> M <<
 # Referral links disguised as movie download links
 # https://mediawach. com/introducing-telegram-app-for-mobile-standard-and-premium-versions/
 ||mediawach.com^
@@ -51344,20 +50717,14 @@ analytics-*.aasaam.com
 ||analytic.magland.ir^
 ||affiliate.malltina.com^
 ||sentry.malltina.com^
-# >> N <<
 ||sentry.namava.ir^
 ||ws.namava.ir^
 ||stc.ninisite.com^
-# >> O <<
 # https://github.com/MasterKia/PersianBlocker/issues/93
 ||websocket.55online.news^
-# >> P <<
 ||analytics.plaza.ir^
-# >> Q <<
 ||sentry.querastaff.ir^
-# >> R <<
 ||a.reymit.ir^
-# >> S <<
 # sheypoor.com
 ||sentry.mielse.com^
 ||ingest-data-afra.snappfood.dev^
@@ -51365,13 +50732,10 @@ analytics-*.aasaam.com
 # https://github.com/MasterKia/PersianBlocker/issues/125
 ||websocket.sobhtazeh.news^
 ||linkdoni.soft98.ir^
-# >> T <<
 ||ad.technews-iran.com^
 ||adengine.telewebion.com^
 ||analytics.telewebion.com^
 ||hadeseh.simra.cloud^
-# >> U <<
-# >> V <<
 # https://github.com/MasterKia/PersianBlocker/issues/219
 ||analytics.jeldnews.com^
 ||sentry.virgool.io^
@@ -51380,25 +50744,17 @@ analytics-*.aasaam.com
 ||websocket.varandaz.com^
 ||news-view-api.varzesh3.com^
 ||video-view-api.varzesh3.com^
-# >> W <<
-# >> X <<
-# >> Y <<
-# >> Z <<
 ||analytics.zoomit.ir^
 # https://webamoozcom.github.io/warning-list/
 # Discussion?
 ||excoino.com^
-# Discussion?
 ||irancloudmining.com^
-# Discussion?
 ||axotrade.com^
 # آمیتیس?
 # https://github.com/Webamoozcom/warning-list/discussions/41
 # What domain?
 # https://github.com/Webamoozcom/warning-list/discussions/127
-# What domain?
 # https://github.com/Webamoozcom/warning-list/discussions/131
-# What domain?
 # https://github.com/Webamoozcom/warning-list/discussions/12
 ||yoozbit.com^
 # https://github.com/Webamoozcom/warning-list/discussions/17
@@ -51507,10 +50863,6 @@ analytics-*.aasaam.com
 # AdlIran scam
 ||159.100.22.89^
 ||ewpb.site^
-!
-! Source name: List-KR filter ad servers
-! Source: https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filters-share/1st_domains.txt
-!
 ||planad.net^
 ||aedi.ai^
 ||mobon.net^
@@ -51571,10 +50923,6 @@ analytics-*.aasaam.com
 ||categorysort.com^
 ||tenping.kr^
 ||adcastmarket.com^
-!
-! Source name: List-KR filter third-party ad servers
-! Source: https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filters-share/3rd_domains.txt
-!
 ||adgirl.yes24.com^
 ||ad.api.adwiser.kr^
 ||recoshopping.naver.com^
@@ -51736,63 +51084,29 @@ analytics-*.aasaam.com
 ||ads-*.v.ssp.yahoo.com^
 ||safeframe.googlesyndication.com^
 ||adservice.google.com^
-!
-! DOMAIN-REFRESHER: START
-!
 ||ntkimg.cloud^
 ||ttse.b-cdn.net^
 ||i.keezip.com^
 ||awd.spochak.com^
-!
-! DOMAIN-REFRESHER: END
-!
-! Source name: AdGuard Japanese filter Plus
-! Source: https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt
-!
 ||ads.zippal.com^
-!
-! Source name: AdGuard DNS filter Unbreaker for Japanese
-! Source: Filters/dns-unbreak.txt
-!
-! Title: AdGuard DNS filter Unbreaker for Japanese
-! Expires: 5 days
-! Homepage: https://github.com/Yuki2718/adblock2
-! Licence: https://github.com/Yuki2718/adblock2/blob/main/LICENSE.md
-! Version: 20250419
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1852
 @@||api2.branch.io^|
-! https://x.com/iti_harapeko/status/1900164627310543248
 @@||asset.f-tra.com^|
 @@||conf.f-tra.com^|
 @@||console.f-tra.com^|
-! https://x.com/monmimami/status/1896441545177661923
 @@||a-adq.mediation.unity3d.com^|
 @@||i-sdk.mediation.unity3d.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/188915
 @@||srv.clickfuse.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/170371
 @@||browser-intake-datadoghq.com^|
 @@||ec-concier.com^|
 @@||www.datadoghq-browser-agent.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/113030
 @@||as.uncn.jp^|
 @@||b90.yahoo.co.jp^|
 @@||b92.yahoo.co.jp^|
 @@||js.adsrvr.org^|
-! https://github.com/AdguardTeam/AdguardFilters/pull/90357
 @@||www.google-analytics.com^|
-!
-! Source name: Additional rules
-! Source: Filters/rules.txt
-!
-!
-! Tracking
-!
-! This domain does not exist and is used for health checks
 ||abcounter.de^
 ||adc.9news.com.au^
 ||adc.nine.com.au^
-! https://github.com/AdguardTeam/AdguardDNS/issues/52
 ||mobileanalytics.*.amazonaws.com^
 ||affiliate.mercola.com^
 ||affiliate.productreview.com.au^
@@ -52295,9 +51609,6 @@ analytics-*.aasaam.com
 ||tracking.ustream.tv^
 ||tracking.yourfilehost.com^
 ||trackpm.shop2market.com^
-!
-! Ads
-!
 ||adocean.cz^
 ||doubleclick.net^
 ||dualstack.adbert-web-lbs-*.elb.amazonaws.com^
@@ -52326,197 +51637,84 @@ analytics-*.aasaam.com
 ||letysheeps.ru^
 ||a4.overclockers.ua^
 ||novunu.football-plyus.net^
-!
-! Special block section, requires explanation for the rule
-!
-!
-! Source name: Exception rules
-! Source: Filters/exceptions.txt
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/200033
-! Blocked by CNAME oasjs.kataweb.it
 @@||tlh.gedidigital.it^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1854
-! Blocked by CNAME tracking.socketlabs.com
 @@||smtp.focusgroupresearch.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/199304
 @@||ap01.records.in.treasuredata.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1840
-! Blocked by EasyList's `||23.109.82.`
 @@||click.avs.io^|
-! Link redirector - https://www.mydealz.de/visit/threadimg/2512771
 @@||link.sylikes.com^|
 @@||rd.bizrate.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1822
 @@|www.daraz.pk^|
 @@|daraz.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1820
 @@||sbs.demdex.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/194309
 @@||cl.link-ag.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1784
 @@||action.metaffiliation.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1773
-! Blocked by CNAME s1search.co
 @@||www.dogpile.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1771
-! Related to disguised tracker
-! https://github.com/AdguardTeam/AdguardFilters/blob/d77b4202c04486f0dc0488dbd56679cc586e5ad2/SpywareFilter/sections/tracking_servers.txt#L4110
 @@||acs-m.daraz.com.bd^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1768
 @@||f-gear.ec-optimizer.com^|
-!
-! Blocked by CNAME unbouncepages.com
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1826
 @@||get.neofinancial.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1765
 @@||hidive.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1817
 @@||learn.khanacademy.org^|
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/187801
 @@||res.ads.nicovideo.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1720
-! Blocked by CNAME data.adobedc.net
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1717
 @@||sax.sina.com.cn^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1709
-! Blocked by CNAME postaffiliatepro.com
 @@||linka.page^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1702
 @@||track.webgains.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1681
-! Blocked by CNAME fp27ee.wac.systemcdn.net
 @@||secureimage.securedataimages.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1668
-! Blocked by CNAME nr-data.net
 @@||infra-api.newrelic.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1631
-! Blocked by CNAME nc0.co
 @@||tms.capitalone.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1613
 @@||redir.ownpage.fr^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1583
-! Blocked by CNAME go2jump.org
 @@||tr.rdrtr.com^|
-!
-! Blocked by CNAME exponea.com
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1604
 @@||media-consumer365.desigual.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/164769
 @@||cdn.us*.exponea.com^|
 @@||crm-cdn.peek-cloppenburg.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/992
 @@||public-cis.exponea.com^|
-! cdn.rozetka.com.ua is blocked by CNAME 'rozetka-cdn.exponea.com'
 @@||cdn.rozetka.com.ua^|
-!
-! https://github.com/AdguardTeam/AdguardFilters/issues/194309 honto link
 @@||vcentry2.valuecommerce.ne.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1569
 @@||recommender.scarabresearch.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/167622
-! Blocked by CNAME extole.com
 @@||refer.discover.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/167320
 @@||cmp.inmobi.com^|
-! Blocked by CNAME data.adobedc.net
 @@||data.digital.costco.ca^|
 @@||data.digital.costco.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/163141
 @@||api.karte.io^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1464
 @@||sponsor.nitropay.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/157550
 @@||click.cptrack.de^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1412
-! line25.com - not able to accept cookies to use the page
 @@|ezodn.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1411
 @@||gate.first-id.fr^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1401
-! Blocked by CNAME bodis.com
 @@||leechers-paradise.org^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1406
-! Blocked by CNAME iocnt.net
 @@||data-*.herz-fuer-tiere.de^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/150715
 @@||go.adjust.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/150038
-! Blocked by CNAME getblueshift.com
 @@||clickattr.wayup.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1393
-! Blocked by CNAME adperfect.com
 @@||remembering.ca^|
 @@||obituaries.therecord.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1265
 @@||catchup.thisisdax.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1239
 @@||px.a8.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1181
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1344
 @@||cdn.duurzaam.greenchoice.nl^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/136509
-! Blocked by CNAME c.msn.com
 @@||c.office.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1131
 @@||surveymyopinion.researchnow.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1114
-! Blocked by CNAME track.customer.io
 @@||e.customeriomail.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1115
-! Blocked by CNAME tapfiliate.com
 @@||partner.everydays.de^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/134172
 @@||api.docodoco.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/133715
 @@||js.monitor.azure.com^|
-! https://old.reddit.com/r/Adguard/comments/wkcvpx/redirect_link_not_working_when_adguard_pro_ios_is/
 @@||link.morningbrew.com^|
-! https://forum.adguard.com/index.php?threads/incorrect-extension-blocking.49177/#post-223130
 @@||click.appcast.io^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/977
 @@||anwb.webpower.eu^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/959
 @@||bcicl.*.evergage.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/114908
 @@||torimochi.line-apps.com^|
-! Fixing crazyegg.com login page
 @@|core.crazyegg.com^|
 @@|app.crazyegg.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/937
 @@||oa.tr.line.me^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/115247
 @@||stash.roistat.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/113049
 @@||static-v*.trbo.com^|
 @@||api-v*.trbo.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/111707
 @@||brm-core-*.brsrvr.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/897
-! Blocked by CNAME affex.org
 @@||marketing.net.idealo-partner.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/107168
 @@||netatmo.commander1.com^|
-! https://github.com/easylist/easylist/pull/9904
 @@||vcentry3.valuecommerce.ne.jp^|
-! Fixing the issue with "Wi-Fi" connection mark when you configure private DNS on Android 9
-! Once you enable private DNS, Android 9 starts resolving random domains looking like
-! `*-*-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
-! Here you can check how it's used by Android: https://cs.android.com/search?q=ds.metric.gstatic.com
 @@-ds.metric.gstatic.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/824
 @@||id.i2i.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/98798
 @@||thumbnail.thench.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/819
 @@||validate.perfdrive.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/98729
 @@||ia.hit.interia.pl^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/797
-! https://forum.adguard.com/index.php?threads/amplitude-com-blocked.45115
 @@||analytics.amplitude.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/783
 @@|adsterra.com^|
 @@|ads.adsterra.com^|
 @@|publishers.adsterra.com^|
@@ -52526,159 +51724,79 @@ analytics-*.aasaam.com
 @@|affiliates.adsterra.com^|
 @@|beta.affiliates.adsterra.com^|
 @@|help-advertisers.adsterra.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/759
-! Blocked by CNAME impactradius.com
 @@||goto.target.com^|
 @@||goto.walmart.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/743
 @@||citiintl.122.2o7.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/805
 @@||ma135-r.analytics.edgekey.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/89190
 @@||79423.analytics.edgekey.net^|
-!
-! Blocked by CNAME ||leadpages.net^$third-party
-! https://github.com/AdguardTeam/AdguardFilters/issues/98565
 @@||classliving.lpages.co^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/829
 @@||home.focusatwill.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/707
 @@||health.halodoc.com^|
-!
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/709
 @@||promo.gramedia.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/81939
 @@||support-beacon.nakanohito.jp^|
 @@||support-widget.nakanohito.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/660
 @@||afi-b.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/pull/636
 @@||daikoku.ebis.ne.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/629
 @@||envato.market^|
-! https://github.com/AdguardTeam/AdguardFilters/pull/76413
-! whitelist as click-through
 @@||ac.ebis.ne.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/602
-! Don't block clicks in AWS emails
 @@||email.awscloud.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/574
-! Blocked by ||relevant-digital.com^
 @@||oneline.nextday.media^|
-! Reported via Telegram: https://t.me/AdGuard_chinese/13741
 @@|ftp.bmp.ovh^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/580
 @@||cloud.notification-naviextras.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/568
 @@||email.elitedangerous.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/551
 @@||links.e.theatlantic.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/71289
 @@||app.appsflyer.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/71434
 @@||email.procook.co.uk^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/498
 @@||omsc.kpn.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/514
 @@||logentries.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/517
 @@||email.*.skyeng.ru^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/65326
 @@||go.scorptec.com.au^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/468
 @@||links.getblueshift.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/453
 @@||click.trafficguard.ai^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/441
 @@||hb.afl.rakuten.co.jp^|
 @@||pt.afl.rakuten.co.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/62583
 @@||proto2ad.durasite.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/62780
 @@||tags.crwdcntrl.net^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/428
-! CNAME: paymaya.customlinks.appsflyer.com
 @@||official.paymaya.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1499
 @@|statcounter.com^|
 @@||www.statcounter.com^|
 @@||gs.statcounter.com^|
-! Blocked by exacttarget.com alias
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/333
 @@||click.virt.s*.exacttarget.com^|
 @@||click.virt.exacttarget.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/685
-! Exacttarget Marketing Cloud
 @@||mc.*.exacttarget.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/61592
 @@||login.sendpulse.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/451
 @@||a.sellpoint.net^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/59840
 @@||tlaol.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/378
 @@||admin.dable.io^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/358
 @@||log.mmstat.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/345
-! Blocked by alimama.com alias
 @@||click.simba.taobao.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/340
 @@||cs.silverpop.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/312
 @@||grp07.ias.rakuten.co.jp^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/304
 @@||cindyholbrook.lpages.co^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/289
-! Fixing Google Shop and Google Ads in search results.
-! These ads cannot be hidden on the DNS-level, so we should not break clicks on the adverts
 @@||pagead.l.doubleclick.net^|
 @@||www.googleadservices.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/287
 @@||my.tealiumiq.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/267
 @@||artifactory.appodeal.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/258
 @@||www.jdoqocy.com^|
 @@||cj.dotomi.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/50415
 @@||intersport.peerius.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/231
 @@||cutcaptcha.com^|
-! https://forum.adguard.com/index.php?threads/36967/
 @@||forum.notebookreview.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/199
 @@||radiofrance.targetspot.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/190
 @@||awin1.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/185
 @@||app.adjust.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/183
 @@||feed.adrelayer.com^|
-! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/168
 @@||redirect.appmetrica.yandex.com^|
-! Fixing redirects through guce.advertising.com (www.engadget.com, www.huffpost.com)
 @@||guce.advertising.com^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/27196
 @@||a.adwolf.ru^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/26607
-! https://github.com/AdguardTeam/AdguardFilters/issues/23929
 @@||cm-beacon.nakanohito.jp^|
 @@||cm-widget.nakanohito.jp^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/19113
 @@||ads.tdbank.com^|
-! https://forum.adguard.com/index.php?threads/23410/page-7#post-165504
 @@||nineto5mac-d.openx.net^|
-! https://github.com/AdguardTeam/AdguardDNS/issues/192
 @@||redir.tradedoubler.com^|
 @@||clk*.tradedoubler.com^|
-! https://forum.adguard.com/index.php?threads/27021/
 @@||href.li^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/6749
 @@||str.hit.gemius.pl^|
-! https://github.com/AdguardTeam/AdguardFilters/issues/6486
 @@||track.rutarget.ru^|
-! Watson News App for iOS https://github.com/AdguardTeam/AdguardFilters/issues/4524
 @@||5471782.fls.doubleclick.net^|
-! Fixing Walmart
 @@||omniture.walmart.com^|
