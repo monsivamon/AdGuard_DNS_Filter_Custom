@@ -300,22 +300,30 @@
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
+      "name": "AdGuard Japanese filter Plus",
+      "source": "https://raw.githubusercontent.com/Yuki2718/main/japanese/jpf-plus.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "inclusions": ["/^\\|\\|[a-z0-9-.]+\\^?(\\$third-party)?$/"],
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "AdGuard DNS filter Unbreaker for Japanese",
+      "source": "Filters/dns-unbreak.txt",
+      "type": "adblock",
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
       "name": "Additional rules",
       "source": "Filters/rules.txt",
       "type": "adblock",
-      "transformations": ["RemoveModifiers", "RemoveComments", "Validate"]
+      "transformations": ["Validate"]
     },
     {
       "name": "Exception rules",
       "source": "Filters/exceptions.txt",
       "type": "adblock",
-      "transformations": ["RemoveModifiers", "RemoveComments", "Validate"]
-    },
-    {
-      "name": "AdGuard DNS filter Unbreaker for Japanese",
-      "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt",
-      "type": "adblock",
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["Validate"]
     }
   ],
   "transformations": ["Compress", "Deduplicate"],
