@@ -297,7 +297,7 @@
       "source": "https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filters-share/3rd_domains.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "RemoveComments", "Validate"]
+      "transformations": ["RemoveModifiers", "Validate"]
     },
     {
       "name": "Additional rules",
