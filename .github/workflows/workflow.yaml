@@ -21,12 +21,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           
-      - name: Remove old filter files from repo
-        run: |
-          git rm -f Filters/*.txt
-          git commit -m "Remove old filter files"
-          git push origin master
-          
       - name: Get Latest File
         run: |
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
