@@ -32,6 +32,13 @@ jobs:
         run: |
           yarn install
           yarn run build
+
+      - name: Clean up main_filter.txt
+        run: |
+          tail -n +11 Filters/main_filter.txt | grep -v '^!' | awk '!seen[$0]++' > body.txt
+          head -n 10 Filters/main_filter.txt > header.txt
+          cat header.txt body.txt > Filters/main_filter.txt
+          rm header.txt body.txt
           
       - name: Upload new filter
         run: |
