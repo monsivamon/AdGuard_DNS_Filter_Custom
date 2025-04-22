@@ -4,7 +4,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard-DNS-Filter-Custom
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-22T09:26:00.939Z
+! Last modified: 2025-04-22T09:31:22.702Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -51731,10 +51731,15 @@ analytics-*.aasaam.com
 ||ads-*.v.ssp.yahoo.com^
 ||safeframe.googlesyndication.com^
 ||adservice.google.com^
+!
+! DOMAIN-REFRESHER: START
+!
 ||ntkimg.cloud^
 ||ttse.b-cdn.net^
 ||i.keezip.com^
 ||awd.spochak.com^
+!
+! DOMAIN-REFRESHER: END
 !
 ! Source name: Additional rules
 ! Source: Filters/rules.txt
