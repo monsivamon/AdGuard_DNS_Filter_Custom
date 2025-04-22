@@ -4,7 +4,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard-DNS-Filter-Custom
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-22T03:44:10.136Z
+! Last modified: 2025-04-22T06:49:39.954Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -23,6 +23,8 @@
 !
 !
 !
+||keethoostoaps.net^
+||rneniibeiijmxeb.com^
 ||s2.static.cfgr3.com^
 ||4bind2.cfd^
 ||orquidea.ai^
