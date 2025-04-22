@@ -56,7 +56,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Filters/main_filter.txt
-          git add Filters/popup_filter.txt
+          git add Filters/*.txt
           git commit -m "Build filter Success."
           git push origin master
