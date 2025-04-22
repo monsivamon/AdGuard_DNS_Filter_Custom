@@ -36,11 +36,7 @@ jobs:
       - name: Clean up main_filter.txt
         run: |
           head -n 10 main_filter.txt > tmp_head.txt
-          tail -n +11 main_filter.txt | \
-            grep -v '^\!' | \            # コメント行（!）を除外
-            grep '^\|\|' | \             # '||' で始まる行のみを残す
-            grep '^@@' | \               # '@@' で始まる行のみを残す
-            awk '!seen[$0]++' > tmp_body.txt   # 重複を削除
+          tail -n +11 main_filter.txt | grep -v '^\!' | awk '!seen[$0]++' > tmp_body.txt
           cat tmp_head.txt tmp_body.txt > main_filter.txt
           rm tmp_head.txt tmp_body.txt
 
