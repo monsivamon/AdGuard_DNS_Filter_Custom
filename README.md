@@ -24,7 +24,6 @@ https://raw.githubusercontent.com/monsivamon/AdGuard-DNS-Filter-Custom/master/Fi
 
 - This filter is updated **automatically every 6 hours** using GitHub Actions.
 - Manual edits or commits may also occur at irregular intervals depending on development or testing needs.
-- Please refer to the commit history for details on recent changes.
 
 ---
 
@@ -32,11 +31,8 @@ https://raw.githubusercontent.com/monsivamon/AdGuard-DNS-Filter-Custom/master/Fi
 
 This filter includes references and ideas from the following outstanding projects:
 
+- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)  
-  → An excellent collection of filters focused on Japanese sites and services.
-
-- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)  
-  → The official AdGuard DNS filter. This project refers to some of its rules and structural ideas under the terms of the GPL.
 
 Many thanks to the original authors and contributors of these projects.
 
