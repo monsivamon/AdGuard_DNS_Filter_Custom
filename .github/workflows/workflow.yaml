@@ -47,12 +47,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
           
-      - name: Add License Comment to Filter
-        run: |
-          for file in Filters/*_filter.txt; do
-            echo "! Based on AdGuardTeam/AdGuardSDNSFilter - Licensed under MPL 2.0" | cat - "$file" > temp && mv temp "$file"
-          done
-          
       - name: Upload new filter
         run: |
           git config --local user.email "action@github.com"
