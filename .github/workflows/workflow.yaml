@@ -21,11 +21,12 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           
-      - name: Get File
+      - name: Get Lastest File
         run: |
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt -o Filters/exceptions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
+          curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
     
       - name: yarn
         run: |
