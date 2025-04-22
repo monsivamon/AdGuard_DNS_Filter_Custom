@@ -21,9 +21,10 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           
-      - name: Remove old filter
+      - name: Remove old filter files from repo
         run: |
-          rm Filters/dns-unbreak.txt Filters/exceptions.txt Filters/exclusions.txt Filters/rules.txt
+          git rm -f Filters/*.txt
+          git commit -m "Remove old filter files"
           git push origin master
           
       - name: Get Latest File
