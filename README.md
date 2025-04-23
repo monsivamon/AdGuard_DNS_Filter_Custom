@@ -1,4 +1,4 @@
-# AdGuard DNS Filter (Custom)
+# AdGuard DNS Filter Custom
 
 This is a **custom AdGuard DNS filter list**, created primarily for **personal learning and practice**.  
 Please note that I am still a beginner with GitHub and filter creation, so this repository may not follow best practices or deliver perfect results.
