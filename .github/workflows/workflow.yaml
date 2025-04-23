@@ -44,7 +44,7 @@ jobs:
         run: |
           VERSION_LINE="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
           awk -v ver="$VERSION_LINE" '
-            /^! Last modified:/ { print; print ver; next }
+            /^! Description:/ { print; print ver; next }
             { print }
           ' Filters/main_filter.txt > Filters/tmp_main.txt
           mv Filters/tmp_main.txt Filters/main_filter.txt
