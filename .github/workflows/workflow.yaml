@@ -31,7 +31,7 @@ jobs:
       - name: Get 280blocker domain ag file
         run: |
           ym=$(date +'%Y%m')
-          curl -sSfL "https://280blocker.net/files/280blocker_domain_ag_${ym}.txt" -o Filters/280_domain_filter.txt
+          curl -sSfL -A "Mozilla/5.0" "https://280blocker.net/files/280blocker_domain_ag_${ym}.txt" -o Filters/280_domain_filter.txt
           
       - name: yarn
         run: |
