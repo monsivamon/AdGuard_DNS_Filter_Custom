@@ -28,10 +28,6 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
           
-      - name: Get 280blocker domain ag file
-        run: |
-          curl -sSfL "https://monsivamon.web.fc2.com/280blocker_domain_ag_yyyyMM.txt" -o Filters/280_domain_filter.txt
-          
       - name: yarn
         run: |
           yarn install
