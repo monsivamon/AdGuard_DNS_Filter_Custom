@@ -32,7 +32,8 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 This filter includes references and ideas from the following outstanding projects:
 
 - [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
-- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)  
+- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)
+- [tofukko/filter](https://github.com/tofukko/filter)
 
 Many thanks to the original authors and contributors of these projects.
 
