@@ -16,6 +16,7 @@ Please note that I am still a beginner with GitHub and filter creation, so this 
 ## 🔗 How to Use with AdGuard
 
 To use this filter in AdGuard (e.g., AdGuard Home, AdGuard DNS), add the following URL to your custom DNS filters:
+
 https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/master/Filters/main_filter.txt
 
 ---
@@ -27,28 +28,26 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 
 ---
 
-## 📝 Credits
+## 📝 Credits & Source Projects
 
-This filter includes references and ideas from the following outstanding projects:
+This filter includes references, ideas, and in some cases direct rules from the following GPL-licensed projects:
 
 - [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)
 - [tofukko/filter](https://github.com/tofukko/filter)
 
-Many thanks to the original authors and contributors of these projects.
+I deeply respect the original authors and thank them for their contributions.
 
 ---
 
 ## ⚖️ License
 
-This project includes material from other GPL-licensed repositories.  
-Accordingly, this repository is distributed under the **GNU General Public License v3.0**.
+This project incorporates material from other **GPL v3** licensed repositories.  
+Therefore, this repository is distributed under the **GNU General Public License v3.0**.
 
-For more information, see:  
+For complete license terms, please refer to the following:  
 📄 [LICENSE (GPL v3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ---
 
-Thank you for visiting this repository 🙌
-
-
+Thank you for visiting this repository!
