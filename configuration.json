@@ -317,7 +317,7 @@
       "name": "AdGuard DNS filter Unbreaker for Japanese",
       "source": "Filters/dns-unbreak.txt",
       "type": "adblock",
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["Validate"]
     },
     {
       "name": "Additional rules",
