@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
 ! Description: AdGuard DNS filter Customized by monsivamon
-! Version: 2025-04-25 22:19 JST
+! Version: 2025-04-25 23:59 JST
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-25T13:19:46.968Z
+! Last modified: 2025-04-25T14:59:10.114Z
 !
 ||nvpartnerspromo.com^
 ||yougetwhatyoupayfor.net^
@@ -36299,7 +36299,6 @@
 ||ads.mobilefuse.net^
 ||ads.mobilityware.com^
 ||ads.mobvertising.net^
-||ads.mopub.com^
 ||ads.pdbarea.com^
 ||ads.pinger.com^
 ||ads.taptapnetworks.com^
@@ -46694,6 +46693,8 @@
 ||lucnwtl.top^
 ||uwcnmtt.top^
 ||tljrvn.icu^
+||bucnwtv.top^
+||khehliets.com^
 ||thaincoth.com^
 ||etbh.cn^
 ||pflwta.top^
@@ -51718,6 +51719,7 @@
 ||zeppin.com^
 ||assets-momentum.akamaized.net^
 ||banners.itunes.apple.com^
+||partner*.become.co.jp^
 ||4chan-ads.org^
 ||2-only.page.ne.jp^
 ||2o7.net^
@@ -51874,6 +51876,7 @@
 ||enhance.co.jp^
 ||assoc-amazon.
 ||ws.amazon.
+||rcm*.amazon.
 ||amazlink.
 ||amazoo.longseller.org^
 ||amzlsh.com^
@@ -51901,6 +51904,7 @@
 ||mail-ads.google.com^
 ||doubleclick.net^
 ||fundingchoicesmessages.google.com
+||ad.kissanime.*^
 ||disproveknob.com^
 ||ad2iction.com^
 ||coppedex.com^
@@ -51913,6 +51917,7 @@
 ||dyecowwhy.com^
 ||eyefuneve.com^
 ||hdselection.com^
+||inpagepush.com^$important
 ||jiltlargosirk.com^
 ||mehebborc.com^
 ||mhuvmleot.com^
@@ -51944,6 +51949,7 @@
 ||rcm.shinobi.jp^
 ||ba1.shinobi.jp^
 ||vis1.shinobi.jp^
+||ersties.com^
 ||deliver.ptgncdn.com^
 ||metrics.streaks.jp^
 ||analytics.tver.jp^
@@ -51966,12 +51972,17 @@
 ||collector.xhamster.com^
 ||dauhunecoag.net^
 ||go.bundlebyte.net^
+||leewibaijoa.com^
 ||ostupsaury.net^
 ||raiphafimept.net^
 ||souhoazapee.net^
 ||zaisofohow.net^
 ||solty.biz^
 ||ads.zippal.com^
+||mopub.com^$badfilter
+||mopub.com^
+||outbrain.com^$badfilter
+||taboola.com^$badfilter
 @@||api2.branch.io^|
 @@||asset.f-tra.com^|
 @@||conf.f-tra.com^|
