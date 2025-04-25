@@ -304,7 +304,6 @@
       "source": "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "inclusions": ["/^\\|\\|[a-z0-9-.]+\\^?(\\$third-party)?$/"],
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
@@ -312,7 +311,6 @@
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "inclusions": ["/^\\|\\|[a-z0-9-.]+\\^?(\\$third-party)?$/"],
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
