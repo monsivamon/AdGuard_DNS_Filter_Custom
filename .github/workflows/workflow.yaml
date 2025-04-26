@@ -60,7 +60,7 @@ jobs:
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
 
           # 一時ファイル削除
-          rm Filters/tmp_head.txt Filters/tmp_body*.txt
+          rm Filters/tmp*.txt
           
       - name: Insert Version info in JST
         run: |
