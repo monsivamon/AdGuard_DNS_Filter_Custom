@@ -54,8 +54,8 @@ jobs:
           # awk '($0 ~ /^@@/) || ($0 !~ /tracking|tracker|analytics/)' Filters/tmp_body_clean_2.txt > Filters/tmp_body_clean_3.txt
           
           awk '
-          # ステップ 1: コメント除去
-          !/^!/ {
+          # ステップ 1: コメント＆使えない行除去
+          if (!/^!/ && (/^\|\||^@@/)) {
             # ステップ 2: 不要修飾子を除去 ($important以外の$修飾子)
             if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
               sub(/\$.*$/, "", $0)
