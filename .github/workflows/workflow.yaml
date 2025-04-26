@@ -35,6 +35,7 @@ jobs:
 
       - name: Clean up main_filter.txt
         run: |
+          cp Filters/main_filter.txt Filters/main_filter_bak.txt
           sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
           tail -n +11 Filters/main_filter.txt | awk '!/^\!/ && (/^\|\||^@@/) && !seen[$0]++' > Filters/tmp_body.txt
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
