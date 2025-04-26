@@ -43,7 +43,8 @@ jobs:
 
           # ヘッダ部分（2〜7行目）を抽出
           sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
-          
+
+          # ヘッダー以外を整理整頓
           awk '
           # ステップ 1: コメント＆使えない行除去
           !/^!/ && (/^\|\||^@@/) {
@@ -59,13 +60,10 @@ jobs:
               }
             }
           }
-          ' Filters/main_filter.txt > Filters/tmp_body.txt
-
-          # ヘッダと整形済みの本体を結合
-          cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
-
-          # 一時ファイル削除
-          rm Filters/tmp*.txt
+          ' Filters/main_filter.txt >> Filters/tmp_head.txt
+          
+          # 上書き実行
+          mv Filters/tmp_head.txt Filters/main_filter.txt
           
       - name: Insert Version info in JST
         run: |
@@ -83,6 +81,8 @@ jobs:
             print 
           }
           ' Filters/main_filter.txt > Filters/tmp_main.txt
+
+          # 上書き実行
           mv Filters/tmp_main.txt Filters/main_filter.txt
           
       # フィルタをアップロード
