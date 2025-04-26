@@ -13,6 +13,14 @@ Please note that I am still a beginner with GitHub and filter creation, so this 
 
 ---
 
+## 🔧 Filter Creation Process
+- The filter list was originally generated using the official AdGuard DNS filter compiler.
+- After generation, I used shell scripting to modify and customize the filter rules for personal use.
+- The customizations include removing specific categories like tracking, analytics, and certain domains that were flagged by default.
+- Please be aware that these changes are not official, and the filter may not work as effectively as the original.
+
+---
+
 ## 🔗 How to Use with AdGuard
 
 To use this filter in AdGuard (e.g., AdGuard Home, AdGuard DNS), add the following URL to your custom DNS filters:
