@@ -33,9 +33,13 @@ jobs:
       # フィルタビルド実行
       - name: Build Filter
         run: |
+          # 依存関係を最新にアップグレード
+          yarn upgrade
+          # 依存関係をインストール
           yarn install
-          yarn run build
-          
+          # フィルタ生成実行
+          ./node_modules/.bin/hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
+      
       # 生成フィルタそのままから弄る
       - name: Clean up main_filter.txt
         run: |
