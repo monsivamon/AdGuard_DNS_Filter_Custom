@@ -44,27 +44,30 @@ jobs:
           
           # 日付を取得
           VERSION="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+
+          # awkでフィルタ整形
           awk -v ver="$VERSION" '
+          # 1行目をスキップ
           NR > 1 {
             print
-            # Last modifiedを見つけたらVerと!追記
-            if (/^! Last modified:/) {
+            # Last modified行を見つけたらバージョン情報を追加
+            /^! Last modified:/ {
               print ver
               print "!"
-          　}
-            next
-          }
-          #コメント行を除外し、フィルタ形式の行のみ対象
-          !/^!/ && (/^\|\||^@@/) {
-            # $important 以外の修飾子削除
-            if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
-              sub(/\$.*$/, "", $0)
+              next
             }
-            # @@は無条件で許可、それ以外でtracking系ワード含むものは除外
-            if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
-              # 重複ではないことを確認
-              if (!seen[$0]++) {
-                print
+            #コメント行を除外し、フィルタ形式の行のみ対象
+            !/^!/ && (/^\|\||^@@/) {
+              # $important 以外の修飾子削除
+              if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
+                sub(/\$.*$/, "", $0)
+              }
+              # @@は無条件で許可、それ以外でtracking系ワード含むものは除外
+              if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
+                # 重複ではないことを確認
+                if (!seen[$0]++) {
+                  print
+                }
               }
             }
           } ' Filters/main_filter.txt > Filters/tmp_filter.txt
