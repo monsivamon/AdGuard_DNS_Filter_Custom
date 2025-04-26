@@ -44,7 +44,6 @@ jobs:
           
           # 日付を取得
           VERSION="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-
           awk -v ver="$VERSION" '
           NR > 1 {
             print
