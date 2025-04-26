@@ -40,30 +40,30 @@ jobs:
         run: |
           # 元ファイルをバックアップ
           cp Filters/main_filter.txt Filters/before_modify.txt
-
-          # ヘッダ部分（2〜7行目）を抽出
-          sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
-
-          # ヘッダー以外を整理整頓
+          
           awk '
-          # ステップ 1: コメント＆使えない行除去
+          # 2~7行目をそのまま書き出す
+          NR >= 2 && NR <= 7 {
+             print
+             next
+          }
+          # 8行目以降のフィルタ関係ない行を除外
           !/^!/ && (/^\|\||^@@/) {
-            # ステップ 2: 不要修飾子を除去 ($important以外の$修飾子)
+          　# $important 以外の修飾子削除
             if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
               sub(/\$.*$/, "", $0)
             }
-            # ステップ 3: tracking関連の除外（@@以外の行でtracking系を除外）
+            # @@ではないtracking要素を含んだルールを除外
             if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
-              # ステップ 4: 重複してないことを確認
+              # 重複ではないことを確認
               if (!seen[$0]++) {
                 print
               }
             }
-          }
-          ' Filters/main_filter.txt >> Filters/tmp_head.txt
+          } ' Filters/main_filter.txt > Filters/tmp_filter.txt
           
           # 上書き実行
-          mv Filters/tmp_head.txt Filters/main_filter.txt
+          mv Filters/tmp_filter.txt Filters/main_filter.txt
           
       - name: Insert Version info in JST
         run: |
