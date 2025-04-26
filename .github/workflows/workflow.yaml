@@ -38,16 +38,26 @@ jobs:
 
       - name: Clean up main_filter.txt
         run: |
+        
           # 元ファイルをバックアップ
           cp Filters/main_filter.txt Filters/before_modify.txt
           
-          awk '
-          # 2~7行目をそのまま書き出す
-          NR >= 2 && NR <= 7 {
-             print
-             next
+          # 日付を取得
+          VERSION="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+
+          # awkで整形
+          awk -v ver="$VERSION" '
+          # ヘッダー処理開始
+          NR > 1 {
+            print
+            # Last modifiedを見つけたら Verと空欄追記
+            if (/^! Last modified:/) {
+            　　print ver
+            　　print "!"
+          　}
+            next
           }
-          # 8行目以降：コメント行を除外し、フィルタ形式の行のみ対象
+          #コメント行を除外し、フィルタ形式の行のみ対象
           !/^!/ && (/^\|\||^@@/) {
             # $important 以外の修飾子削除
             if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
@@ -64,26 +74,6 @@ jobs:
           
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
-          
-      - name: Insert Version info in JST
-        run: |
-          # 現在の日付と時間をJST形式で取得
-          VERSION_LINE="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-          
-          # ファイル内で「! Description:」行の直後にバージョン情報を挿入
-          awk -v ver="$VERSION_LINE" '
-          /^! Description:/ { 
-            print; 
-            print ver; 
-            next
-          }
-          { 
-            print 
-          }
-          ' Filters/main_filter.txt > Filters/tmp_main.txt
-
-          # 上書き実行
-          mv Filters/tmp_main.txt Filters/main_filter.txt
           
       # フィルタをアップロード
       - name: Upload new filter
