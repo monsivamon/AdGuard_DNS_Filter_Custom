@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
 ! Description: AdGuard DNS filter Customized by monsivamon
-! Version: 2025-04-26 13:24 JST
+! Version: 2025-04-26 13:32 JST
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-26T04:24:17.144Z
+! Last modified: 2025-04-26T04:32:31.056Z
 !
 ||nvpartnerspromo.com^
 ||yougetwhatyoupayfor.net^
@@ -51321,6 +51321,7 @@
 @@||b90.yahoo.co.jp^|
 @@||b92.yahoo.co.jp^|
 @@||js.adsrvr.org^|
+@@||www.google-analytics.com^|
 ||abcounter.de^
 ||adc.9news.com.au^
 ||adc.nine.com.au^
@@ -51846,6 +51847,7 @@
 @@||thumbnail.thench.net^|
 @@||validate.perfdrive.com^|
 @@||ia.hit.interia.pl^|
+@@||analytics.amplitude.com^|
 @@|adsterra.com^|
 @@|ads.adsterra.com^|
 @@|publishers.adsterra.com^|
@@ -51858,6 +51860,8 @@
 @@||goto.target.com^|
 @@||goto.walmart.com^|
 @@||citiintl.122.2o7.net^|
+@@||ma135-r.analytics.edgekey.net^|
+@@||79423.analytics.edgekey.net^|
 @@||classliving.lpages.co^|
 @@||home.focusatwill.com^|
 @@||health.halodoc.com^|
