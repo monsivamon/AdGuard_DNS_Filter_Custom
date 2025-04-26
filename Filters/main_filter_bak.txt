@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-26T03:29:29.537Z
+! Last modified: 2025-04-26T03:34:12.905Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -138,6 +138,7 @@
 ||157.90.183.248^
 ||randomadsrv.com^
 ||crmentjg.com^
+||crmtt.livejasmin.com^
 ||patakaendymal.top^
 ||noopapnoeic.digital^
 ||gaming001.site^
@@ -12305,6 +12306,7 @@ vkcdnservice.appspot.com^
 ||crittereasilyhangover.com^
 ||crjpgate.com^
 ||crjpingate.com^
+||crmpt.livejasmin.com^
 ||croakedrotonda.com^
 ||croakglanceskier.com^
 ||crockejection.com^
@@ -34368,6 +34370,7 @@ vkcdnservice.appspot.com^
 ||assets.sheetmusicplus.com^
 ||audioad.zenomedia.com^
 ||award.sitekeuring.net^
+||banners.livepartners.com^
 ||bc.coupons.com^
 ||bidder.newspassid.com^
 ||bids.concert.io^
@@ -36391,6 +36394,7 @@ vkcdnservice.appspot.com^
 ||adv-front.devpnd.com^
 ||mintegral.com^
 ||x-eu.64e98469810bd13e2b45e52d19d6fddfe333b3528350d8cfa792d478.com^
+||skadsdk.appsflyer.com^
 ||alt-ad.mail.ru^
 ||chavoads.com^
 ||r2d2.aotter.net^
@@ -36670,6 +36674,7 @@ vkcdnservice.appspot.com^
 ||adonly.com^
 ||vm5apis.com^
 ||adprotected.com^
+||adproxy.tf1.fr^
 ||adpublisher.s3.amazonaws.com^
 ||adquota.com^
 ||ads.aerserv.com^
@@ -37145,6 +37150,7 @@ vkcdnservice.appspot.com^
 ||collector-pxebumdlwe.px-cdn.net^
 ||s2s.adjust.com^
 ||view.adjust.com^
+||engagements.appsflyer.com^
 ||pageview.click^
 ||viaklera.com^
 ||pixel-*.convertagain.net^
@@ -37449,6 +37455,7 @@ vkcdnservice.appspot.com^
 ||hotjar.io^
 ||1800cnt.com^
 ||tag.nifty.com^
+||tracker.kantan-access.com^
 ||counter2.blog.livedoor.com^
 ||odtrtadl.com^
 ||dkotrack.com^
@@ -37560,6 +37567,7 @@ vkcdnservice.appspot.com^
 ||signalayer.com^
 ||cdn.cohesionapps.com^
 ||c212.net^
+||imp.xmax.jp^
 ||analytics.audionow.de^
 ||oaprodlogging.yo-digital.com^
 ||analytics.e2estudios.com^
@@ -37789,6 +37797,7 @@ vkcdnservice.appspot.com^
 ||sortext.com^
 ||ew1.reg.bigdata.ssp.samsung.com^
 ||nmetrics.samsung.com^
+||websdk.appsflyer.com^
 ||sr.studiostack.com^
 ||experianmatch.info^
 ||pghub.io^
@@ -37870,6 +37879,8 @@ vkcdnservice.appspot.com^
 ||cdn.preciso.net^
 ||trx-hub.com^
 ||leafmedia.io^
+||d.adlpo.com^
+||t.adlpo.com^
 ||rudderlabs.com^
 ||tag.contactatonce.co.uk^
 ||mxradon.com^
@@ -37985,6 +37996,7 @@ vkcdnservice.appspot.com^
 ||segs.jp^
 ||n-analytics.io^
 ||b97.yahoo.co.jp^
+||log.ma-jin.jp^
 ||reingod.com^
 ||mediarithmics.com^
 ||ivitrack.com^
@@ -38006,6 +38018,7 @@ vkcdnservice.appspot.com^
 ||pv.kuaizhan.com^
 ||eventsapi.grocerkey.com^
 ||dc-tag.jp^
+||kitchen.juicer.cc^
 ||t.beop.io^
 ||contents-tracking.beop.io^
 ||docomo-analytics.com^
@@ -38280,9 +38293,11 @@ vkcdnservice.appspot.com^
 ||im-apps.net^
 ||pixel.s3xified.com^
 ||collect.feefo.com^
+||js.ptengine.jp^
 ||imp.dmm.co.jp^
 ||imp.dmm.com^
 ||track.edu-info.jp^
+||sftrack.searchforce.net^
 ||analytics.audioeye.com^
 ||ws.audioeye.com^
 ||a.wishabi.com^
@@ -38411,6 +38426,7 @@ vkcdnservice.appspot.com^
 ||pymx5.com^
 ||ubiquitousyard.com^
 ||i.compendium.com^
+||statsp.fpop.net^
 ||conductrics.com^
 ||zorosrv.com
 ||api.cazamba.com^
@@ -42165,6 +42181,7 @@ vkcdnservice.appspot.com^
 ||a8clk.ands-tech.com^
 ||a8clk.angeliebe.co.jp^
 ||a8clk.aoki-style.com^
+||a8clk.ap.livede55.com^
 ||a8clk.app.offerbox.jp^
 ||a8clk.apply-shop.menu.inc^
 ||a8clk.asahi-net.or.jp^
@@ -43252,6 +43269,7 @@ vkcdnservice.appspot.com^
 ||clk.ingage.jp^
 ||clk.liberty-e.com^
 ||clk.wagon-hire.com^
+||clkcv.livede55.com^
 ||complete.smilecbd.jp^
 ||contact.kdg-yobi.com^
 ||cosme.caseepo.jp^
@@ -88026,6 +88044,7 @@ vkcdnservice.appspot.com^
 ||app.shopimind.com^
 ||ca-api.cafe24data.com^
 ||tracking.tving.com^
+||c.statcounter.com^
 ||a.mts.ru^
 ||ana*.inews24.com^
 ||analytics.streamfab.
@@ -89073,6 +89092,7 @@ vkcdnservice.appspot.com^
 ||lively-collect-elb-*.amazonaws.com^
 ||log-player.arte.tv^
 ||log-stats.weathercn.com^
+||log.adap.tv^
 ||log.ajunews.com^
 ||log.api.zaloapp.com^
 ||log.appdriver.jp^
@@ -89155,6 +89175,7 @@ vkcdnservice.appspot.com^
 ||metric.inetcore.com^
 ||metric.nimo.tv^
 ||metrics-api.librato.com^
+||metrics-broker.prod.p.tf1.fr^
 ||metrics.api.yle.fi^
 ||metrics.aws.sitepoint.com^
 ||metrics.bangbros.com^
@@ -89294,6 +89315,7 @@ vkcdnservice.appspot.com^
 ||pxl-*.ozone.ru^
 ||pxlctl.elpais.com^
 ||pzd.rakuten.co.jp^
+||qlog.adap.tv^
 ||qnajplxtvz-a.akamaihd.net^
 ||r.bbci.co.uk^
 ||r.kleertjes.com^
@@ -89326,6 +89348,7 @@ vkcdnservice.appspot.com^
 ||sbeacon.sina.com.cn^
 ||secure-wa-na.unileversolutions.com^
 ||segment-cdn.producthunt.com^
+||segments.adap.tv^
 ||sentry01.zerg.rambler.ru^
 ||services.wetek.com^
 ||session.timecommerce.net^
@@ -89483,6 +89506,7 @@ vkcdnservice.appspot.com^
 ||statetc.nate.com^
 ||static-ads.zaloapp.com^
 ||static.analytics-site.com^
+||static.cloudflareinsights.com^
 ||static.parsely.com^
 ||statistics.11880.com^
 ||statistics.crowdynews.com^
@@ -89552,6 +89576,7 @@ vkcdnservice.appspot.com^
 ||stt.nimbusweb.me^
 ||style.onvz.nl^
 ||swa.metro.co.uk^
+||sync.adap.tv^
 ||sysmon.kakaku.com^
 ||t-ak.hulu.com^
 ||t.451.io^
@@ -90062,10 +90087,33 @@ gcdsdk.appsflyersdk.com^
 -launches.appsflyersdk.com^
 cdn-settings.appsflyersdk.com^
 dlsdk.appsflyersdk.com^
+||adrevenue.appsflyer.com^
+||api.appsflyer.com^
+||api2.appsflyer.com^
+||app.appsflyer.com^
+||attr.appsflyer.com^
+||banner.appsflyer.com^
 ||cdn-settings.appsflyersdk.com^
+||cdnappicons.appsflyer.com^
+||dls2s.appsflyer.com^
 dlsdk.appsflyer.com^
+||events.appsflyer.com^
+||fvalid.appsflyer.com^
+||gcd-s2s.appsflyer.com^
+||gcdsdk.appsflyer.com^
+||hq1.appsflyer.com^
+||impression.appsflyer.com^
+||inapps.appsflyer.com^
 inapps.appsflyersdk.com^
+||launches.appsflyer.com^
 ||launches.appsflyersdk.com^
+||onelink.appsflyer.com^
+||register.appsflyer.com^
+||sdk-services.appsflyer.com^
+||sdk.appsflyer.com^
+||track.appsflyer.com^
+||validate.appsflyer.com^
+||wa.appsflyer.com^
 ! QQ
 ||mtrace.qq.com^
 ||sngmta.qq.com^
@@ -90541,6 +90589,7 @@ inapps.appsflyersdk.com^
 ||telemetry.voxeet.com^
 ||usertrack.appcpi.net^
 ||api*.amplitude.com^
+||conversions.appsflyer.com^
 ||collect.serious.li^
 ||analytics.jodelapis.com^
 ||analytics.mobilegamestats.com^
@@ -91025,6 +91074,7 @@ inapps.appsflyersdk.com^
 ||control.cityofcairns.com^
 ||conversions.genieventures.co.uk^
 ||cookie-guard-erdee.ey.r.appspot.com^
+||cookies.livepartners.com^
 ||cookiex.ngd.yahoo.com^
 ||core-apps.b-cdn.net^
 ||count-server.sharethis.com^
@@ -91258,6 +91308,7 @@ inapps.appsflyersdk.com^
 ||p.typekit.net^
 ||page-events-ustats.udemy.com^
 ||pagesense-collect.zoho.com^
+||pagesocket.glam.com^
 ||pap.qualityunit.com^
 ||parallax.askmediagroup.com^
 ||pegasus.unifygroup.com^
@@ -93775,6 +93826,7 @@ inapps.appsflyersdk.com^
 ||cppgf.com^
 ||crackac.com^
 ||creara-media.ru^
+||creatives.livejasmin.com^
 ||creofive.com^
 ||creofun.com^
 ||crutop.nu^
@@ -95292,6 +95344,7 @@ inapps.appsflyersdk.com^
 ||d2swpuhpwp3khd.cloudfront.net^
 ||afflaze.com^
 ||adstuber.com^
+||ad.orange-park.jp^
 ||d-064.com^
 ||public.adgger.jp^
 ||pompass.net^
@@ -95356,6 +95409,7 @@ inapps.appsflyersdk.com^
 ||ad.ddo.jp^
 ||js.winc-ad.com^
 ||reemo-ad.jp^
+||cdn.alistcloud.com^
 ||candy-network.com^
 ||flux-g.com^
 ||x5.jougennotuki.com^
@@ -95384,6 +95438,7 @@ inapps.appsflyersdk.com^
 ||divscripty.net^
 ||zxcvbnmasdfghjklqwertyuiop.work^
 ||smv.to^
+||ad.angel-live.com^
 ||ads-lite.net^
 ||blogparts.gcolle.net^
 ||eisys-bcs.jp^
@@ -95401,10 +95456,12 @@ inapps.appsflyersdk.com^
 ||admane.jp^
 ||smaad.net^
 ||app.monetrack.com^
+||bn.dxlive.com^
 ||mobee2.jp^
 ||mttag.com^
 ||preaf.jp^
 ||relaido.jp^
+||widget.cybershop-affiliate.jp^
 ||ad-arrow.com^
 ||aff.jskyservices.com^
 ||a-i-ad.com^
@@ -95422,6 +95479,7 @@ inapps.appsflyersdk.com^
 ||ala.durasite.net^
 ||p.permalink-system.com^
 ||adp.homes.co.jp^
+||api.primecaster.net^
 ||fam-8.net^
 ||okbp.xyz^
 ||primead.jp^
@@ -95430,6 +95488,7 @@ inapps.appsflyersdk.com^
 ||ad.netowl.jp^
 ||v4dwkcv.com^
 ||fam-ad.com^
+||ap.ad-feed.com^
 ||blog.livelog.biz^
 ||appollo.jp^
 ||ad-tag.biz^
@@ -95465,6 +95524,7 @@ inapps.appsflyersdk.com^
 ||b-click.net^
 ||colossal.jp^
 ||cpro.baidu.com^
+||download.jword.jp^
 ||fivecdm.com^
 ||fxprime-popular.com^
 ||i2idata.com^
@@ -95476,7 +95536,9 @@ inapps.appsflyersdk.com^
 ||recommender.jp^
 *ad.durasite.net^
 ||scadnet.com^
+||search.jword.jp^
 ||seoparts.com^
+||srv2.trafficgate.net^
 ||tumabeni.com^
 ||webantenna.info^
 ||widget-view.dmm.co.jp^
@@ -95496,6 +95558,7 @@ inapps.appsflyersdk.com^
 ||media5.fc2.com^
 ||ov.yahoo.co.jp^
 ||yads.yahoo.co.jp^
+||yads.yjtag.yahoo.co.jp^
 !
 !+ NOT_OPTIMIZED
 ||bance.jp^
@@ -96714,6 +96777,7 @@ inapps.appsflyersdk.com^
 ||cdn.yieldwrapper.com^
 ||cdn001.milotree.com^
 ||cdn1.profitmetrics.io^
+||cdn-magiclinks.trackonomics.net^
 ||cdn.pushmaster-cdn.xyz^
 ||cdn.vip-hd-movies.xyz^
 ||cdp-eu.customer.io^
@@ -96737,6 +96801,7 @@ inapps.appsflyersdk.com^
 ||collect-metrics.aquro.com^
 ||connectio.s3.amazonaws.com^
 ||content.livesportmedia.eu^
+||contextual.media.net^
 ||core.centotag.io^
 ||core.manatee.io^
 ||creative.prf.hn^
@@ -96805,6 +96870,7 @@ inapps.appsflyersdk.com^
 ||js.hsleadflows.net^
 ||js.multibrandaffiliates.com^
 ||jssdkcdns.mparticle.com^
+||js.hs-banner.com^
 ||ksdarprt.reseguiden.se^
 ||lanapengar.expressen.se^
 ||lararforbundet.analytics.ozzi.io^
@@ -96906,6 +96972,7 @@ inapps.appsflyersdk.com^
 ||se5.pliing.com^
 ||secure.curl7bike.com^
 ||secure.reaktion.se^
+||secure.statcounter.com^
 ||seenthis.se^
 ||sentry.outbid.io^
 ||seo.compado.com^
@@ -97134,6 +97201,7 @@ inapps.appsflyersdk.com^
 ||www.kundvisaren.se^
 ||www.mymediaindex.com^
 ||www.stadiumstage.com^
+||www.statcounter.com^
 ||www.vejaskor.com.se^
 ||www.datadoghq-browser-agent.com^
 ||www.gymshark-sweden.com.se^
@@ -107785,374 +107853,6 @@ analytics-*.aasaam.com
 !
 ! DOMAIN-REFRESHER: END
 !
-! Source name: 豆腐フィルタ
-! Source: https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt
-!
-! 2025/04/14 サ終
-! 2025年06月02日 https://fc2information.blog.fc2.com/blog-entry-2307.html
-! 2025年06月30日 http://www.fc2web.com/
-||assys01.fc2.com^
-||cnt.fc2web.com^
-||ajfnee.com^
-||banner1.site^
-! 2024/07/24
-||go.trvdp.com^
-!2021/07/02
-!2024/05/18 読み込み
-||adimg.net^
-||byokan.net^
-||rss.drecom.jp^
-!amp
--auto-ads-
--sticky-ad-
-!geniee
-!/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$script
-://ad.
-://ads.
--ad.com^
-!||fam-ad.com^$third-party
-!||storage-ad.com^
-!||smac-ad.com^
--ad.net^
--ads.com^
-||access-lab.com^
-||ad-feed.com^
-||ad-management.biz^
-||ad-v.jp^
-||ad8.jp^
-||adap.tv^
-||adingo.jp
-||adjust-net.jp^
-||adjustnetwork.com^
-||adlantis.jp^
-||adlpo.com^
-||admatrix.jp
-||adplan7.com^
-||adprost.com^
-||adresult.jp^
-||ads-tool.
-||adserver.
-||adsymptotic.com
-||adtune.jp^
-||adult-8.com^
-||advertise.
-||advertising.
-||advertserve.
-||adultfriendfinder.com^
-||adwires.com^
-||af-board.com^
-||af-market.com^
-||af-system.net^
-||aff-adeals.com^
-||affiliate.
-||affiliate-
-||affiliatecenter.jp^
-||affiliates.
-||ag-affiliate.com^
-||alimama.cn^
-||alistcloud.com^
-||blogclick.jp^
-||blog-koukoku.com^
-||clicktx.jp^
-||coinurl.com^
-||contents-search-windows.com^
-||cyber-traffic.net^
-||cybershop-affiliate.jp^
-||dtiserv.com^
-||find-a.jp^
-||flux-training.com^
-||fourmtagservices.com^
-||fun9.net^
-||fxjapan-inc.biz^
-||glam.com^
-||glam.jp^
-||image-ad.jp^
-||infocart.jp^
-||infotop.
-||juicyads.com^
-||jword.jp^
-||kau.li^
-||koukoku.
-||ladmp.com^
-||leaffi.jp^
-||linkbucks.com^
-||linkshare.ne.jp^
-||livepartners.com^
-||m-n-j.com^
-||ma-jin.jp^
-||media.net^
-||mediagra.com^
-||motionlink.jp^
-||musicgate.
-||my-affiliate.com^
-||nsk-sys.com^
-||octo-pus.net^
-||og-affiliate.com^
-||omany.tv^
-||online-dn.com^
-||orange-park.jp^
-||p-bxm.com^
-||pagoda301.com^
-||pinpointdmp.com^
-||pop6.com^
-||primead.jp
-||primecaster.net^
-||proparm.jp^
-||rakuword.com^
-||reemo-ad.jp
-||rightsnetwork.net^
-||roy-union.com^
-||roy-union.org^
-||rssad.jp^
-||sexymap.net^
-||sfilm.com^
-||silveregg.net^
-||skimlinks.com^
-||smaf.jp^
-||sppp.jp^
-||store-mix.com^
-||sublimestore.jp^
-||tagtoru.tokyo^
-||tf1.fr^
-||themediaplanets.com^
-||tofutyama.org^
-||toki-aiad.com^
-||trafficgate.net^
-||trafficsway.net^
-||triver.jp^
-||trustclick.ne.jp^
-||tunnel-vision.info^
-||tyrellsys.com^
-||unitedblades.co.jp^
-||wyunion.com^
-||xfuckbook.com^
-||xmax.jp^
-||yieldmanager.com^
-!----18
-||angel-group.net^
-||angel-live.com^
-||citysex.com^
-||dxlive.com^
-||finderz.jp^
-||j-live.tv^
-||lakn.org^
-||latexbizarret.net^
-||livede55.com^
-||livejasmin.com^
-||mg-k.jp^
-||natuko-miracle.com^
-||rose-lip.com^
-||redshell.info^
-||sorotore.com^
-||zeppin.com^
-! g
-!----third-party
-||assets-momentum.akamaized.net^
-||banners.itunes.apple.com^
-||partner*.become.co.jp^
-||4chan-ads.org^
-||2-only.page.ne.jp^
-||3939kaiseki.com^
-||6hit.jp^
-||ac-log.com^
-||access-radar.jp^
-||access-traffic.com^
-||acookie.
-||adbuyer.com^
-||afv.jp^
-||al.l--l.jp^
-||analysiswebtool.com^
-||analytics.
-||appsflyer.com^
-||ashia.to^
-||auriq.com^
-||blogchart.jp^
-||botchecker.com^
-||ca-mpr.jp^
-||clickanalyzer.jp^
-||connect.newzia.jp^
-||datasign.co^
-||dlpo.jp^
-||eloqua.com^
-||ezworks.jp^
-||fastonlineusers.com^
-||fpop.net^
-||geovisite.com^
-||himitsuya.jp^
-||infoscan.jp^
-||inpros.net^
-||juicer.cc^
-||just-now.net^
-||kaffik.com^
-||kantan-access.com^
-||keewurd.com^
-||linkfind.org^
-||lphbs.com^
-||ninki.net^
-||noface.jp^
-||nowvisitors.com^
-||oole-analytics.com^
-||pagerank.
-||pr-icon.com^
-||ptengine.jp^
-||pvk.jp^
-||pvranking.com^
-||radarurl.com^
-||reachword.com^
-||read-scope.com^
-||refeed.net^
-||searchforce.net^
-||seo-stats.
-||seo119.com^
-||seoparts.
-||seostats.net^
-||serving-sys.com^
-||sitebro.
-||sitesnapi.com^
-||statcounter.com^
-||swcs.jp^
-||thebrighttag.com^
-||trackonomics.net^
-||trackword.
-||traffimagic.com^
-||ugo2.jp^
-||wa-track.com^
-||web-analysis.click^
-||web-kaiseki.net^
-||web-stats.jp^
-||webdeki-analyze.com^
-||webscouter.net^
-||zero-tools.com^
-||analyze.unfinished.jp^
-||analyzer.wox.cc^
-||c.microsoft.com^
-||rover.ebay.com^
-||smp.sankei.co.jp^
-! --- 5ch pink --- !
-! --- amazon --- !
-||assoc-amazon.
-||ws.amazon.
-||rcm*.amazon.
-||amazlink.
-||amazoo.longseller.org^
-||amzlsh.com^
-||amzrm.com^
-||drk7.jp^
-||pritre.com^
-||yasui-kamo.com^
-||azlink.sakuratan.biz^
-!abema
-||abema-adx.ameba.jp^
-! --- buttobi.net --- !
-||sea.pakapeko.com^
-!g --- coolrom.com --- !
-! xbooru.com
-||tm-banners.gamingadult.com^
-||tm-offers.gamingadult.com^
-! konachan.com
-! rule34.paheal.net
-! sankakucomplex.com
-! --- dmm --- !
-||aztool.org
-||150601.fc2rs.com^
-||dmm.ad-s.org^
-||dmm.afisapo.com^
-||dmm-rank.com^
-||media.fc2.com^
-! --- fc2hub.com --- !
-! --- freeup.jp --- !
-||banner.worldranking.jp^
-! --- fresheye.com --- !
-||relart.fresheye.com^
-! --- goo --- !
-||mail-ads.google.com^
-||doubleclick.net^
-||fundingchoicesmessages.google.com
-||ad.kissanime.*^
-!ru
-||disproveknob.com^
-! --- lifehacker.jp --- !
-||coppedex.com^
-||bongacams.com^
-||cogleapad.com^
-||comasoiling.casa^
-||courteous-development.com^
-||dramaco.xyz^
-||dyecowwhy.com^
-||eyefuneve.com^
-||hdselection.com^
-||inpagepush.com^$important
-||jiltlargosirk.com^
-||mehebborc.com^
-||mhuvmleot.com^
-||roataisa.net^
-||wovazaix.com^
-||zebraicrudista.com^
-||jiordgxkpglzm.com^
-||wqjbldnnceroue.com^
-! milky
-! https://milk-key.com
-! --- momon-ga.com --- !
-! --- mozakin.com --- !
-!||mozakin.com/auto_updater/dti_get.php?
-!||mozakin.com/v4/js/bbs/dynamic/popup_pc.js
-! --- nan-net.com --- !
-||mbadw.nan.co.jp^
-! hentaipaw.com
-! --- nicovideo ニコニコ動画 --- !
-! --- nifty --- !
-! nifty.gamedistribution.com
-! --- rakuten 楽天 --- !
-||dynamic.rakuten.co.jp^
-||rakuprop.net^
-||rt.rakuten.co.jp^
-||zucks.net
-!g --- saucenao.com --- !
-||cloudflareinsights.com^
-||adc.shinobi.jp^
-||bar1.shinobi.jp^
-||ba1.shinobi.jp^
-||vis1.shinobi.jp^
-||ersties.com^
-! --- tokyomotion.net --- !
-! https://github.com/tofukko/filter/issues/40
-! --- tver.jp --- !
-! --- twitter.com --- !
-! --- wav.tv --- !
-.adrotate.
-||hs-banner.com^
-||hs-analytics.net
-! --- xrea.com --- !
-||imgj.xrea.com^
-||analytics.yahoo.co
-! 視聴履歴が残らないかも
-! https://tofukko.blog.fc2.com/blog-entry-405.html#comment848
-!||dsb.yahoo.co.jp^
-||yjtag.yahoo.co.jp^
-!g --- xhamster --- !
-||collector.xhamster.com^
-!g --- xvideos.com --- !
-! --- jav系 --- !
-! pp server
-/^https?:\/\/[a-z]{8,15}\.xyz\/$/$xmlhttprequest,third-party,to=xyz,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
-/^https?:\/\/[a-z]{8,15}\.com\/$/$xmlhttprequest,third-party,to=com,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
-||dauhunecoag.net^
-||go.bundlebyte.net^
-||leewibaijoa.com^
-||ostupsaury.net^
-||raiphafimept.net^
-||souhoazapee.net^
-||zaisofohow.net^
-! nakanohito
-! solty.biz
-||solty.biz^
-! https://github.com/uBlockOrigin/uBlock-issues/issues/1388
-!g savevideo.me
-! https://github.com/uBlockOrigin/uAssets/issues/3874
-!-------------------Mobile用(オマケ)---------------------!
-!c
-!s
-!
 ! Source name: AdGuard Japanese filter Plus
 ! Source: https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt
 !
@@ -108238,7 +107938,9 @@ analytics-*.aasaam.com
 ||beacon.examiner.com^
 ||beacon.search.yahoo.com^
 ||beacons.helium.com^
+||c.microsoft.com^
 ||c.newsinc.com^
+||click.livejasmin.com^
 ||click.mmosite.com^
 ||clicks.hurriyet.com.tr^
 ||clicks.traffictrader.net^
@@ -108254,6 +107956,7 @@ analytics-*.aasaam.com
 ||collector.shopstream.co^
 ||collector.shorte.st^
 ||collector.tescocompare.com^
+||collector.xhamster.com^
 ||count.livetv.ru^
 ||count.livetv.sx^
 ||count.prx.org^
@@ -108354,6 +108057,7 @@ analytics-*.aasaam.com
 ! Ads
 !
 ||adocean.cz^
+||doubleclick.net^
 ||dualstack.adbert-web-lbs-*.elb.amazonaws.com^
 ||vahufapave.com^
 ||cewegncr.com^
