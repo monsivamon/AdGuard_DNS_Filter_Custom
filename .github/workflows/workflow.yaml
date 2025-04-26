@@ -52,7 +52,8 @@ jobs:
             !/^\!/ && (/^\|\||^@@/) {
               if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
                 sub(/\$.*$/, "", $0);
-                if ($0 !~ /tracking|tracker|analytics/) {
+                # tracking, tracker, analytics を含み、かつ @@ を含まない行を除去
+                if ($0 !~ /tracking|tracker|analytics/ || $0 ~ /@@/) {
                   print
                 }
               }
