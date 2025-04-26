@@ -45,7 +45,7 @@ jobs:
           sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
 
           # コメント除去
-          awk '!/^\!/ && (/^\|\||^@@/)' Filters/main_filter.txt > Filters/tmp_body_clean_1.txt
+          awk '!/^!/ && (/^\|\||^@@/)' Filters/main_filter.txt > Filters/tmp_body_clean_1.txt
           
           # 不要修飾子を除去
           awk '{ if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) { sub(/\$.*$/, "", $0) }; print }' Filters/tmp_body_clean_1.txt > Filters/tmp_body_clean_2.txt
