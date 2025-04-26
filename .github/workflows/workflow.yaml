@@ -31,11 +31,13 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
 
       # フィルタビルド実行
-      - name: yarn
+      - name: Build Filter
         run: |
           yarn install
-          yarn run build
+          # 回りくどいことはせず、直接コマンド実行
+          hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
 
+      # 生成フィルタそのままから弄る
       - name: Clean up main_filter.txt
         run: |
         
