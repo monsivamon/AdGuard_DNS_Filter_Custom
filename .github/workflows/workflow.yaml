@@ -50,10 +50,10 @@ jobs:
           # ヘッダー処理開始
           NR > 1 {
             print
-            # Last modifiedを見つけたら Verと空欄追記
+            # Last modifiedを見つけたらVerと!追記
             if (/^! Last modified:/) {
-            　　print ver
-            　　print "!"
+              print ver
+              print "!"
           　}
             next
           }
