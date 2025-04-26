@@ -83,7 +83,7 @@ jobs:
             print 
           }
           ' Filters/main_filter.txt > Filters/tmp_main.txt
-				  mv Filters/tmp_main.txt Filters/main_filter.txt
+	  mv Filters/tmp_main.txt Filters/main_filter.txt
 
       - name: Upload new filter
         run: |
