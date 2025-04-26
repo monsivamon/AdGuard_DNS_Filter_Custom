@@ -37,7 +37,9 @@ jobs:
           yarn upgrade
           # 依存関係をインストール
           yarn install
-          # フィルタ生成実行
+          # コマンドコケたらスクリプト停止
+          set -e
+          # フィルタビルド実行
           ./node_modules/.bin/hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
       
       # 生成フィルタそのままから弄る
