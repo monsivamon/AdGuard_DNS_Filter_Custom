@@ -51,7 +51,7 @@ jobs:
           cp Filters/main_filter.txt Filters/before_modify.txt
 
           # awkでフィルタ整形
-          awk -v ver="$VERSION" '
+          awk '
           # 2~7行目をそのまま書き出す
           NR >= 2 && NR <= 7 {
              print
