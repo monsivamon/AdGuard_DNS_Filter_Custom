@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
 ! Description: AdGuard DNS filter Customized by monsivamon
-! Version: 2025-04-26 10:32 JST
+! Version: 2025-04-26 10:46 JST
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-26T01:32:02.224Z
+! Last modified: 2025-04-26T01:46:16.789Z
 !
 ||nvpartnerspromo.com^
 ||yougetwhatyoupayfor.net^
@@ -658,7 +658,7 @@
 ||vipads.live^
 ||api.smartnews-ads.com^
 ||154.199.255.184^
-||tn.porngo.xxx^$badfilter
+||tn.porngo.xxx^
 ||88.208.46.222^
 ||kms-full.com^
 ||Kmspico.io^
@@ -5858,7 +5858,7 @@
 ||reklammen.spellchecker.lu^
 ||bn.gogo.mn^
 ||widget.tippebannere.no^
-||linksprf.com^$badfilter
+||linksprf.com^
 ||c2c24.pl^
 ||cdn.gallery^
 ||llog.pl^
@@ -51993,10 +51993,10 @@
 ||zaisofohow.net^
 ||solty.biz^
 ||ads.zippal.com^
-||mopub.com^$badfilter
 ||mopub.com^
-||outbrain.com^$badfilter
-||taboola.com^$badfilter
+||mopub.com^
+||outbrain.com^
+||taboola.com^
 @@||api2.branch.io^|
 @@||asset.f-tra.com^|
 @@||conf.f-tra.com^|
