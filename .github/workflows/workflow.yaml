@@ -30,6 +30,7 @@ jobs:
           # Yuki2718氏のフィルタも取得
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
 
+      # フィルタビルド実行
       - name: yarn
         run: |
           yarn install
@@ -84,7 +85,8 @@ jobs:
           }
           ' Filters/main_filter.txt > Filters/tmp_main.txt
           mv Filters/tmp_main.txt Filters/main_filter.txt
-
+          
+      # フィルタをアップロード
       - name: Upload new filter
         run: |
           git config --local user.email "action@github.com"
