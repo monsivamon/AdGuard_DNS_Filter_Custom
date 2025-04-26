@@ -35,14 +35,35 @@ jobs:
 
       - name: Clean up main_filter.txt
         run: |
+          # 元ファイルをバックアップ
           cp Filters/main_filter.txt Filters/main_filter_bak.txt
+
+          # ヘッダ部分（2〜7行目）を抽出
           sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
-          tail -n +11 Filters/main_filter.txt | awk '!/^\!/ && (/^\|\||^@@/) && !seen[$0]++' > Filters/tmp_body_raw.txt
-          awk '{ if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) { sub(/\$.*$/, "", $0) }; print }' Filters/tmp_body_raw.txt > Filters/tmp_body.txt
+
+          # 本体部分（11行目以降）を抽出
+          tail -n +11 Filters/main_filter.txt > Filters/tmp_body_raw.txt
+
+          # 以下の条件で整形（コメント除去、正規のルールのみ抽出、$付きの修飾子除去（ただし$importantは残す）、tracking系ワード除外）
+          awk '
+            !/^\!/ && (/^\|\||^@@/) {
+              if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
+                sub(/\$.*$/, "", $0);
+                if ($0 !~ /tracking|tracker|analytics/) {
+                  print
+                }
+              }
+            }
+           ' Filters/tmp_body_raw.txt > Filters/tmp_body_clean.txt
+
+          # 重複行を除外
+          awk '!seen[$0]++' Filters/tmp_body_clean.txt > Filters/tmp_body.txt
+
+          # ヘッダと整形済みの本体を結合
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
-          rm Filters/tmp_head.txt Filters/tmp_body.txt Filters/tmp_body_raw.txt
-          awk '!/tracking|tracker|analytics/' Filters/main_filter.txt > Filters/temp_filter.txt 
-          mv Filters/temp_filter.txt Filters/main_filter.txt
+
+          # 一時ファイル削除
+          rm Filters/tmp_head.txt Filters/tmp_body_raw.txt Filters/tmp_body_clean.txt Filters/tmp_body.txt
           
       - name: Insert Version info in JST
         run: |
