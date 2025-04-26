@@ -51,18 +51,16 @@ jobs:
           awk '{ if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) { sub(/\$.*$/, "", $0) }; print }' Filters/tmp_body_clean_1.txt > Filters/tmp_body_clean_2.txt
           
           # tracking系ワード除外
-          awk '$0 !~ /tracking|tracker|analytics/' Filters/tmp_body_clean_2.txt > Filters/tmp_body_clean_3.txt
-          
-          # 重複行を除外
-          awk '!seen[$0]++' Filters/tmp_body_clean_3.txt > Filters/tmp_body_4.txt
+          awk '($0 ~ /^@@/) || ($0 !~ /tracking|tracker|analytics/)' Filters/tmp_body_clean_2.txt > Filters/tmp_body_clean_3.txt
 
-          mv Filters/tmp_body_4.txt Filters/tmp_body.txt
+          # 重複行を除外
+          awk '!seen[$0]++' Filters/tmp_body_clean_3.txt > Filters/tmp_body.txt
 
           # ヘッダと整形済みの本体を結合
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
 
           # 一時ファイル削除
-          #　rm Filters/tmp_head.txt Filters/tmp_body_raw.txt Filters/tmp_body.txt
+          rm Filters/tmp_head.txt Filters/tmp_body*.txt
           
       - name: Insert Version info in JST
         run: |
