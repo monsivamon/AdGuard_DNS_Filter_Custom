@@ -62,13 +62,16 @@ jobs:
             }
             # ステップ 3: tracking関連の除外（@@以外の行でtracking系を除外）
             if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
-              print
+              # ステップ 4: 重複してないことを確認
+              if (!seen[$0]++) {
+                print
+              }
             }
           }
-          ' Filters/main_filter.txt > Filters/tmp_body_clean_3.txt
+          ' Filters/main_filter.txt > Filters/tmp_body.txt
           
           # 重複行を除外
-          awk '!seen[$0]++' Filters/tmp_body_clean_3.txt > Filters/tmp_body.txt
+          # awk '!seen[$0]++' Filters/tmp_body_clean_3.txt > Filters/tmp_body.txt
 
           # ヘッダと整形済みの本体を結合
           cat Filters/tmp_head.txt Filters/tmp_body.txt > Filters/main_filter.txt
