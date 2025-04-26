@@ -45,9 +45,7 @@ jobs:
           # 日付を取得
           VERSION="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
 
-          # awkで整形
           awk -v ver="$VERSION" '
-          # ヘッダー処理開始
           NR > 1 {
             print
             # Last modifiedを見つけたらVerと!追記
