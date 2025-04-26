@@ -356,13 +356,6 @@
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
-      "name": "豆腐フィルタ",
-      "source": "https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
-    },
-    {
       "name": "AdGuard Japanese filter Plus",
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
