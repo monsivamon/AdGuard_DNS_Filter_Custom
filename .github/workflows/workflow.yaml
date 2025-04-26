@@ -39,7 +39,7 @@ jobs:
       - name: Clean up main_filter.txt
         run: |
           # 元ファイルをバックアップ
-          cp Filters/main_filter.txt Filters/main_filter_org.txt
+          cp Filters/main_filter.txt Filters/before_modify.txt
 
           # ヘッダ部分（2〜7行目）を抽出
           sed -n '2,7p' Filters/main_filter.txt > Filters/tmp_head.txt
