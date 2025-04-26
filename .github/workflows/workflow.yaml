@@ -52,9 +52,9 @@ jobs:
             !/^\!/ && (/^\|\||^@@/) {
               if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
                 sub(/\$.*$/, "", $0);
-                if ($0 !~ /tracking|tracker|analytics/) {
-                  print
-                }
+                #if ($0 !~ /tracking|tracker|analytics/) {
+                #  print
+                #}
               }
             }
            ' Filters/tmp_body_raw.txt > Filters/tmp_body_clean.txt
