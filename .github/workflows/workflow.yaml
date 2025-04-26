@@ -34,8 +34,9 @@ jobs:
       - name: Build Filter
         run: |
           yarn install
+          # yarn run build
           # 回りくどいことはせず、直接コマンド実行
-          hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
+          ./scripts/build.sh
 
       # 生成フィルタそのままから弄る
       - name: Clean up main_filter.txt
