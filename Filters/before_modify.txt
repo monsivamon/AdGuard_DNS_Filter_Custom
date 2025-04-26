@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-26T09:52:23.204Z
+! Last modified: 2025-04-26T11:10:11.616Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -47526,6 +47526,8 @@ vkcdnservice.appspot.com^
 ||pktfla.top^
 ||mucnwtx.top^
 ||owcnmtk.top^
+||cnwuamf.top^
+||dheilgorsy.com^
 ||hvrunsqqy.com^
 ||nlnlrn.top^
 ||ohqp.cn^
@@ -52413,7 +52415,6 @@ analytics-*.aasaam.com
 ! Source name: List-KR filter third-party ad servers
 ! Source: https://cdn.jsdelivr.net/gh/List-KR/List-KR@latest/filters-share/3rd_domains.txt
 !
-||ssl-daumcdn-dvmq7lf5.kgslb.com^
 ||adgirl.yes24.com^
 ||ad.api.adwiser.kr^
 ||recoshopping.naver.com^
