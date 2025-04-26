@@ -20,10 +20,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          
+
+      # ビルドで使う最新フィルタを取得（生URL指定だとソースが長くなる為）
       - name: Get Latest File
         run: |
-          # 公式フィルタを取得
+          # Adguard 公式フィルタを取得
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt -o Filters/exceptions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
