@@ -23,9 +23,11 @@ jobs:
           
       - name: Get Latest File
         run: |
+          # 公式フィルタを取得
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt -o Filters/exceptions.txt
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
+          # Yuki2718氏のフィルタも取得
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
           
       - name: yarn
@@ -65,15 +67,29 @@ jobs:
           # 一時ファイル削除
           rm Filters/tmp_head.txt Filters/tmp_body_raw.txt Filters/tmp_body_clean.txt Filters/tmp_body.txt
           
-      - name: Insert Version info in JST
-        run: |
+　　　　- name: Insert Version info in JST
+         run: |
+         
+    　　　 # 現在の日付と時間をJST形式で取得
           VERSION_LINE="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-          awk -v ver="$VERSION_LINE" '
-            /^! Description:/ { print; print ver; next }
-            { print }
-          ' Filters/main_filter.txt > Filters/tmp_main.txt
-          mv Filters/tmp_main.txt Filters/main_filter.txt
-          
+
+    　　　 # ファイル内で「! Description:」行の直後にバージョン情報を挿入
+    　　　 awk -v ver="$VERSION_LINE" '
+      　　 # 「! Description:」行があった場合、バージョン情報を挿入
+      　　 /^! Description:/ { 
+        　　 　print; 
+        　　 　print ver; 
+        　 　　next 
+      　　 }
+      　　 # それ以外の行はそのまま出力
+      　　 { 
+        　 　　print 
+      　　 }
+    　　　 ' Filters/main_filter.txt > Filters/tmp_main.txt
+
+    　　　 # tmpファイルを元ファイルに置き換え
+    　　　 mv Filters/tmp_main.txt Filters/main_filter.txt
+
       - name: Upload new filter
         run: |
           git config --local user.email "action@github.com"
