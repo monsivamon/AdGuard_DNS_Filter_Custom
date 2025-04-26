@@ -29,7 +29,7 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
           # Yuki2718氏のフィルタも取得
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
-          
+
       - name: yarn
         run: |
           yarn install
@@ -83,7 +83,7 @@ jobs:
             print 
           }
           ' Filters/main_filter.txt > Filters/tmp_main.txt
-	  mv Filters/tmp_main.txt Filters/main_filter.txt
+          mv Filters/tmp_main.txt Filters/main_filter.txt
 
       - name: Upload new filter
         run: |
