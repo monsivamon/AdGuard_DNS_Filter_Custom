@@ -77,21 +77,6 @@ jobs:
           
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
-
-      # 完成されたフィルタから異常フィルタの検出（今後の対策検討用）
-      - name: bad filter search
-        run: |
-          awk '
-          #コメント行を除外
-          !/^!/ {
-            # @@||で始まらないフィルタを抽出
-            if ($0 !~ /^@@\|\|/ && $0 !~ /^\|\|/) {
-              # 重複ではないことを確認
-              if (!seen[$0]++) {
-                print
-              }
-            }
-          } ' Filters/main_filter.txt > Filters/bad_filter.txt
           
       # ビルドした日時をVersionとして追記
       - name: Insert Ver INFO
@@ -112,7 +97,22 @@ jobs:
 
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
-        
+
+      # 完成されたフィルタから異常フィルタの検出（今後の対策検討用）
+      - name: bad filter search
+        run: |
+          awk '
+          #コメント行を除外
+          !/^!/ {
+            # @@||で始まらないフィルタを抽出
+            if ($0 !~ /^@@\|\|/ && $0 !~ /^\|\|/) {
+              # 重複ではないことを確認
+              if (!seen[$0]++) {
+                print
+              }
+            }
+          } ' Filters/main_filter.txt > Filters/bad_filter.txt
+          
       # フィルタをアップロード
       - name: Upload new filter
         run: |
