@@ -47,7 +47,7 @@ jobs:
           ./node_modules/.bin/hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
       
       # 生成フィルタそのままから弄る
-      - name: Clean up main_filter.txt
+      - name: Filter Clean up
         run: |
         
           # 元ファイルをバックアップ
@@ -102,8 +102,8 @@ jobs:
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
 
-      # 完成されたフィルタから異常フィルタの検出（今後の対策検討用）
-      - name: bad filter search
+      # 完成されたフィルタから異常フィルタの検出
+      - name: Bad Filter Search
         run: |
           awk '
           #コメント行を除外
