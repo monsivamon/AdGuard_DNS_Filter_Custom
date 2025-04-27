@@ -84,9 +84,9 @@ jobs:
 
           awk -v ver="! Version: ${TODAY}" '
           {
-            # それ以外は普通に出力
+            # そのまま出力
             print
-            # 3行目に追記
+            # 2行目の後にバージョン情報を挿入
             if (NR == 2) {
               print ver 
             }
