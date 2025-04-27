@@ -30,7 +30,13 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
           # Yuki2718氏のフィルタも取得
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
-
+          
+      - name: Get Build JST
+        run: |
+           # 現在の日付と時間をJST形式で取得
+           TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+           sed "s/__DATE__/${TODAY}/g" configuration.template.json > configuration.json
+           
       # フィルタビルド実行
       - name: Build Filter
         run: |
