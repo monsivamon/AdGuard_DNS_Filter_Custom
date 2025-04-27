@@ -46,8 +46,8 @@ jobs:
           # フィルタビルド実行
           ./node_modules/.bin/hostlist-compiler -c configuration.json -o Filters/main_filter.txt --verbose
           
-      # 生成フィルタbakup
-      - name: Original Filter BauckUP
+      # 生成直後のフィルタは一応残す
+      - name: Original Filter BackUP
         run: |
           cp Filters/main_filter.txt Filters/before_modify.txt
           
