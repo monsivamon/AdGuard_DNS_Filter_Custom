@@ -2,8 +2,11 @@ name: Build Filter & modify
 
 on:
   push:
+  # 6Hごとに自動実行
   schedule:
-    - cron: '0 */6 * * *' # Every 6th hour
+    - cron: '0 */6 * * *'
+
+  # 手動実行を許可
   workflow_dispatch:
 
 env:
@@ -21,7 +24,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      # ビルドで使う最新フィルタを取得（生URL指定だとソースが長くなる為）
+      # ビルドで使う最新フィルタを取得（URL直接指定だとconfiguration.json記述が長くなる為）
       - name: Get Latest File
         run: |
           # Adguard 公式フィルタを取得
@@ -100,6 +103,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # 処理途中で取得したフィルタの更新確認の為、同時に出力
           git add Filters/*.txt
           git commit -m "Updated filter successfully generated."
           git push origin master
