@@ -30,7 +30,8 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
           # Yuki2718氏のフィルタも取得
           curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
-          
+
+      # ビルドした日時をVersionとして記録
       - name: Get Build JST
         run: |
            # 現在の日付と時間をJST形式で取得
@@ -80,26 +81,6 @@ jobs:
           
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
-
-      - name: Insert Version info in JST
-        run: |
-           # 現在の日付と時間をJST形式で取得
-           VERSION_LINE="! Version: $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-           
-           # ファイル内で「! Description:」行の直後にバージョン情報を挿入
-           awk -v ver="$VERSION_LINE" '
-           /^! Description:/ { 
-             print; 
-             print ver; 
-             next
-           }
-           { 
-             print 
-           }
-           ' Filters/main_filter.txt > Filters/tmp_main.txt
- 
-           # 上書き実行
-           mv Filters/tmp_main.txt Filters/main_filter.txt
            
       # フィルタをアップロード
       - name: Upload new filter
