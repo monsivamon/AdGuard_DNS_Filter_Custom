@@ -117,6 +117,14 @@ jobs:
             }
           } ' Filters/main_filter.txt > Filters/bad_filter.txt
           
+      # 異常フィルタが空の場合、bad_filter.txtを削除
+      - name: Remove Empty Bad Filter
+        run: |
+          # ファイル行数が0の場合、bad_filter.txtを削除
+          if [ $(wc -l < Filters/bad_filter.txt) -eq 0 ]; then
+            rm Filters/bad_filter.txt
+          fi
+    
       # フィルタをアップロード
       - name: Upload new filter
         run: |
