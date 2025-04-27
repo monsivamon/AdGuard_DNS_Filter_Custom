@@ -75,25 +75,25 @@ jobs:
           # 上書き実行
           mv Filters/tmp_filter.txt Filters/main_filter.txt
           
-        # ビルドした日時をVersionとして追記
+      # ビルドした日時をVersionとして追記
       - name: Insert Ver INFO
         run: |
         
-           # 現在の日付と時間をJST形式で取得
-           TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+          # 現在の日付と時間をJST形式で取得
+          TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
 
-           awk -v ver="! Version: ${TODAY}" '
-           {
-             # それ以外は普通に出力
-             print
-             # 3行目に追記
-             if (NR == 2) {
-               print ver 
-             }
-           } ' Filters/main_filter.txt > Filters/tmp_filter.txt
+          awk -v ver="! Version: ${TODAY}" '
+          {
+            # それ以外は普通に出力
+            print
+            # 3行目に追記
+            if (NR == 2) {
+              print ver 
+            }
+          } ' Filters/main_filter.txt > Filters/tmp_filter.txt
 
-           # 上書き実行
-           mv Filters/tmp_filter.txt Filters/main_filter.txt
+          # 上書き実行
+          mv Filters/tmp_filter.txt Filters/main_filter.txt
         
       # フィルタをアップロード
       - name: Upload new filter
