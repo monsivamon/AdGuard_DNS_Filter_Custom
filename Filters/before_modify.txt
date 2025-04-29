@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-29T03:14:20.339Z
+! Last modified: 2025-04-29T06:49:46.388Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -41405,8 +41405,8 @@ vkcdnservice.appspot.com^
 # A hosts file that aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites
 # ----
 # title:          Frellwit's Swedish Hosts File
-# last updated:   2025-04-22 05:06:20 CEST
-# entries:        1114
+# last updated:   2025-04-29 05:44:44 CEST
+# entries:        1115
 # format:         hosts (hosts -- in hosts file format)
 # homepage:       https://github.com/lassekongo83/Frellwits-filter-lists/
 ||1terms.com^
@@ -42128,6 +42128,7 @@ vkcdnservice.appspot.com^
 ||vitals.vercel-insights.com^
 ||w.sharethis.com^
 ||w.usabilla.com^
+||wb-analytics.onecruiter.com^
 ||wct-1.com^
 ||wct-2.com^
 ||webbannons.ntm.eu^
@@ -47809,6 +47810,7 @@ vkcdnservice.appspot.com^
 ||exoh.cn^
 ||rhdifs.top^
 ||enwuamw.top^
+||mwcnmtx.top^
 ||oldh.cn^
 ||vcaqexl.com^
 ||hua4207.xyz^
