@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-04-29T06:49:46.388Z
+! Last modified: 2025-04-29T13:44:30.469Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -36508,6 +36508,7 @@ vkcdnservice.appspot.com^
 ||startup.mobile.webvisor.com^
 ||startup-mobile.ap.yandex-net.ru^
 !
+||maticooads.com^
 ||ad*.zonaplus.tv^
 ||apishow.babybus.com^
 ||apppromoteapi.babybus.com^
@@ -47811,6 +47812,9 @@ vkcdnservice.appspot.com^
 ||rhdifs.top^
 ||enwuamw.top^
 ||mwcnmtx.top^
+||wwok04291kl.com^
+||fvitteilse.com^
+||iwhp.cn^
 ||oldh.cn^
 ||vcaqexl.com^
 ||hua4207.xyz^
@@ -52215,6 +52219,7 @@ vkcdnservice.appspot.com^
 ||jun01.oss-cn-beijing.aliyuncs.com^
 ||shaquevip.oss-cn-zhangjiakou.aliyuncs.com^
 ||wzjs1.oss-accelerate.aliyuncs.com^
+||mihoutao1868.github.io^
 ||22588888.com^
 ||2481e.com^
 ||693836.com^
@@ -53503,6 +53508,9 @@ analytics-*.aasaam.com
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1876
+! Blocked by CNAME saymedia.com
+@@||taiga.maven.io^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/200033
 ! Blocked by CNAME oasjs.kataweb.it
 @@||tlh.gedidigital.it^|
