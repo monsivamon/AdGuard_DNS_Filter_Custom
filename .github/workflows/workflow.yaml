@@ -51,6 +51,47 @@ jobs:
         run: |
           cp Filters/main_filter.txt Filters/before_modify.txt
           
+      # クリーンアップ前の異常行を抽出
+      - name: Bad filter begin
+        run: |
+          awk '
+          #コメント行を除外し、フィルタ形式じゃない行を抽出
+          !/^!/ && !/^\|\|/ && !/^@@/ {
+              if (!seen[$0]++) {
+                print
+              }
+          } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
+          
+      # クリーンアップ前の異常行を修正
+      - name: Bad filter begin fix
+        run: |
+          awk '
+          # コメント行または空行をスキップ
+          /^#/ || /^$/ {
+            # `://` を含む行を修正（例: `://*.example.com^` → `||example.com^`）
+              /:\/\// {
+                # `://*` を `||` に置換
+                sub(/^.*:\/\/\*?/, "||")
+                # 末尾の `^` を維持
+                sub(/\^$/, "^")
+                print
+                next
+              }
+              # 先頭の `.` を削除（例: `.example.com^` → `||example.com^`）
+              /^\./ {
+                # 先頭のドットを削除
+                sub(/^\./, "")
+                print "||" $0 "^"
+                next
+              }
+              # 通常の行（`example.com^` → `||example.com^`）
+              {
+              # 末尾の `^` を一旦削除
+              sub(/\^$/, "")
+                print "||" $0 "^"
+              }
+          } ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
+
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
         run: |
@@ -77,17 +118,6 @@ jobs:
               }
             }
           } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
-          
-      # クリーンアップ前の異常行を抽出
-      - name: Bad filter begin
-        run: |
-          awk '
-          #コメント行を除外し、フィルタ形式じゃない行を抽出
-          !/^!/ && !/^\|\|/ && !/^@@/ {
-              if (!seen[$0]++) {
-                print
-              }
-          } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
           
       # ヘッダー部分の作成
       - name: Create Header
