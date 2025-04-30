@@ -62,28 +62,27 @@ jobs:
               }
           } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
           
-      # クリーンアップ前の異常行を修正
-      - name: Bad filter begin fix
-        run: |
+      # 異常フィルタの修正
+      - name: bad filter modify
+        run: |          
           awk '
           # コメント行はスキップ
           /^#/ {
             next
           }
-          # `://` を含む行を修正（例: `://*.example.com^` → `||example.com^`）
-          /:\/\// {
-            sub(/^.*:\/\/\*?/, "||")
-            sub(/\^$/, "^")
+          # `://` を含む行を修正
+          /:[/][/]/ {
+            sub(/^.*:[/][/]\*?/, "||")
             print
             next
           }
-          # 先頭がドットの行を修正（例: `.example.com^` → `||example.com^`）
+          # 先頭がドットの行を修正
           /^\./ {
-            sub(/^\./, "")
-            print "||" $0 "^"
+            sub(/^\./, "||")
+            print $0 "^"
             next
           }
-          # その他の行（`example.com^` → `||example.com^`）
+          # その他の行
           {
             sub(/\^+$/, "")
             print "||" $0 "^"
