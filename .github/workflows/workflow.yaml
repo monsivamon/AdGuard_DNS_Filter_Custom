@@ -67,30 +67,28 @@ jobs:
         run: |
           awk '
           # コメント行はスキップ
-          !/^#/ {
-            # `://` を含む行を修正（例: `://*.example.com^` → `||example.com^`）
-              /:\/\// {
-                # `://*` を `||` に置換
-                sub(/^.*:\/\/\*?/, "||")
-                # 末尾の `^` を維持
-                sub(/\^$/, "^")
-                print
-                next
-              }
-              # 先頭の `.` を削除（例: `.example.com^` → `||example.com^`）
-              /^\./ {
-                # 先頭のドットを削除
-                sub(/^\./, "")
-                print "||" $0 "^"
-                next
-              }
-              # 通常の行（`example.com^` → `||example.com^`）
-              {
-              # 末尾の `^` を一旦削除
-              sub(/\^$/, "")
-                print "||" $0 "^"
-              }
-          } ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
+          /^#/ {
+            next
+          }
+          # `://` を含む行を修正（例: `://*.example.com^` → `||example.com^`）
+          /:\/\// {
+            sub(/^.*:\/\/\*?/, "||")
+            sub(/\^$/, "^")
+            print
+            next
+          }
+          # 先頭がドットの行を修正（例: `.example.com^` → `||example.com^`）
+          /^\./ {
+            sub(/^\./, "")
+            print "||" $0 "^"
+            next
+          }
+          # その他の行（`example.com^` → `||example.com^`）
+          {
+            sub(/\^$/, "")
+            print "||" $0 "^"
+          }
+          ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
 
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
