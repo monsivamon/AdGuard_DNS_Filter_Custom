@@ -87,7 +87,7 @@ jobs:
             sub(/\^+$/, "")
             print "||" $0 "^"
           }
-          ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
+          ' Filters/bad_filter_begin.txt | sed 's/\^\^$/^/' | sort > Filters/bad_filter_begin_fix.txt
 
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
