@@ -78,6 +78,17 @@ jobs:
             }
           } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
           
+      # クリーンアップ前の異常行を抽出
+      - name: Bad filter begin
+        run: |
+          awk '
+          #コメント行を除外し、フィルタ形式じゃない行を抽出
+          !/^!/ && (!/^\|\|/ || !/^@@/) {
+              if (!seen[$0]++) {
+                print
+              }
+          } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
+          
       # ヘッダー部分の作成
       - name: Create Header
         run: |
