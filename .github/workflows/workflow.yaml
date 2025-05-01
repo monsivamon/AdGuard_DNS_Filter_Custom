@@ -66,8 +66,12 @@ jobs:
       - name: bad filter modify
         run: |          
           awk '
-          # コメント行もしくは正規表現を含む行をスキップ
-          /^#/ || !/\(\?\:|\\|^\^|{\d|}/ {
+          # コメント行スキップ
+          /^#/ {
+            next
+          }
+          # 正規表現を含む行をスキップ
+          !/\(\?\:|\\|^\^|{\d|}/ {
             next
           }
           # `://` を含む行を修正
@@ -87,9 +91,12 @@ jobs:
             sub(/\^+$/, "")
             print "||" $0 "^"
           }
-          ' Filters/bad_filter_begin.txt |
-          # 末尾^^を^に再変換
-          sed 's/\^\^$/^/' | sort > Filters/bad_filter_begin_fix.txt
+          # 末尾^^を^に変換
+          {
+            sub(/\^\^$/, "^")
+              print $0
+          }
+          ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
 
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
