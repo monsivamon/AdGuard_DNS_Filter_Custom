@@ -62,8 +62,8 @@ jobs:
               }
           } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
           
-      # 異常フィルタの修正
-      - name: bad filter modify
+      # クリーンアップ前の異常フィルタを検出し、修正
+      - name: Bad filter modify
         run: |          
           awk '
           # コメント行スキップ
@@ -99,6 +99,8 @@ jobs:
             print "||" $0
           }
           ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
+          # 修正したフィルタをメインフィルタに追記
+          cat Filters/bad_filter_begin_fix.txt >> Filters/main_filter.txt
 
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
