@@ -52,7 +52,7 @@ jobs:
           cp Filters/main_filter.txt Filters/before_modify.txt
           
       # クリーンアップ前の異常行を抽出
-      - name: Bad filter begin
+      - name: Before Bad Filter
         run: |
           awk '
           #コメント行を除外し、フィルタ形式じゃない行を抽出
@@ -60,10 +60,10 @@ jobs:
               if (!seen[$0]++) {
                 print
               }
-          } ' Filters/main_filter.txt | sort > Filters/bad_filter_begin.txt
+          } ' Filters/main_filter.txt | sort > Filters/before_bad_filter.txt
           
-      # クリーンアップ前の異常フィルタを検出し、修正
-      - name: Bad filter modify
+      # クリーンアップ前の異常フィルタを一部修正
+      - name: Before Bad Filter modify
         run: |          
           awk '
           # コメント行スキップ
@@ -98,9 +98,9 @@ jobs:
           {
             print "||" $0
           }
-          ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
+          ' Filters/before_bad_filter.txt | sort > Filters/before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
-          cat Filters/bad_filter_begin_fix.txt >> Filters/main_filter.txt
+          cat Filters/before_bad_filter_fix.txt >> Filters/main_filter.txt
 
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
