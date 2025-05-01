@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
-! Version: 2025-05-02 04:16 JST
+! Version: 2025-05-02 04:17 JST
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-01T19:16:07.895Z
+! Last modified: 2025-05-01T19:17:53.300Z
 !
 @@||5471782.fls.doubleclick.net^|
 @@||79423.analytics.edgekey.net^|
@@ -4955,6 +4955,7 @@
 ||adx-*.dbankcloud.^
 ||adx-*.dbankedge.cn^
 ||adx-*.op.dbankcloud.com.edgekey.net^
+||adx-*.rayjump.com^
 ||adx-dre.op.hicloud.com^
 ||adx-exchange.toast.com^
 ||adx-open-service.youku.com^
@@ -52046,4 +52047,3 @@
 ||zztxfj.xyz^
 ||zzxjlr.com^
 ||zzznews.ru^
-||||adx-*.rayjump.com^
