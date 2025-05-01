@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
-! Version: 2025-05-01 21:55 JST
+! Version: 2025-05-01 22:00 JST
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-01T12:55:50.844Z
+! Last modified: 2025-05-01T13:00:45.644Z
 !
 @@||5471782.fls.doubleclick.net^|
 @@||79423.analytics.edgekey.net^|
@@ -141,7 +141,7 @@
 @@||oa.tr.line.me^|
 @@||obituaries.therecord.com^|
 @@||official.paymaya.com^|
-@@||omniture.walmart.com^|
+@@||omniture.walmart.com^|||*.a-akamaihd.com^
 @@||omsc.kpn.com^|
 @@||oneline.nextday.media^|
 @@||pagead.l.doubleclick.net^|
@@ -196,6 +196,9 @@
 @@||www.jdoqocy.com^|
 @@||www.statcounter.com^|
 ||*.exaapi.com^
+||*ad.durasite.net^
+||-adx-*.rayjump.com^
+||/193.200.64.24:/^
 ||0.101tubeporn.com^
 ||0.clicks4me.fwh.is^
 ||0.cosmicnewspulse.com^
@@ -434,6 +437,7 @@
 ||0vc.fun^
 ||0x01n2ptpuz3.com^
 ||1.07swz.com^
+||1.1.1.l80.js^
 ||1.1010pic.com^
 ||1.11130.com.cn^
 ||1.11467.com^
@@ -1126,6 +1130,8 @@
 ||2za.fun^
 ||3.5646.cn^
 ||3.cjcp.cn^
+||3.n.2.1.l50.js^
+||3.n.2.2.l30.js^
 ||3.ssqzj.com^
 ||3.uyybde07w.com^
 ||3.wemakebestnews.com^
@@ -1381,6 +1387,7 @@
 ||4497e71924.com^
 ||44e29c19ac.com^
 ||44fc128918.com^
+||45.82.68.79^
 ||452tapgn.de^
 ||453130fa9e.com^
 ||4547u5qms0m2um3rrum2wuo.xyz^
@@ -1665,12 +1672,15 @@
 ||60739ebc42.com^
 ||609999.xyz^
 ||60jxn4.xyz^
+||61.121.245.*^
 ||613f15a070.com^
 ||614514.com^
 ||6170b1649f.25f5d4f39c.com^
 ||6176.5clo0xmbf.com^
 ||61serve.everydayporn.co^
 ||61zdn1c9.skin^
+||62.76.25.27^
+||62.76.25.28^
 ||6205.5clo0xmbf.com^
 ||622bcf2c86.com^
 ||62842068.xyz^
@@ -5696,6 +5706,7 @@
 ||allabc.com^
 ||allads4you.de^
 ||alladvertisingdomclub.club^
+||allalla.com^
 ||allbn.net^
 ||allcrackhere.info^
 ||allcracks.org^
@@ -12750,6 +12761,7 @@
 ||cpa-optimizer.online^
 ||cpa-tc.com^
 ||cpa.greenp.kr^
+||cpa1.ru^
 ||cpa3iqcp.de^
 ||cpabeyond.com^
 ||cpaclickz.com^
@@ -16995,6 +17007,7 @@
 ||ecma.bdimg.com^
 ||ecmb.bdimg.com^
 ||eco.blendxxx.com^
+||ecommtools.com^
 ||econenectedith.info^
 ||econrus.ru^
 ||econsistentlyplea.com^
@@ -20012,6 +20025,7 @@
 ||gamefowl.emailforward.mx^
 ||gamefowl.karlsutt.com^
 ||gamefowl.nonprofit.foundation^
+||gameleads.ru^
 ||gameover-shop.de^
 ||gamersad.com^
 ||gamersshield.com^
@@ -23934,6 +23948,7 @@
 ||infostation.digital^
 ||infostuet.com^
 ||infotop.jp^
+||infox.sg^
 ||infra.systems^
 ||infractructurelegislation.com^
 ||infrashift.com^
@@ -24375,6 +24390,7 @@
 ||irwyiaexxopok.love^
 ||irxybq.com^
 ||irymountain.org^
+||is.traff-numerical.info^
 ||is02041qqp.xyz^
 ||is02050qqp.xyz^
 ||isabellagodpointy.com^
@@ -24900,6 +24916,7 @@
 ||jgxavkopotthxj.xyz^
 ||jgxirv.icu^
 ||jhbjkqqykibyt.buzz^
+||jhf.ru^
 ||jhiihllo.com^
 ||jhkfd.com^
 ||jhlnlt.xyz^
@@ -25965,6 +25982,7 @@
 ||km-digibank.com^
 ||km-kryxqvt.site^
 ||km14hkusz.com^
+||kma.biz^
 ||kmbjerbaafdn.global^
 ||kmmgoogle.oss-ap-southeast-1.aliyuncs.com^
 ||kmmrukqrphix.com^
@@ -30494,6 +30512,8 @@
 ||mzol7lbm.com^
 ||mzpecui.icu^
 ||mzwdiyfp.com^
+||n.2.1.js^
+||n.2.1.l60.js^
 ||n.baminw.com.cn^
 ||n.cashheaven.ru^
 ||n.dyntrk.com^
@@ -31965,6 +31985,7 @@
 ||o02231aokk.com^
 ||o02251aokk.com^
 ||o02260aokk.com^
+||o0e.ru^
 ||o1.jyjyj.cn^
 ||o18.click^
 ||o18.link^
@@ -34367,6 +34388,7 @@
 ||picard.aomg5bzv7.com^
 ||picarosexempt.shop^
 ||picbitok.com^
+||piccash.net^
 ||pickaflick.co^
 ||pickeerleopard.top^
 ||picklecandourbug.com^
@@ -35101,6 +35123,7 @@
 ||pothutepu.com^
 ||potnormal.com^
 ||potnormandy.com^
+||potopy.ru^
 ||potsaglu.net^
 ||potshumiliationremnant.com^
 ||potsiuds.com^
@@ -36798,6 +36821,7 @@
 ||r.my.com^
 ||r.partner.badoo.ru^
 ||r.qip.ru^
+||r.reklam*.com^
 ||r.tinmoi24.vn^
 ||r.topdent.ru^
 ||r.toplaygame.ru^
@@ -41830,6 +41854,8 @@
 ||sportapp.co.il^
 ||sportbets.su^
 ||sportevents.news^
+||sportframe*.co^
+||sportframe*.org^
 ||sportpardon.com^
 ||sportradarserving.com^
 ||sports-live-streams.club^
@@ -45035,6 +45061,7 @@
 ||touvxlii.top^
 ||touweptouceeru.xyz^
 ||touzoaty.net^
+||tovarro.com^
 ||tovbus.cn^
 ||tovespiquener.com^
 ||tovwhxpomgkd.com^
@@ -45081,6 +45108,7 @@
 ||tpizy1uy3x.ru^
 ||tpjw.cn^
 ||tpkv.cn^
+||tpm.pw^
 ||tpmedia-reactads.com^
 ||tpmedia.online^
 ||tpmoney.xyz^
@@ -47944,6 +47972,7 @@
 ||vipgooshop.com^
 ||viphirsaick.net^
 ||vipicmou.net^
+||vipko.ru^
 ||viplovang.com^
 ||vipmmomo2456.fun^
 ||vipmomo.club^
@@ -48051,6 +48080,7 @@
 ||vjzvgvgz.icu^
 ||vk-ads.ru^
 ||vkbxaixl.icu^
+||vkcdnservice.appspot.com^
 ||vkcdnservice.com^
 ||vkeagmfz.com^
 ||vkebctjkr.com^
@@ -49015,6 +49045,7 @@
 ||webgains.com^
 ||webgringo.ru^
 ||webh5.newfastloan.cc^
+||webhop.net^
 ||webiklan.com^
 ||webinfo-ebank.com^
 ||webinstats.com^
