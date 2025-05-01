@@ -141,7 +141,7 @@ jobs:
               }
             }
             # @@は無条件で許可、それ以外でtracking系ワード含むものは除外
-            if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
+            if ($0 ~ !/^\//) && ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
               # 重複ではないことを確認
               if (!seen[$0]++) {
                 print
