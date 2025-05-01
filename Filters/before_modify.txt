@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-01T01:34:58.495Z
+! Last modified: 2025-05-01T03:35:08.619Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -41478,8 +41478,8 @@ vkcdnservice.appspot.com^
 # A hosts file that aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites
 # ----
 # title:          Frellwit's Swedish Hosts File
-# last updated:   2025-04-29 05:44:44 CEST
-# entries:        1115
+# last updated:   2025-05-01 04:39:49 CEST
+# entries:        1113
 # format:         hosts (hosts -- in hosts file format)
 # homepage:       https://github.com/lassekongo83/Frellwits-filter-lists/
 ||1terms.com^
@@ -41495,7 +41495,6 @@ vkcdnservice.appspot.com^
 ||adhost.se^
 ||adonstudio.com^
 ||ads.aland.com^
-||ads.annonsbladet.com^
 ||ads.bethard.com^
 ||ads.compro.se^
 ||ads.docunordic.net^
@@ -42058,7 +42057,6 @@ vkcdnservice.appspot.com^
 ||tracking.barometern.se^
 ||tracking.bblat.se^
 ||tracking.blt.se^
-||tracking.bonnier.news^
 ||tracking.borlangetidning.se^
 ||tracking.borssnack.di.se^
 ||tracking.bt.se^
@@ -47882,6 +47880,8 @@ vkcdnservice.appspot.com^
 ||uaqe.cn^
 ||okpl05010ai.com^
 ||vmlrxs.top^
+||unwuamt.top^
+||qqosk05010llo.com^
 ||qsoc.cn^
 ||wwok04300kl.com^
 ||oia04300klq.com^
