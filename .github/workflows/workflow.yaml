@@ -82,9 +82,9 @@ jobs:
               $0 = $0 "^"
             }
           }
-          # `://` を含む行を修正
-          /:[/][/]/ {
-            sub(/^.*:[/][/]\*?/, "||")
+          # 先頭"://"を修正
+          /^:[/][/]/ {
+            sub(/^:[/][/]/, "||")
             print $0
             next
           }
@@ -95,8 +95,10 @@ jobs:
             next
           }
           # その他の行
-          {
+          if ($0 !~ /^\|\|/) {
             print "||" $0
+          } else {
+            print $0
           }
           ' Filters/bad_filter_begin.txt | sort > Filters/bad_filter_begin_fix.txt
 
