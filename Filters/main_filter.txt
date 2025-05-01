@@ -1,9 +1,9 @@
 ! Title: AdGuard_DNS_Filter_for_myself
-! Version: 2025-05-02 04:01 JST
+! Version: 2025-05-02 04:12 JST
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-01T19:01:28.590Z
+! Last modified: 2025-05-01T19:12:54.030Z
 !
 @@||5471782.fls.doubleclick.net^|
 @@||79423.analytics.edgekey.net^|
@@ -197,7 +197,6 @@
 @@||www.statcounter.com^|
 ||*.exaapi.com^
 ||*ad.durasite.net^
-||-adx-*.rayjump.com^
 ||/193.200.64.24:/^
 ||0.101tubeporn.com^
 ||0.clicks4me.fwh.is^
@@ -52047,3 +52046,4 @@
 ||zztxfj.xyz^
 ||zzxjlr.com^
 ||zzznews.ru^
+||||adx-*.rayjump.com^
