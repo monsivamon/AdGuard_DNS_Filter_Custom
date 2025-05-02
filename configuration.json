@@ -314,6 +314,20 @@
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
+      "name": "uBlock filters",
+      "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
+      "name": "uBlock filters – Mobile",
+      "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-mobile.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
       "source": "Filters/dns-unbreak.txt",
       "type": "adblock",
