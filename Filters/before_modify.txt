@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-02T02:50:10.243Z
+! Last modified: 2025-05-02T02:55:50.716Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -100,7 +100,6 @@
 ||jhu8u9.pro^
 ||fdolspwa.my^
 ||server.megabrain.co^
-||cf.adxcel.com^
 ||cda7k-ddok.com^
 ||sat.cellordion3.net^
 ||sat.dipamaid.net^
@@ -373,7 +372,6 @@
 ||adsmodern.com^
 ||yourdestinationlink.com^
 ||adshort.media^
-||a.binpartner.com^
 ||discovernative.com^
 ||gecontentasap.com^
 ||rqhere2.com^
@@ -450,7 +448,6 @@
 ||evadavdsp.pro^
 ||bms1.adjarabet.com^
 ||sauwoaptain.com^
-||cdn.sports-streams-online.club^
 ||ian029dkl3osl930sian.club^
 ||popupplus.ir^
 ||marfeelcache.com^
@@ -506,7 +503,6 @@
 ||burdaffi.burdadigital.pl^
 ||tinb.net^
 ||yeahmobi.com^
-||api.grumft.com^
 ||advmanager.techfun.pl^
 ||abodealley.com^
 ||1warie.com^
@@ -1502,7 +1498,6 @@
 ||m.x-power.info^
 ||m5r.hoes.tube^
 ||makejav11.fun^
-||makumva.all-usanomination.com^
 ||mamamia.vintageporno.stream^
 ||mamruoa.club^
 ||mangbaiz.xyz^
@@ -3078,7 +3073,6 @@
 ||hpacdn.pornpics.de^
 ||hps.pornpics.de^
 ||loc.cliv2508.com^
-||loc.clivads.com^
 ||loc.hp250820.com^
 ||loc.xtr2020.com^
 ||log.fapder.com^
@@ -5770,7 +5764,6 @@
 ||donasi.lk21.de^
 ||creative.boyfriend.show^
 ||creative.camsplanetlive.com^
-||creative.celebjihad.live^
 ||creative.chiccams.com^
 ||creative.drtuberlive.com^
 ||creative.live.javmix.tv^
@@ -52681,7 +52674,6 @@ analytics-*.aasaam.com
 ! ---------- Ads specific (adult): too few visitors ----------
 ||ads.zippal.com^
 /^https?:\/\/[a-z]{8,15}\.(?:com|xyz)\/$/$xmlhttprequest,third-party,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
-/\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/
 /_dating\d\/index\.html\?aref=/
 ! https://github.com/AdguardTeam/AdguardFilters/issues/143447#issuecomment-1438352020
 61.121.245.*
@@ -52694,6 +52686,503 @@ analytics-*.aasaam.com
 ||outbrain.com^$badfilter
 ||outbrain.com^
 ||taboola.com^$badfilter
+!
+! Source name: uBlock filters
+! Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+!
+! https://news.ycombinator.com/item?id=12677179
+||x.shopsavvy.com^
+||*ontent.steamplay.*^
+||coertiest.click^
+||player-feedback*.glomex.*^
+||tgwidget.com^
+! https://github.com/uBlockOrigin/uAssets/issues/10039
+! https://github.com/uBlockOrigin/uAssets/issues/883
+||fbs.com^
+||trcklks.com^
+||grandfuckauto.xxx^
+||long.xxx^
+||topblockchainsolutions.*^
+! https://github.com/uBlockOrigin/uAssets/issues/3768
+||techmyntra.net^
+||adblockenterpriseedition.com^
+||tech426.com^
+||ultra-rv.com^
+||atom-ds.com^
+||kogaqmlci.com^
+||adsloboclick.com^
+||hipercontas.com.br^
+! https://github.com/uBlockOrigin/uAssets/issues/1816
+||gotprofits.com^
+||wontent.powvideo.net^
+||zontent.powvideo.net^
+||ghastlyejection.com^
+||zonedummy.com^
+||a2ztechworld.com^
+||imgpfx.arenavision.
+||ddacn6pr5v0tl.cloudfront.net^
+||dx-tv.com^
+||hologydeno.info^
+||bokarsolutions.co.uk^
+||kuvirixa.com^
+||grtyb.com^
+||cfgr2.com^
+||vuwomoby.pro^
+||clprr.com^
+||forwardrb.bid^
+||findmyheadache.com^
+||myfreecopyright.com^
+! https://github.com/uBlockOrigin/uAssets/issues/4136
+||boyfriendmeaningless.com^
+||disproveknob.com^
+||romgoc.net^
+||d19f0dp1dh77jq.cloudfront.net^
+||brightadnetwork.com^
+||cviezjsg.com^
+||gtbtnrpzz.com^
+||jwgigawtq.com^
+||zwuucugezzjhhi.com^
+||share.notizie.it^
+||areyouabot.net^
+||n1g459ky7y.com^
+||celebjihad.live^
+||all-usanomination.com^
+||clivads.com^
+||filesenzu.com^
+||ecotrackings.com^
+||sports-streams-online.club^
+||strpjmp.com^
+! https://github.com/uBlockOrigin/uAssets/issues/4632
+! https://github.com/uBlockOrigin/uAssets/issues/4681
+! https://github.com/uBlockOrigin/uAssets/issues/20330
+||ronnoble.com^
+||hellrider.live^
+||winfr-wtc.com^
+! https://github.com/uBlockOrigin/uAssets/issues/4834
+! https://github.com/NanoMeow/QuickReports/issues/661
+||metrika.lookmovie.io^$important
+||hotdeals360.com^
+||aruble.net^
+||qik.cc^
+||trifms.com^
+||get-link.xyz^
+||hitcashtag.com^
+||techbumper.info^
+||techcdn.com^
+||grumft.com^
+||descargaloaca.com^
+||eagamerz.com^
+||supertracker200.com^
+||mn-shop.com^
+! https://github.com/uBlockOrigin/uAssets/issues/5698
+! https://github.com/NanoMeow/QuickReports/issues/3261
+! https://github.com/uBlockOrigin/uAssets/issues/19463
+||welect.de^
+||wlct-three.de^
+||ipultcbpgbs.com^
+||karconsulting.us^
+||ads.adrise.tv^
+||adsrt.com^
+! altadefinizione .cloud anti adb
+||altadefinizone.*^
+||ekdj30.com^
+||psaiceex.net^
+||iz682noju02ye5.com^
+! https://github.com/uBlockOrigin/uAssets/issues/12328
+||cpx-research.com^
+||bitcoinsports.org^
+||lengejoberdak.pro^
+||measur-d.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6115
+||rusexclips.com^
+||scopateitaliane.it^
+||multinews.me^
+||p23hxejm1.com^
+||thirdads.me^
+||leadnote.me^
+||ad.kisstvshow.*^
+||bitcoinadvertise.net^
+||wap4dollar.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6024#issuecomment-541228625
+||mediapass.com^
+||nvxcvyfedg.com^
+||okean-qoj.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6508
+||vidads.gr^
+||45tu1c0.com^
+||releinemaoff.pro^
+||perfotrack.com^
+! https://github.com/NanoMeow/QuickReports/issues/2788
+||fundingchoicesmessages.google.com^
+||protectsurf-a.akamaihd.net^
+||catsnbootsncats2020.com^
+||boyfriendlive.com^
+||ohbayersbur.pro^
+! https://github.com/AdguardTeam/AdguardFilters/issues/51244
+||weblion777.github.io^
+||corported.com^
+||nohat.me^
+||allbloggingtips.com^
+||short.pe^
+||oyesrhweyma.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/52633
+||clk.sh^
+||backletseamen.com^
+||dependsmoscow.com^
+||filmishquila.com^
+||fixatessoused.com^
+||odorfulapheses.com^
+||prewhipmamamu.com^
+||sorosehottie.com^
+||augustboyby.com^
+||beachinfinitegag.com^
+||bulletadopt.com^
+||charmshoist.com^
+||herpassages.com^
+||marchshotgun.com^
+||mirthconfidence.com^
+||perceivedpalpable.com^
+||todayswigcontagious.com^
+||thankstoyou.website^
+||cassatabayard.com^
+||rafikfangas.com^
+! Arbitrary adservers / URLs
+! https://github.com/easylist/easylist/commit/9fed17fe030b739cbb8887dab4f92d03952e3e48
+||dpuplet.com^
+||jaifeeveely.com^
+||joyrodetoment.com^
+||plygainroundup.com^
+||unbentfaced.com^
+||worthlessbend.com^
+||creeperplotgrove.com^
+||decimalcursor.com^
+||efficientdescent.com^
+||mywatchtones.com^
+||play-lust.com^
+||wordsdelivery.com^
+/^https?:\/\/.*\/easylist\/[0-9]{5}/
+||jeengweb.com^
+! pornq .com popups
+||bitupsss.com^
+/^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,xhr,3p,match-case,to=com,header=link:/adsco\.re\/>;rel=preconnect/
+/^https:\/\/www\.[a-z]{8,16}\.com\/(?:[A-Za-z]+\/)*(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.js$/$script,3p,match-case,to=com,ipaddress=/^([78]9\.1[28]7\.[12]\d{2}\.\d{1,3}|84\.17\.57\.\d{1,2}|207\.211\.208\.184|2a02:6ea0:d[16]0[0c]::\d{1,2})$/
+||clenchedyouthmatching.com^
+||pilixiaoshuo.com^
+||knownamount.com^
+||untried-manager.com^
+||youvideoporno.mobi^
+||checking-your-browser.com^
+! https://github.com/uBlockOrigin/uAssets/pull/26211
+||omegatoki.com^
+/^https?:\/\/[a-z]{8,15}\.xyz\/$/$xhr,3p,to=xyz,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
+/^https?:\/\/[a-z]{8,15}\.com\/$/$xhr,3p,to=com,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
+||dauhunecoag.net^
+||go.bundlebyte.net^
+||leewibaijoa.com^
+||maishuhahi.net^
+||ostupsaury.net^
+||raiphafimept.net^
+||sefeethameel.com^
+||sisaurgeegh.net^
+||souhoazapee.net^
+||zaisofohow.net^
+! !SECTION: wpadmngr.com ads
+! SECTION: Adcash
+! https://github.com/AdguardTeam/AdguardFilters/issues/177530
+||go.aff.7k-partners.com^
+||hottracker.biz^
+||vehavings.biz^
+||kooolboomin.com^
+||shyvanas.top^
+||searchwithme.net^
+||ad-shield.cc^
+! https://github.com/uBlockOrigin/uAssets/issues/28137
+||shield.knowt.com^
+||badshores.com^
+||usheebainaut.com^
+||terrout9.biz^
+||cointiply.com^
+||reingod.com^
+||cdnstaticpr.com^
+||bestcontenttechnology.top^
+! https://github.com/AdguardTeam/AdguardFilters/issues/54629
+||nexusbytes.com^
+||fzj3v7sch2xg5gosh60vpkrth5c6cngvj5ivd9kg5ajcdl2vlp2ocj5fjbto.me^
+||dzhzp0zlnyoe8.cloudfront.net^
+||pndax.love^
+||d10ydmitx7crxz.cloudfront.net^
+||extra69.net^
+||sexoland.net^
+||cpmlink.net^
+||unbrick.id^
+||pixeltrey.com^
+||avantajados.com^
+||eriegentsfse.info^
+! https://github.com/uBlockOrigin/uAssets/issues/14231
+! https://github.com/uBlockOrigin/uAssets/issues/18148
+! https://github.com/uBlockOrigin/uAssets/issues/22198
+! https://www.reddit.com/r/uBlockOrigin/comments/1gdc7mh/spotify/
+! ||spotify.com/storage-resolve/files/audio/interactive/*$xhr,domain=open.spotify.com
+||adxcel.com^
+||dezf3o8j9jdt6.cloudfront.net^
+||weatherforecastmap.com^
+||adsux.com^
+||awdeliverynet.com^
+||sexei.net^
+||pub.javwide.com^
+||bitfun.co^
+||bitsroll.com^
+||btcclicks.com^
+||exe.io^
+||facilitategovernor.com^
+||eadvertisingd.biz^
+||aghtag.tech^
+||43478y.online^
+||addi809.buzz^
+||bethonaickou.com^
+||chubbyfailure.com^
+||cleanupharm.com^
+||diligentcloset.com^
+||enginecorruptiontrice.com^
+||hbhgvhgc.cfd^
+||impliednauseous.com^
+||impressexaltsculptor.com^
+||mredir.com^
+||tomarnamki.shop^
+||worthyboxersympathy.com^
+||xedo.me^
+||protoawegw.com^
+||tabooporn.tv^
+||easyads28.*^
+||multipledrawers.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/71877
+||adshort.tech^
+||cryptocreed.com^
+! https://github.com/uBlockOrigin/uAssets/issues/8535
+||binpartner.com^
+||coinad.*^
+||bestcripto.xyz^
+||playorigin.com^
+||bohubrihi.com^
+||aragontrack.com^
+! androidhexzone.blogspot.com anti-adb
+! https://github.com/AdguardTeam/AdguardFilters/issues/79530
+||linkvertise.net^
+||chandrabindu.net^
+||receivefreesms.co.uk^
+! https://github.com/AdguardTeam/AdguardFilters/issues/80945
+||sered.net^
+||grab.tc^
+||ad-doge.com^
+||addoge.cc^
+||clicksgenie.com^
+! https://github.com/uBlockOrigin/uAssets/issues/10378
+||webmonetiser.com^
+||interserver.net^
+! https://www.reddit.com/r/uBlockOrigin/comments/ncbk72/ublock_detected_at_greeleytribunecom/
+||prairiemountainmedia.com^
+||dailycamera.com^
+||tny.so^
+||omeda.com^
+! https://github.com/uBlockOrigin/uAssets/issues/17141
+||weakermumrespect.com^
+! https://github.com/uBlockOrigin/uAssets/pull/9192#issuecomment-848097239
+! https://www.reddit.com/r/uBlockOrigin/comments/nnesag/some_anime_popup_window_on_this_website/
+||2target.net^
+! https://www.reddit.com/r/uBlockOrigin/comments/nyzxsh/anti_adblock_trivela/
+||filmeserialehd.biz^
+! https://www.reddit.com/r/uBlockOrigin/comments/on98rw/dynamic_adblocking_on_lowendtalkcom/
+||lowendbox.com^
+||binomo.com^
+||sumologic.stv.tv^
+||dsccams.com^
+||ad.mail.ru^
+||nanime.biz^
+! https://github.com/uBlockOrigin/uAssets/issues/9964
+||quinporn.com^
+||funker530-ads.azurewebsites.net^
+||ad4point.nyc3.digitaloceanspaces.com^
+||myezads.com^
+||browsingcontredir.com^
+||babup.com^
+||dvdgayonline.com^
+||taradinhos.com^
+! https://github.com/uBlockOrigin/uAssets/issues/10673
+! https://github.com/uBlockOrigin/uAssets/issues/20409
+||camplethora.com^
+! https://github.com/uBlockOrigin/uAssets/issues/11280
+||revive.3wayint.com^
+||unactkiosk.com^
+||a.slashdotmedia.com^
+||mediacandy.ai^
+! https://www.reddit.com/r/uBlockOrigin/comments/ssvdg9/adblock_diagnosis/
+||gratisbitcoin.my.id^
+||flirtmeet.life^
+||easyads29.*^
+! https://github.com/uBlockOrigin/uAssets/issues/4574#issuecomment-1062577877
+! a8ix .live/atishmkv aliases
+||ublockpop.com^
+||drectsearch.com^
+||adblockultra.com^
+||fflink.net^
+||you2ubeconverter.com^
+||renewalsuspiciousrattle.com^
+! adsterra popups / frames
+/\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/
+||skiptheadz.com^
+||8q7tvj34.xyz^
+||selfservesenpai.*^
+||spiddefrexpron.com^
+||flatrelentlessperspective.com^
+||litaudrootsa.net^
+||spiderhannahresidential.com^
+||collect.media.jio.com^
+||nah-versorger.de^
+||stopundstart.de^
+||mein-organizer.de^
+||schneesommer.de^
+! https://github.com/uBlockOrigin/uAssets/issues/24377
+||ss-mndsrv.b-cdn.net^
+||raichaudouk.com^
+||preservehalt.com^
+||regie-cpc.com^
+! https://www.reddit.com/r/uBlockOrigin/comments/11nupxv/
+||cfw.dexscreener.com^
+! https://github.com/uBlockOrigin/uAssets/issues/17182
+! https://github.com/uBlockOrigin/uAssets/issues/16909
+! https://github.com/uBlockOrigin/uAssets/issues/12214#issuecomment-2299131571
+! https://github.com/MajkiIT/polish-ads-filter/issues/22589
+||ssp.wp.pl^
+||critomiron.click^
+||play.turbommo.com^
+! doronime
+-cpm-ads.$badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/15pq26a/receiving_video_advertisements_on_radio_stations/
+||ssiadnweb.securenetsystems.net^
+||toptdspup.com^
+||doood.cam^
+! videos broken
+||metrolagu.cam^$badfilter
+||berlagu.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/25663
+||annotationsincereexistence.com^
+||reminderasking.com^
+! EL badfilter
+||ate60vs7zcjhsjo5qgv8.com^$badfilter
+||xhamsterpremium.com^
+||xhamsterlive.com^
+||remaininghopefully.com^
+||acortalo.*^
+||easysexe.com^
+||rencontres-coquines.jacquieetmichel.net^
+! ads servers
+||358g46.fun^
+||dfuybl-bclxb.love^
+||fbpbpmjjg-f.club^
+||gajinifreedomain.fun^
+||h5xzcrigf541b0fzxj.fun^
+||msok-bayqa.icu^
+||nanai-clw.com^
+||pzcwk-sfend.top^
+||slavicprophetyontherm.com^
+||tronkwintun.com^
+||urxox-iqx.online^
+||vjkyw.vip^
+||wbhwwnzptf.club^
+||x-ozwpiqlb.rocks^
+||xdgeslibgbim.icu^
+||zoroalteedrich.net^
+! https://github.com/uBlockOrigin/uAssets/issues/22772
+||fulltv.video^
+||ver.gratis^
+||toughvariation.com^
+! https://github.com/uBlockOrigin/uAssets/issues/23292
+||h.seznam.cz^$badfilter
+! https://freek.to/watch/tv/94605
+! https://young-machine.com/
+||fewcents.co^
+! https://github.com/uBlockOrigin/uAssets/issues/24142
+||loadingfreerar.top^
+||asjjlh.cfd^
+||holputy.shop^
+||smartpc.click^
+||track.torarymor.world^
+||gxh1yqz2v.xyz^
+! https://github.com/uBlockOrigin/uAssets/issues/25773
+! https://github.com/uBlockOrigin/uBOL-home/issues/250
+||festivalcasketfrench.com^
+||shareease.link^
+||fastfilehost.link^
+||rapidsend.cfd^
+||generating.link^
+||restedpealimagine.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/193664
+! https://github.com/uBlockOrigin/uAssets/issues/26540
+||ads.the.tube^
+! https://github.com/uBlockOrigin/uAssets/issues/26218
+! https://github.com/uBlockOrigin/uAssets/issues/26038
+! thenation.com anti-adb
+||site-config.com^
+||content-settings.com^
+||config-factory.com^
+||sgeiruehou.cfd^
+! https://github.com/easylist/listear/issues/37
+||filletfiguredconstrain.com^
+||mw19c3mi5a.com^
+||ryllae.com^$important
+||webpartners.co^
+! https://github.com/uBlockOrigin/uAssets/issues/6029
+! https://github.com/uBlockOrigin/uAssets/issues/16049
+!*$popunder,3p,domain=spankbang.com
+||ersties.com^
+! <<<<< EasyList Thailand >>>>>
+! https://github.com/uBlockOrigin/uAssets/issues/27043
+! https://github.com/AdguardTeam/AdguardFilters/issues/199239
+! https://github.com/uBlockOrigin/uAssets/issues/27282
+/^https?:\/\/[^\/]+\/_fd$/$xhr,1p,strict1p,header=X-Request-Id:/^[a-f0-9]{8}(-[a-f0-9]{4}){3}-[a-f0-9]{12}$/
+||stookroocoudray.com^
+||gbads.net^
+||filthygracefulspinach.com^
+||shoupsoolsoagna.net^
+||oorsoozo.top^
+||queasypolenta.com^
+||thedreamofus.xyz^
+||batchzoo.com^
+||fortuneindoorsinto.com^
+||s0fast.net^
+||sarodesdonnot.com^
+||vulnerableimmigrateaboveaverage.com^
+||rdrclk.com^
+||curryfielddistribution.com^
+||antonellapouncedcrewels.com^
+||jameeltips.us^
+||jayan-uvl.com^
+||ppcent.org^
+||ultimateaderaser.com^
+||funuzai.ru^
+||datadropspot.pro^
+||speedynews.xyz^
+||immeritousscraichingtarumari.monster^
+||nonentrantcrpehibbin.monster^
+||adosiz.net^
+||dpuplet.net^
+||golnkz.com^
+||reyeshehadtwobri.com^
+! https://github.com/uBlockOrigin/uAssets/discussions/17361#discussioncomment-9845073
+! https://github.com/uBlockOrigin/uAssets/issues/26480
+||atropinestatuarylandleaper.com^
+||tairdalwaly.click^
+||sharecube.pro^
+||flyshare.cfd^
+||boarfishesquandangsunderdried.com^
+||glashanburg.com^
+||wounofoarausooy.net^
+||hk6vdj4z.click^
+||qty3e.pro^
+!
+! Source name: uBlock filters – Mobile
+! Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-mobile.txt
+!
 !
 ! Source name: AdGuard DNS filter Unbreaker for Japanese
 ! Source: Filters/dns-unbreak.txt
@@ -53095,7 +53584,6 @@ analytics-*.aasaam.com
 ||stat.kbs.co.kr^
 ||stat.ruvr.ru^
 ||stat.torrentbar.com^
-||stat.xhamsterpremium.com^
 ||stats.aplus.com^
 ||stats.articlesbase.com^
 ||stats.avg.com^
