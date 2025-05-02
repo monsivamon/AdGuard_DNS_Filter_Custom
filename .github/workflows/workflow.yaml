@@ -170,6 +170,8 @@ jobs:
       # HeaderとBody合成実行
       - name: Complete Create Filter
         run: |
+          # 本来このコードはいらないはず
+          rm Filters/generate_filter.txt
           cat Filters/tmp_head_filter.txt Filters/tmp_body_filter.txt > Filters/generate_filter.txt
           rm Filters/tmp*.txt
           
