@@ -25,7 +25,7 @@ Please note that I am still a beginner with GitHub and filter creation, so this 
 
 To use this filter in AdGuard (e.g., AdGuard Home, AdGuard DNS), add the following URL to your custom DNS filters:
 
-https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/master/Filters/main_filter.txt
+https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/master/Filters/generate_filter.txt
 
 ---
 
