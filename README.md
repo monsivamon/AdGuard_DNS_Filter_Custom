@@ -42,6 +42,7 @@ This filter includes references, ideas, and in some cases direct rules from the 
 
 - [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
 - [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)
+- [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets)
 
 I deeply respect the original authors and thank them for their contributions.
 
