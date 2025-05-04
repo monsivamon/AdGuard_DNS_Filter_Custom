@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-03T18:42:39.786Z
+! Last modified: 2025-05-04T03:32:39.187Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -21951,6 +21951,7 @@ vkcdnservice.appspot.com^
 ||mysweetteam.com^
 ||mytdsnet.com^
 ||myteamdev.com^
+||mythad.com^
 ||mythicsallies.com^
 ||mythings.com^
 ||mythpointsatheism.com^
@@ -48040,8 +48041,14 @@ vkcdnservice.appspot.com^
 ||51tongji.trafficmanager.net^
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
+||bebx.cn^
+||qqosk05040llo.com^
 ||ebroktean.com^
 ||ffxe.cn^
+||croqoltdp.com^
+||okpl05040ai.com^
+||xjvunf.top^
+||knwucnd.top^
 ||okpl05030ai.com^
 ||vtqhelleano.com^
 ||qqosk05030llo.com^
@@ -52974,13 +52981,18 @@ analytics-*.aasaam.com
 ||oyesrhweyma.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/52633
 ||clk.sh^
+! Ads servers
+||attainthreatfluffy.com^
 ||backletseamen.com^
 ||dependsmoscow.com^
+||digresssloked.com^
+||euphonefiar.com^
 ||filmishquila.com^
 ||fixatessoused.com^
 ||odorfulapheses.com^
 ||prewhipmamamu.com^
 ||rutategpd.com^
+||sacksgulleys.com^
 ||sorosehottie.com^
 ||augustboyby.com^
 ||beachinfinitegag.com^
