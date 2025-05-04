@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-04T06:46:48.443Z
+! Last modified: 2025-05-04T13:06:15.401Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -42571,8 +42571,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 03 May 2025 14:45 UTC+7
-! Version: 2505031445
+! Last modified: 04 May 2025 15:52 UTC+7
+! Version: 2505041552
 ! Blocked: 875 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -43413,8 +43413,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN Threat
 ! Description: Only include threat domains
-! Last modified: 03 May 2025 14:45 UTC+7
-! Version: 2505031445
+! Last modified: 04 May 2025 15:51 UTC+7
+! Version: 2505041551
 ! Blocked: 4.749 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -48038,6 +48038,7 @@ vkcdnservice.appspot.com^
 ||107.167.22.*.gif
 ||121.204.246.*.gif
 ||38.33.15.*.gif
+||hash.trafficmanager.net^
 ||51tongji.trafficmanager.net^
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
@@ -48050,6 +48051,8 @@ vkcdnservice.appspot.com^
 ||xjvunf.top^
 ||knwucnd.top^
 ||qqosk05041llo.com^
+||nevtrelathgd.com^
+||okpl05041ai.com^
 ||okpl05030ai.com^
 ||vtqhelleano.com^
 ||qqosk05030llo.com^
