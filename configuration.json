@@ -328,6 +328,13 @@
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
+      "name": "uBlock₀ filters – Badware risks",
+      "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
       "source": "Filters/dns-unbreak.txt",
       "type": "adblock",
