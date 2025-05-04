@@ -40,9 +40,9 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 
 This filter includes references, ideas, and in some cases direct rules from the following GPL-licensed projects:
 
-- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter)
-- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2)
-- [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets)
+- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) – A DNS-based filtering system from AdGuard that blocks ads and tracking at the DNS level.
+- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – A personally curated ad-blocking filter tailored for Japanese websites, compatible with AdGuard and uBlock Origin.
+- [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – The official uBlock Origin filter list, containing essential rules to block ads and trackers.
 
 I deeply respect the original authors and thank them for their contributions.
 
