@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-04T05:27:43.677Z
+! Last modified: 2025-05-04T05:29:47.611Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -35042,7 +35042,6 @@ vkcdnservice.appspot.com^
 ||track.10bet.com^
 ||trendads.reactivebetting.com^
 ||typicalstudent.org^
-||universal.wgplayer.com^
 ||viadata.store^
 ||vice-publishers-cdn.vice.com^
 ||video-ads.a2z.com^
@@ -35062,7 +35061,6 @@ vkcdnservice.appspot.com^
 ||widgets.tree.com^
 ||winonexd.b-cdn.net^
 ||wixlabs-adsense-v3.uc.r.appspot.com^
-||wpb.wgplayer.com^
 ||yield-op-idsync.live.streamtheworld.com^
 ||ad.intl.xiaomi.com^
 ||ad.xiaomi.com^
@@ -36942,7 +36940,6 @@ vkcdnservice.appspot.com^
 ||adv-front.devpnd.com^
 ||mintegral.com^
 ||x-eu.64e98469810bd13e2b45e52d19d6fddfe333b3528350d8cfa792d478.com^
-||skadsdk.appsflyer.com^
 ||alt-ad.mail.ru^
 ||chavoads.com^
 ||r2d2.aotter.net^
@@ -37569,7 +37566,6 @@ vkcdnservice.appspot.com^
 ||hotwords.com.mx^
 ||hotwords.es^
 ||ieurop.net^
-||img.netaffiliation.com^
 ||intrastats.com^
 ||linkeasy.org^
 ||logs.eresmas.com^
@@ -41803,7 +41799,6 @@ vkcdnservice.appspot.com^
 ||cdn.logsnag.com^
 ||cdn.matomo.cloud^
 ||cdn.myadmessenger.com^
-||cdn.permutive.com^
 ||cdn.popt.in^
 ||cdn.pushalert.co^
 ||cdn.reaktion.se^
@@ -42081,14 +42076,12 @@ vkcdnservice.appspot.com^
 ||rum-reporter-prod.exp.bn.nr^
 ||s.cartbooster.io^
 ||s.ntv.io^
-||s10.histats.com^
 ||sak.userreport.com^
 ||salesbooster.ai^
 ||sannsyn.com^
 ||sbs.deliveryengine.adswizz.com^
 ||sc.lfeeder.com^
 ||schibsted-cdn.relevant-digital.com^
-||script.crazyegg.com^
 ||script.extellio.com^
 ||script.ioam.de^
 ||scripts.makeinfluence.com^
@@ -42102,7 +42095,6 @@ vkcdnservice.appspot.com^
 ||se5.pliing.com^
 ||secure.curl7bike.com^
 ||secure.reaktion.se^
-||secure.statcounter.com^
 ||seenthis.se^
 ||sentry.outbid.io^
 ||seo.compado.com^
@@ -42134,7 +42126,6 @@ vkcdnservice.appspot.com^
 ||stat.vimedbarn.se^
 ||stat03.stat.cliche.se^
 ||statcounter.va-endpoint.com^
-||static.chartbeat.com^
 ||static.getclicky.com^
 ||static.hotjar.com^
 ||static.matchads.net^
@@ -42361,10 +42352,8 @@ vkcdnservice.appspot.com^
 ||wct-2.com^
 ||webbannons.ntm.eu^
 ||webbplatsanalys.goteborg.se^
-||websdk.appsflyer.com^
 ||webstats.100procent.com^
 ||web-analytics.ica.se^
-||web-sdk.smartlook.com^
 ||west.statisticplatform.com^
 ||widget.cdn.citygate.se^
 ||widget.citygate.se^
@@ -42385,7 +42374,6 @@ vkcdnservice.appspot.com^
 ||www.kundvisaren.se^
 ||www.mymediaindex.com^
 ||www.stadiumstage.com^
-||www.statcounter.com^
 ||www.tamgrt.com^
 ||www.vejaskor.com.se^
 ||www.vizzit.se^
@@ -56923,6 +56911,289 @@ thepiratebay3.com^
 ||v3-dappradar.com^
 ||darppadar.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/28138
+!
+! Source name: uBlock filters – Unbreak
+! Source: https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt
+!
+! Chrome store feedback
+! To counter `top.mail.ru` in Peter Lowe's
+||top.mail.ru^$badfilter
+||top.mail.ru^
+||sumo.com^$badfilter
+! To counter `o0bc.com` in Peter Lowe's
+! unbreaks boston.com
+||o0bc.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/1825
+||smartlook.com^$badfilter
+||smartlook.com^
+! https://www.reddit.com/r/uBlockOrigin/comments/8czb3t/fullstorycom_blocked/
+||fullstory.com^$badfilter
+||fullstory.com^
+! https://github.com/uBlockOrigin/uAssets/issues/2930
+||bridgetrack.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?f=103&t=40699
+||fuegodevida.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?f=64&t=41498
+||youboranqs01.com^$badfilter
+! Reported through email: many Canadian car sites broken because of
+! `d2cmedia.ca` in Peter Lowe's. Examples:
+! https://www.hyundailongueuil.com/neufs/Hyundai-Elantra%20GT-2018.html
+! https://www.complexekia.com/demonstrateurs/Kia-Soul-2018-id7101681.html
+||d2cmedia.ca^$badfilter
+! https://forums.lanik.us/viewtopic.php?f=64&t=41588
+||smartsuppchat.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?p=144333#p144333
+||marketo.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/4812
+! https://github.com/uBlockOrigin/uAssets/issues/18905
+||evergage.com^$badfilter
+||velaro.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?p=147310#p147310
+||hawk.pcgamer.com^$badfilter
+||exoclick.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?f=64&t=43091
+||scroll.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/5880
+||madmimi.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/5992
+||xtremetop100.com^$badfilter
+||xtremetop100.com^
+! https://forums.lanik.us/viewtopic.php?f=64&t=43425
+/^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$badfilter
+! https://github.com/easylist/easylist/issues/3942
+||pmdstatic.net^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/6480
+||pushengage.com^$badfilter
+||t.eloqua.com^$badfilter
+||t.eloqua.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6693
+||advertising.com^$badfilter
+! netaffiliation .com Peter Lowe's
+||metaffiliation.com^$badfilter
+||netaffiliation.com^$badfilter
+||netaffiliation.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6990
+||blockadblock.com^$badfilter
+||blockadblock.com^
+! https://github.com/uBlockOrigin/uAssets/issues/7005
+! https://github.com/uBlockOrigin/uAssets/issues/7012#issuecomment-592815205
+||cedexis.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/7001
+||spade.sci.twitch.tv^$badfilter
+||spade.sci.twitch.tv^
+! https://forums.lanik.us/viewtopic.php?p=153533#p153533
+@@||coral.coralproject.net^
+! CNAME https://github.com/uBlockOrigin/uAssets/issues/7264
+! https://github.com/easylist/easylist/issues/5214
+||techsidea.website^$badfilter
+||onlineshopping.website^$badfilter
+! trafic .ro blocked Peter Lowe's
+||trafic.ro^$badfilter
+||trafic.ro^
+! https://github.com/uBlockOrigin/uAssets/issues/6838
+||crazyegg.com^$badfilter
+||crazyegg.com^
+! https://github.com/uBlockOrigin/uAssets/issues/7664
+||logsss.com^$badfilter
+! sedoparking .com unbreak
+||sedoparking.com^$badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/ifvbor/
+||circularhub.com^$badfilter
+! unbreak push home page vendigamus .com
+||vendigamus.com^$badfilter
+! strict-blocked and broken by Peter Lowe's and anti-adb
+||crypto-loot.org^$badfilter
+||crypto-loot.org^
+! unlock biroads .com
+||biroads.com^$badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/kpl5ty/
+||data.over-blog-kiwi.com^$badfilter
+! Fix chatbot on https://brave.com/brave-ads/ via Peter Lowes List
+||targeting.api.drift.com^$badfilter
+! override Peter Lowe's filter
+||piano.io^$badfilter
+! to counter Peter Lowe's filters (breaking the site itself)
+||chartbeat.com^$badfilter
+||chartbeat.net^$badfilter
+||chartbeat.com^
+||chartbeat.net^
+! blocked by PL
+||blogtopsites.com^$badfilter
+||blogtopsites.com^
+! https://www.reddit.com/r/uBlockOrigin/comments/loexoa/cant_figure_out_how_to_unblock_reviews_on_a_site/
+! adssettings.google.com blocked by PL
+||ads.youtube.com^$badfilter
+! revcatch. com unlock page itself (3p blocked by EP)
+||revcatch.com^$badfilter
+! unlock site page cpmstar. com (Peter Lowe's)
+||cpmstar.com^$badfilter
+! click-through broken by PL, 3p blocked by EP
+! ex. https://app.seedapp.jp/click/v1/ad/122?site=1843&article=4454
+||appsflyer.com^$badfilter
+||appsflyer.com^
+! https://www.reddit.com/r/uBlockOrigin/comments/m1fzip/can_devs_please_unblock_this_legit_website/
+! https://github.com/uBlockOrigin/uAssets/issues/12046 cname breakage
+||actonsoftware.com^$badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/m1thyx/cant_play_mahjong_games/
+||consensu.org^$badfilter
+! histats. com unlock the site itself
+||histats.com^$badfilter
+||histats.com^
+! https://forums.lanik.us/viewtopic.php?p=159121#p159121
+||go.nordvpn.net^$badfilter
+||3r1kwxcd.top^$badfilter
+! https://twitter.com/Armstrong/status/1393153389752692736
+! Blocked by Peter Lowe's
+||baremetrics.com^$badfilter
+||baremetrics.com^
+! https://ilakovac.com/teespring-ublock-issue/
+! https://forums.lanik.us/viewtopic.php?f=64&t=46190
+||smartadserver.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/9153
+||vidible.tv^$badfilter
+! adshrink.it blocked by PL
+||adshrink.it^$badfilter
+||adshrink.it^
+! https://github.com/uBlockOrigin/uAssets/issues/9365
+||klaviyo.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/9692
+||hb.afl.rakuten.co.jp^$badfilter
+! https://forums.lanik.us/viewtopic.php?f=64&t=46688
+||ads.pinterest.com^$badfilter
+||ads.pinterest.com^
+! https://forums.lanik.us/viewtopic.php?f=64&t=42810
+||azadify.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/9983
+! https://github.com/uBlockOrigin/uAssets/pull/10005 CNAME breakage by Peter Lowe's
+||smart-traffik.com^$badfilter
+! https://github.com/easylist/easylist/commit/c1e5cea211d41c5547f58321e5dae56ac834fce0
+||tercept.com^$badfilter
+||tercept.com^
+! docs.tealium.com blocked by PL
+||tealium.com^$badfilter
+||tealium.com^
+! https://github.com/uBlockOrigin/uAssets/issues/11308#issuecomment-1013865830
+||tags.tiqcdn.com^$badfilter
+! website, not a tracker
+||lp.tfd-corp.co.jp^$badfilter
+||info.neg.co.jp^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/13161
+||go.usa.gov^$badfilter
+! override Peter Lowe's filter
+||t.co^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/13284
+! flix
+||flixsyndication.net^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/13512
+||fwcdn2.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/13655
+||ads.tiktok.com^$badfilter
+! unlock legit page simpletraffic. co
+||simpletraffic.co^$badfilter
+! vice. com cookie banner reappear after every reload
+||sourcepoint.vice.com^$badfilter
+! affiliate.rakuten.co.jp broken
+||ba.afl.rakuten.co.jp^$badfilter
+||ba.afl.rakuten.co.jp^
+! https://github.com/uBlockOrigin/uAssets/issues/14118
+||da-services.ch^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/14258
+||exponea.com^$badfilter
+||exponea.com^
+! https://github.com/uBlockOrigin/uAssets/issues/15647
+||wisepops.com^$badfilter
+! https://forums.lanik.us/viewtopic.php?t=47902-join-megaphonetv-com-rej
+||join.megaphonetv.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/16022
+||esputnik.com^$badfilter
+||opsktp.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/16167
+||parsely.com^$badfilter
+||parsely.com^
+! https://github.com/uBlockOrigin/uAssets/commit/66a1e58b63f86e73f0bf596b3cd4e82d4b6781d9
+||counter2.blog.livedoor.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/16464
+||permutive.com^$badfilter
+||permutive.com^
+! https://github.com/uBlockOrigin/uAssets/issues/17653
+||cdn.onesignal.com^$badfilter
+! wgplayer breakages
+||wgplayer.com^
+! https://github.com/uBlockOrigin/uAssets/issues/17810
+||cs.co^$badfilter
+! To counter `statcounter.com` in Peter Lowe's
+! https://github.com/uBlockOrigin/uAssets/commit/1142bef68ee287d27f6191c433ff8491570b6612
+||statcounter.com^$badfilter
+||statcounter.com^
+! https://github.com/uBlockOrigin/uAssets/issues/18188
+||braze.eu^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/18196
+||success.act-on.com^$badfilter
+||webtracking.fe.union-investment.de^
+! https://github.com/uBlockOrigin/uAssets/issues/18638
+||click.aliexpress.com^$badfilter
+! https://github.com/AdguardTeam/AdguardFilters/issues/158351
+! https://github.com/AdguardTeam/AdguardFilters/issues/159452
+||tradeinsights.net^$badfilter
+||tradeinsights.net^
+! simple counter
+||rays-counter.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/19835
+||linkvertise.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/7636#issuecomment-1735168592
+2.87.160.7$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/20256
+||img.service.belboon.com^$badfilter
+||partner.service.belboon.com^$badfilter
+||ui.service.belboon.com^$badfilter
+! https://github.com/AdguardTeam/AdguardFilters/issues/164921
+||hbb.afl.rakuten.co.jp^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/20410
+||quantcast.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/21050
+||inmobi.com^$badfilter
+! Override EasyList Germany exceptions
+! https://github.com/uBlockOrigin/uAssets/issues/25543
+! https://github.com/uBlockOrigin/uAssets/issues/21286
+||jsrdn.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/22373
+! https://github.com/uBlockOrigin/uAssets/issues/22687#issuecomment-1969035876
+||tiqcdn.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/18516
+||click.discord.com^$badfilter
+||sponsors.vuejs.org^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/22580
+||cj.com^$badfilter
+! https://github.com/easylist/easylist/issues/18715
+||guinsters286nedril.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/23791
+||tapad.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/24037
+||js-agent.newrelic.com^$badfilter
+! https://www.cotopaxi.com/products/batac-16l-backpack-del-dia-limited-color-drop?variant=40697496600637 - product not appear
+||st.dynamicyield.com^$badfilter
+! https://github.com/uBlockOrigin/uAssets/issues/24964
+! https://github.com/easylist/easylist/issues/19835
+||services.haaretz.co.il^$badfilter
+! https://github.com/easylist/easylist/issues/19913
+||trycloudflare.com^$badfilter
+! unbreak Email and SMS solutions
+||klclick1.com^$badfilter
+||klclick1.com^
+! https://www.reddit.com/r/uBlockOrigin/comments/1hp40q7/ublock_origin_blocks_this_site_httpsxlivesexcom/
+||xlivesex.com^$badfilter
+! http://beelzeboulxxx.com/ => redirect
+! https://github.com/uBlockOrigin/uAssets/issues/27371
+||registry.api.cnn.io^$badfilter
+||turnip.cdn.turner.com^$badfilter
+! https://github.com/easylist/easylist/commit/49d775a
+! https://www.digi24.ro/live/digi24 - video breakage
+! https://github.com/uBlockOrigin/uAssets/issues/27523
+||cdn.cookielaw.org^$badfilter
+! unbreak https://pizzaonline.dominos.co.in/?src=brand due to PL filter
+! https://github.com/uBlockOrigin/uAssets/issues/27207
+||keyvdowallet.me^$badfilter
+||api-2-0.spot.im^$badfilter
 !
 ! Source name: AdGuard DNS filter Unbreaker for Japanese
 ! Source: Filters/dns-unbreak.txt
