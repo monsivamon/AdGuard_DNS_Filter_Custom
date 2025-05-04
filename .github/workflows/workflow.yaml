@@ -157,12 +157,12 @@ jobs:
           TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
 
           awk -v ver="! Version: ${TODAY}" '
-          # 2~7行目をそのまま書き出す
-          NR >= 2 && NR <= 7 {
+          # 7行目までそのまま書き出す
+          NR <= 7 {
             # そのまま出力
             print
             # 2行目の後にバージョン情報を挿入
-            if (NR == 2) {
+            if (NR == 3) {
               print ver 
             }
           } ' Filters/main_filter.txt > Filters/tmp_head_filter.txt
