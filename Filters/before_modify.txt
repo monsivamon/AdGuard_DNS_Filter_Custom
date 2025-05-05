@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-05T01:22:20.471Z
+! Last modified: 2025-05-05T03:30:46.135Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -42586,8 +42586,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 04 May 2025 15:52 UTC+7
-! Version: 2505041552
+! Last modified: 05 May 2025 09:50 UTC+7
+! Version: 2505050950
 ! Blocked: 875 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -43428,8 +43428,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN Threat
 ! Description: Only include threat domains
-! Last modified: 04 May 2025 15:51 UTC+7
-! Version: 2505041551
+! Last modified: 05 May 2025 09:49 UTC+7
+! Version: 2505050949
 ! Blocked: 4.749 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -48061,6 +48061,7 @@ vkcdnservice.appspot.com^
 ||zxiws.cn^
 ||qiwqaagnaell.com^
 ||zibjls.top^
+||snwucnb.top^
 ||bebx.cn^
 ||qqosk05040llo.com^
 ||ebroktean.com^
@@ -53068,6 +53069,7 @@ analytics-*.aasaam.com
 ||sefeethameel.com^
 ||sisaurgeegh.net^
 ||souhoazapee.net^
+||staukaptaicm.net^
 ||zaisofohow.net^
 ! !SECTION: wpadmngr.com ads
 ! SECTION: Adcash
