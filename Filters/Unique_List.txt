@@ -1,4 +1,4 @@
-# add allow domain
+! # add allow domain
 @@||s0.2mdn.net^|
 @@||web-jp.ad-v.jp^|
 @@||setting.adzcore.com^|
@@ -48,7 +48,7 @@
 @@||ad-api-v01.uliza.jp^|
 @@||s.yimg.jp^|
 
-# add block domain
+! # add block domain
 ||100234.advision-adnw.jp^
 ||100291.adnico.jp^
 ||100602.advision-adnw.jp^
