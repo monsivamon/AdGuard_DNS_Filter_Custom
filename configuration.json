@@ -348,6 +348,13 @@
       "transformations": ["Validate"]
     },
     {
+      "name": "Unique List",
+      "source": "Filters/Unique_List.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "transformations": ["Validate"]
+    },
+    {
       "name": "Additional rules",
       "source": "Filters/rules.txt",
       "type": "adblock",
