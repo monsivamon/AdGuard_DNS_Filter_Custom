@@ -182,8 +182,11 @@ jobs:
           cd massdns
           # massdns を実行（-r オプションでリゾルバ指定）
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
-            -w ../Filters/Success_Results.txt ../Filters/domains_only_before_check.txt || true
+            -w ../Filters/Success_Results_raw.txt ../Filters/domains_only_before_check.txt || true
             
+          # 成功したドメインだけ取り出す（末尾のドットを除去）
+          awk '{ sub(/\.$/, "", $1); print $1 }' ../Filters/Success_Results_raw.txt | sort -u > ../Filters/Success_Results.txt
+          
           # 解決できなかったドメインを dead_domains.txt に書き出す
           grep -Fv -f ../Filters/Success_Results.txt ../Filters/domains_only_before_check.txt > ../Filters/dead_domains.txt
 
