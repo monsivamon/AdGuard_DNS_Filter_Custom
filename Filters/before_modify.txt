@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-06T10:14:55.538Z
+! Last modified: 2025-05-06T10:34:24.495Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -58513,6 +58513,8 @@ thepiratebay3.com^
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! Popular anti-adblock bait
+@@|www3.doubleclick.net^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1879
 ! Blocked by the rule, required for blocking Ingenious Technologies analytics
 @@||acs-m.daraz.pk^|
