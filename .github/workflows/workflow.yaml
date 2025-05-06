@@ -27,6 +27,8 @@ jobs:
       # Daed domain linterのセットアップ
       - name: Setup for dead domains check
         run: |
+          sudo apt-get update
+          sudo apt-get install -y jq parallel
           npm update -g @adguard/dead-domains-linter
           
       # ビルドで使う最新フィルタを取得（URL直接指定だとconfiguration.json記述が長くなる為）
