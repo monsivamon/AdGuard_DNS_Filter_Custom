@@ -149,7 +149,7 @@ jobs:
             }
           } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
 
-      # ドメインのみ抽出
+      # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
         run: |
           awk '
@@ -178,17 +178,23 @@ jobs:
           make  # massdns をビルド
           # massdns を実行（-r オプションでリゾルバ指定）
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
-            -w ../Filters/Success_Results_raw.txt ../Filters/domains_only_before_check.txt || true
+            -w ../Filters/Exist_raw.txt ../Filters/domains_only_before_check.txt || true
 
       # 存在するドメインのみ書き出す
       - name: Check Result modify
         run: |
-          # 成功ドメインだけ整形して出力（読みやすく複数行に分けたawk）
+          # 成功ドメインだけ整形して出力
           awk '{
             sub(/\.$/, "", $1)
             print "||" $1 "^"
           }
-          ' Filters/Success_Results_raw.txt | sort -u > Filters/tmp_body_filter_block.txt
+          ' Filters/Exist_raw.txt | sort > Filters/tmp_body_filter_block.txt
+
+          # チェック時に除外した許可リストを追記
+          awk '
+          /^@@/ { 
+            print $0
+          }' Filters/tmp_body_filter.txt | sort >> Filters/tmp_body_filter_block.txt
 
       # ヘッダー部分の作成
       - name: Create Header
@@ -211,8 +217,8 @@ jobs:
       # HeaderとBody合成実行
       - name: Complete Create Filter
         run: |
-          cat Filters/tmp_head_filter.txt Filters/tmp_body_filter.txt > Filters/main_filter.txt
-          # rm Filters/tmp*.txt
+          cat Filters/tmp_head_filter.txt Filters/tmp_body_filter_block.txt > Filters/main_filter.txt
+          rm Filters/tmp*.txt
           
       # 異常フィルタの検出
       - name: Bad Filter Search
