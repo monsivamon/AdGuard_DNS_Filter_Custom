@@ -148,6 +148,25 @@ jobs:
               }
             }
           } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
+
+      # ドメインのみ抽出
+      - name: Grep domain
+        run: |
+          awk '
+          # 除外ルール（@@）は無視
+          /^\@\@/ { 
+            next
+          }
+          # || で始まる行を処理
+          /^\|\|/ {
+            # || と ^ を削除してドメイン部分だけ残す
+            sub(/^\|\|/, "")
+            sub(/\^$/, "")
+            # 重複回避：連想配列で既に出ているドメインをスキップ
+            if (!seen[$0]++) {
+              print $0
+            }
+          }' Filters/Filters/tmp_body_filter.txt > domains_only.txt
           
       # ヘッダー部分の作成
       - name: Create Header
@@ -195,30 +214,7 @@ jobs:
           if [ $(wc -l < Filters/bad_filter.txt) -eq 0 ]; then
             rm Filters/bad_filter.txt
           fi
-          
-      - name: Setup for dead-domains-linter
-        run: |
-          # 依存関係のインストール
-          sudo apt-get update
-          sudo apt-get install -y jq parallel
-          # 正しいパッケージ名でインストール
-          npm install -g @adguard/dead-domains-linter
-          # グローバルパスの設定（重要）
-          echo "PATH=$(npm prefix -g)/bin:$PATH" >> $GITHUB_ENV
-          echo "NODE_PATH=$(npm root -g)" >> $GITHUB_ENV
 
-      - name: Search Dead Domain
-        run: |
-          # インストール確認
-          dead-domains-linter --version
-          # 実際の実行（推奨パラメータ付き）
-          dead-domains-linter \
-            -i Filters/main_filter.txt \
-            --export=Filters/dead_domains.txt \
-            --concurrency=10 \
-            --timeout=5000 \
-            --skip-ssl-verify
-        
       # フィルタをアップロード
       - name: Upload new filter
         run: |
