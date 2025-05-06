@@ -167,7 +167,25 @@ jobs:
               print $0
             }
           }' Filters/tmp_body_filter.txt | sort > Filters/domains_only_before_check.txt
+
+      # massdns環境構築
+      - name: massdns Install
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git make gcc
+          git clone https://github.com/robertdavidgraham/massdns.git
+          cd massdns
+          make  # massdns をビルド
           
+      - name: Run massdns
+        run: | 
+          cd massdns
+          # massdns でDNSチェックを実行
+          ./massdns -t A -o S -w Success_Results.txt ../Filters/domains_only_before_check.txt || true
+          # 解決できなかったドメインを dead_domains.txt に書き出す
+          grep -Fv -f Success_Results.txt ../Filters/domains_only_before_check.txt > ../Filters/dead_domains.txt
+
+         
       # ヘッダー部分の作成
       - name: Create Header
         run: |
