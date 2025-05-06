@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-06T09:41:30.417Z
+! Last modified: 2025-05-06T09:44:32.435Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -57484,52 +57484,52 @@ thepiratebay3.com^
 ! Source: Filters/Unique_List.txt
 !
 ! # add allow domain
-@@||web-jp.ad-v.jp^|
-@@||setting.adzcore.com^|
-@@||aax-fe.amazon-adsystem.com^|
-@@||c.amazon-adsystem.com^|
-@@||mads.amazon-adsystem.com^|
 @@||aan.amazon.co.jp^|
-@@||fls-fe.amazon.co.jp^|
-@@||device-metrics-us.amazon.com^|
-@@||imgstat.ameba.jp^|
-@@||app-adforce.jp^|
-@@||clickserve.dartsearch.net^|
+@@||aax-fe.amazon-adsystem.com^|
 @@||ad.dmm.com^|
 @@||ad.doubleclick.net^|
-@@||pubads.g.doubleclick.net^|
-@@||edge-chat.facebook.com^|
-@@||facebook.com^|
-@@||m.facebook.com^|
-@@||staticxx.facebook.com^|
-@@||fbcdn.net^|
-@@||scontent-nrt1-1.xx.fbcdn.net^|
-@@||scontent.xx.fbcdn.net^|
-@@||static.xx.fbcdn.net^|
-@@||fbsbx.com^|
-@@||lh3.ggpht.com^|
-@@||yt3.ggpht.com^|
-@@||ssl.google-analytics.com^|
-@@||www.google-analytics.com^|
-@@||youtube.googleapis.com^|
-@@||pagead2.googlesyndication.com^|
-@@||lh3.googleusercontent.com^|
+@@||ad-api-v01.uliza.jp^|
 @@||api.growthbeat.com^|
 @@||api.growthpush.com^|
-@@||c.kakaku.com^|
-@@||line.me^|
-@@||r10.to^|
 @@||api.r10s.jp^|
-@@||r.r10s.jp^|
-@@||grp10.ias.rakuten.co.jp^|
-@@||t.co^|
-@@||ws.tapjoyads.com^|
-@@||ad-api-v01.uliza.jp^|
-@@||s.yimg.jp^|
-@@||vcentry3.valuecommerce.com^|
+@@||app-adforce.jp^|
 @@||atrrd.valuecommerce.com^|
+@@||c.amazon-adsystem.com^|
+@@||c.kakaku.com^|
 @@||ck.jp.ap.valuecommerce.com^|
+@@||clickserve.dartsearch.net^|
+@@||device-metrics-us.amazon.com^|
+@@||edge-chat.facebook.com^|
+@@||facebook.com^|
+@@||fbcdn.net^|
+@@||fbsbx.com^|
+@@||fls-fe.amazon.co.jp^|
+@@||grp10.ias.rakuten.co.jp^|
+@@||imgstat.ameba.jp^|
+@@||lh3.ggpht.com^|
+@@||lh3.googleusercontent.com^|
+@@||line.me^|
+@@||m.facebook.com^|
+@@||mads.amazon-adsystem.com^|
+@@||pagead2.googlesyndication.com^|
+@@||pubads.g.doubleclick.net^|
+@@||r.r10s.jp^|
+@@||r10.to^|
+@@||s.yimg.jp^|
+@@||scontent.xx.fbcdn.net^|
+@@||scontent-nrt1-1.xx.fbcdn.net^|
+@@||setting.adzcore.com^|
+@@||ssl.google-analytics.com^|
+@@||static.xx.fbcdn.net^|
+@@||staticxx.facebook.com^|
+@@||t.co^|
 @@||trj.valuecommerce.com|
+@@||vcentry3.valuecommerce.com^|
+@@||web-jp.ad-v.jp^|
+@@||ws.tapjoyads.com^|
+@@||www.google-analytics.com^|
+@@||youtube.googleapis.com^|
+@@||yt3.ggpht.com^|
 !
 ! Source name: Additional rules
 ! Source: Filters/rules.txt
