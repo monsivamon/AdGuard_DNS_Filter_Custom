@@ -196,18 +196,28 @@ jobs:
             rm Filters/bad_filter.txt
           fi
           
-      # Daed domain linterのセットアップ
       - name: Setup for dead-domains-linter
         run: |
+          # 依存関係のインストール
           sudo apt-get update
           sudo apt-get install -y jq parallel
-          npm update -g @adguard/dead-domains-linter
-          echo "$(npm bin -g)" >> $GITHUB_PATH 
-          
-      # 不要ドメインの検出
+          # 正しいパッケージ名でインストール
+          npm install -g @adguard/dead-domains-linter
+          # グローバルパスの設定（重要）
+          echo "PATH=$(npm prefix -g)/bin:$PATH" >> $GITHUB_ENV
+          echo "NODE_PATH=$(npm root -g)" >> $GITHUB_ENV
+
       - name: Search Dead Domain
         run: |
-          dead-domains-linter -i Filters/main_filter.txt --export=Filters/dead_domains.txt
+          # インストール確認
+          dead-domains-linter --version
+          # 実際の実行（推奨パラメータ付き）
+          dead-domains-linter \
+            -i Filters/main_filter.txt \
+            --export=Filters/dead_domains.txt \
+            --concurrency=10 \
+            --timeout=5000 \
+            --skip-ssl-verify
         
       # フィルタをアップロード
       - name: Upload new filter
