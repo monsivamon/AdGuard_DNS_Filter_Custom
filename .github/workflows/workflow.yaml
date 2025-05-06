@@ -181,9 +181,9 @@ jobs:
         run: | 
           cd massdns
           # massdns でDNSチェックを実行
-          ./massdns -t A -o S -w Success_Results.txt ../Filters/domains_only_before_check.txt || true
+          ./bin/massdns -t A -o S -w ../Filters/Success_Results.txt ../Filters/domains_only_before_check.txt || true
           # 解決できなかったドメインを dead_domains.txt に書き出す
-          grep -Fv -f Success_Results.txt ../Filters/domains_only_before_check.txt > ../Filters/dead_domains.txt
+          grep -Fv -f ../Filters/Success_Results.txt ../Filters/domains_only_before_check.txt > ../Filters/dead_domains.txt
 
          
       # ヘッダー部分の作成
