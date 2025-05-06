@@ -351,6 +351,7 @@
       "name": "Unique List",
       "source": "Filters/Unique_List.txt",
       "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["Validate"]
     },
     {
