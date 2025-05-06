@@ -153,7 +153,7 @@ jobs:
       - name: Grep domain
         run: |
           awk '
-          # 除外ルール（@@）は無視
+          # 除外ルール@@は無視
           /^@@/ { 
             next
           }
@@ -162,33 +162,33 @@ jobs:
             # || と ^ を削除してドメイン部分だけ残す
             sub(/^\|\|/, "")
             sub(/\^$/, "")
-            # 重複回避：連想配列で既に出ているドメインをスキップ
+            # 重複ではないことを確認
             if (!seen[$0]++) {
               print $0
             }
           }' Filters/tmp_body_filter.txt | sort > Filters/domains_only_before_check.txt
 
-      # massdns環境構築
-      - name: massdns Install
+      # massdns環境構築、DNSアドレスの存在確認実行
+      - name: massdns Check
         run: |
           sudo apt-get update
           sudo apt-get install -y git make gcc
           git clone https://github.com/blechschmidt/massdns.git
           cd massdns
           make  # massdns をビルド
-          
-      - name: Run massdns
-        run: | 
-          cd massdns
           # massdns を実行（-r オプションでリゾルバ指定）
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
             -w ../Filters/Success_Results_raw.txt ../Filters/domains_only_before_check.txt || true
-            
-          # 成功したドメインだけ取り出す（末尾のドットを除去）
-          awk '{ sub(/\.$/, "", $1); print $1 }' ../Filters/Success_Results_raw.txt | sort -u > ../Filters/Success_Results.txt
-          
-          # 解決できなかったドメインを dead_domains.txt に書き出す
-          grep -Fv -f ../Filters/Success_Results.txt ../Filters/domains_only_before_check.txt > ../Filters/dead_domains.txt
+
+      # 存在するドメインのみ書き出す
+      - name: Result modify
+        run: |
+          # 成功ドメインだけ整形して出力（読みやすく複数行に分けたawk）
+          awk '{
+            sub(/\.$/, "", $1)
+            print "||" $1 "^"
+          }
+          ' Filters/Success_Results_raw.txt | sort -u > Filters/tmp_body_filter_block.txt
 
       # ヘッダー部分の作成
       - name: Create Header
