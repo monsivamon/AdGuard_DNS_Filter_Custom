@@ -173,7 +173,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y git make gcc
-          git clone https://github.com/robertdavidgraham/massdns.git
+          git clone https://github.com/blechschmidt/massdns.git
           cd massdns
           make  # massdns をビルド
           
