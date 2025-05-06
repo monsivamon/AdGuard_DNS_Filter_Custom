@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      # Daed dimain Checkのセットアップ
+      # Daed domain linerのセットアップ
       - name: Setup for dead domains check
         run: |
           npm install -g dead-domains-linter jq
