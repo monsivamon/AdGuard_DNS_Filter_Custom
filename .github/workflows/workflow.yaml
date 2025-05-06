@@ -101,7 +101,9 @@ jobs:
           ' Filters/before_bad_filter.txt | sort > Filters/before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
           cat Filters/before_bad_filter_fix.txt >> Filters/main_filter.txt
-
+          # もう要らないので削除
+          rm Filters/before_bad_filter*.txt
+          
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
         run: |
