@@ -1,29 +1,33 @@
-# AdGuard_DNS_Filter_for_myself
+# AdGuard DNS Filter for Personal Use
 
-This is a **custom AdGuard DNS filter list**, created primarily for **personal learning and practice**.  
-Please note that I am still a beginner with GitHub and filter creation, so this repository may not follow best practices or deliver perfect results.
+This is a custom AdGuard DNS filter list, created primarily for personal learning and experimentation.
+Please note that I am still learning GitHub and filter creation, so this repository may not follow all best practices or produce perfect results.
 
 ---
 
 ## 📌 Important Notes
 
-- This filter is for **testing and personal use only**.
-- I do **not guarantee** its effectiveness in blocking ads, trackers, or harmful content.
-- Use at your **own risk**. I take **no responsibility** for any issues caused by its usage.
+- This filter is intended for testing and personal use only.
+- I do not guarantee its effectiveness in blocking ads, trackers, or harmful content.
+- Use at your own risk. I am not responsible for any issues caused by using this filter.
 
 ---
 
 ## 🔧 Filter Creation Process
-- The filter list was originally generated using the official AdGuard DNS filter compiler.
-- After generation, I used shell scripting to modify and customize the filter rules for personal use.
-- The customizations include removing specific categories like tracking, analytics, and certain domains that were flagged by default.
-- Please be aware that these changes are not official, and the filter may not work as effectively as the original.
+
+- The filter list is initially generated using the official AdGuard DNS filter compiler.
+- After generation, shell scripts are used to clean up and customize the list.
+- Customizations include:
+  - Removing tracking, analytics, and other categories.
+  - Filtering out non-existent domains using `massdns`.
+
+Please note: These modifications are unofficial and may reduce the effectiveness of the original filters.
 
 ---
 
 ## 🔗 How to Use with AdGuard
 
-To use this filter in AdGuard (e.g., AdGuard Home, AdGuard DNS), add the following URL to your custom DNS filters:
+To use this filter in AdGuard (AdGuard Home, AdGuard DNS, etc.), add the following URL to your custom DNS filter list:
 
 https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/master/Filters/main_filter.txt
 
@@ -31,8 +35,9 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 
 ## 🔄 Update Policy
 
-- This filter is updated **automatically every 6 hours** using GitHub Actions.
-- Manual edits or commits may also occur at irregular intervals depending on development or testing needs.
+- This filter is automatically updated every 6 hours using GitHub Actions.
+- Each update pulls the latest source rules, verifies domains using massdns, and rebuilds the list.
+- Manual edits or updates may also be made at any time during testing or maintenance.
 
 ---
 
@@ -40,10 +45,10 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 
 This filter includes references, ideas, and in some cases direct rules from the following GPL-licensed projects:
 
-- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) – A DNS-based filtering system from AdGuard that blocks ads and tracking at the DNS level.
-- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – A personally curated ad-blocking filter tailored for Japanese websites, compatible with AdGuard and uBlock Origin.
-- [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – The official uBlock Origin filter list, containing essential rules to block ads and trackers.
-- [blechschmidt/massdns](https://github.com/blechschmidt/massdns) – A high-performance DNS stub resolver for bulk lookups and DNS reconnaissance, used here to verify domain existence.
+- [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) – DNS-based blocking of ads and tracking.
+- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – AdGuard/uBlock-compatible filter tailored for Japanese websites.
+- [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – Official filter list from the uBlock Origin team.
+- [blechschmidt/massdns](https://github.com/blechschmidt/massdns) – High-performance DNS resolver used here to verify domains.
 
 I deeply respect the original authors and thank them for their contributions.
 
@@ -51,12 +56,12 @@ I deeply respect the original authors and thank them for their contributions.
 
 ## ⚖️ License
 
-This project incorporates material from other **GPL v3** licensed repositories.  
-Therefore, this repository is distributed under the **GNU General Public License v3.0**.
-
-For complete license terms, please refer to the following:  
-📄 [LICENSE (GPL v3)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+This project includes components from other repositories licensed under the GNU General Public License v3.0.
+Therefore, this repository is also distributed under the **GPL v3** license.
+For full terms, please refer to the [LICENSE](./LICENSE) file.
 
 ---
 
-Thank you for visiting this repository!
+Thank you for visiting this repository!  
+I hope it may be helpful or inspiring in your own filtering efforts.
+
