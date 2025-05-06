@@ -212,7 +212,7 @@ jobs:
       - name: Complete Create Filter
         run: |
           cat Filters/tmp_head_filter.txt Filters/tmp_body_filter.txt > Filters/main_filter.txt
-          rm Filters/tmp*.txt
+          # rm Filters/tmp*.txt
           
       # 異常フィルタの検出
       - name: Bad Filter Search
