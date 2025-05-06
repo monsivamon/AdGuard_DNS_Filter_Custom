@@ -166,7 +166,7 @@ jobs:
             if (!seen[$0]++) {
               print $0
             }
-          }' Filters/Filters/tmp_body_filter.txt > domains_only.txt
+          }' Filters/tmp_body_filter.txt > domains_only.txt
           
       # ヘッダー部分の作成
       - name: Create Header
