@@ -60,7 +60,7 @@ jobs:
               if (!seen[$0]++) {
                 print
               }
-          } ' Filters/main_filter.txt | sort > Filters/before_bad_filter.txt
+          } ' Filters/main_filter.txt | sort > Filters/tmp_before_bad_filter.txt
           
       # クリーンアップ前の異常フィルタを一部修正
       - name: Before Bad Filter modify
@@ -98,11 +98,9 @@ jobs:
           {
             print "||" $0
           }
-          ' Filters/before_bad_filter.txt | sort > Filters/before_bad_filter_fix.txt
+          ' Filters/tmp_before_bad_filter.txt | sort > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
-          cat Filters/before_bad_filter_fix.txt >> Filters/main_filter.txt
-          # もう要らないので削除
-          rm Filters/before_bad_filter*.txt
+          cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
           
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
@@ -168,7 +166,7 @@ jobs:
             if (!seen[$0]++) {
               print $0
             }
-          }' Filters/tmp_body_filter.txt | sort > Filters/domains_only_before_check.txt
+          }' Filters/tmp_body_filter.txt | sort > Filters/tmp_domains_only_before_check.txt
 
       # massdns環境構築、DNSアドレスの存在確認実行
       - name: massdns Check
@@ -180,7 +178,7 @@ jobs:
           make  # massdns をビルド
           # massdns を実行（-r オプションでリゾルバ指定）
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
-            -w ../Filters/Exist_raw.txt ../Filters/domains_only_before_check.txt || true
+            -w ../Filters/tmp_Exist_raw.txt ../Filters/tmp_domains_only_before_check.txt || true
 
       # 存在するドメインのみ書き出す
       - name: Check Result modify
@@ -190,21 +188,18 @@ jobs:
             sub(/\.$/, "", $1)
             print "||" $1 "^"
           }
-          ' Filters/Exist_raw.txt | sort > Filters/tmp_body_filter_block.txt
-
+          ' Filters/tmp_Exist_raw.txt | sort > Filters/tmp_body_filter_block.txt
           # チェック時に除外した許可リストを追記
           awk '
           /^@@/ { 
             print $0
           }' Filters/tmp_body_filter.txt | sort >> Filters/tmp_body_filter_block.txt
-
+          
       # ヘッダー部分の作成
       - name: Create Header
         run: |
-        
           # 現在の日付と時間をJST形式で取得
           TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-
           awk -v ver="! Version: ${TODAY}" '
           # 7行目までそのまま書き出す
           NR <= 7 {
