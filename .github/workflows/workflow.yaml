@@ -150,7 +150,7 @@ jobs:
           } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
 
       # ドメインのみ抽出
-      - name: Grep domain
+      - name: Grep Domain
         run: |
           awk '
           # 除外ルール@@は無視
@@ -181,7 +181,7 @@ jobs:
             -w ../Filters/Success_Results_raw.txt ../Filters/domains_only_before_check.txt || true
 
       # 存在するドメインのみ書き出す
-      - name: Result modify
+      - name: Check Result modify
         run: |
           # 成功ドメインだけ整形して出力（読みやすく複数行に分けたawk）
           awk '{
