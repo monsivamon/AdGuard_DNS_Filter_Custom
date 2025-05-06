@@ -23,13 +23,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      # Daed domain linterのセットアップ
-      - name: Setup for dead domains check
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y jq parallel
-          npm update -g @adguard/dead-domains-linter
           
       # ビルドで使う最新フィルタを取得（URL直接指定だとconfiguration.json記述が長くなる為）
       - name: Get Latest File
@@ -203,8 +196,16 @@ jobs:
             rm Filters/bad_filter.txt
           fi
           
+      # Daed domain linterのセットアップ
+      - name: Setup for dead-domains-linter
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq parallel
+          npm update -g @adguard/dead-domains-linter
+          echo "$(npm bin -g)" >> $GITHUB_PATH 
+          
       # 不要ドメインの検出
-      - name: Remove Empty Bad Filter
+      - name: Search Dead Domain
         run: |
           dead-domains-linter -i Filters/main_filter.txt --export=Filters/dead_domains.txt
         
