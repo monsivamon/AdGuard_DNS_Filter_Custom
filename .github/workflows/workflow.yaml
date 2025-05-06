@@ -202,7 +202,11 @@ jobs:
           if [ $(wc -l < Filters/bad_filter.txt) -eq 0 ]; then
             rm Filters/bad_filter.txt
           fi
-    
+      # 不要ドメインの検出
+      - name: Remove Empty Bad Filter
+        run: |
+          dead-domains-linter -i Filters/main_filter.txt --export=Filters/dead_domains.txt
+        
       # フィルタをアップロード
       - name: Upload new filter
         run: |
