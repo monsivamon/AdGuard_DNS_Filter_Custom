@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-08T13:35:14.374Z
+! Last modified: 2025-05-08T18:50:10.802Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -6245,6 +6245,7 @@ vkcdnservice.appspot.com^
 ! Source: https://raw.githubusercontent.com/easylist/easylist/master/easylist/easylist_adservers.txt
 !
 ! Non-flagged (Generic blocks)
+||0019x.com^
 ||00f8c4bb25.com^
 ||0127c96640.com^
 ||01counter.com^
@@ -10179,6 +10180,7 @@ vkcdnservice.appspot.com^
 ||boobausauhipsa.net^
 ||boodaisi.xyz^
 ||boodiecawquaw.top^
+||boodybasalt.com^
 ||boogopee.com^
 ||bookadil.com^
 ||bookbannershop.com^
@@ -11398,6 +11400,7 @@ vkcdnservice.appspot.com^
 ||ckrf1.com^
 ||ckydlxzejeepc.rocks^
 ||ckynh.com^
+||ckzypnshkzevn.xyz^
 ||cl0udh0st1ng.com^
 ||clackbenefactor.com^
 ||cladp.com^
@@ -16946,6 +16949,7 @@ vkcdnservice.appspot.com^
 ||highercldfrev.com^
 ||highercldfrevb.com^
 ||higheurest.com^
+||highlightattentions.com^
 ||highlypersevereenrapture.com^
 ||highmaidfhr.com^
 ||highmanapts.com^
@@ -18235,6 +18239,7 @@ vkcdnservice.appspot.com^
 ||jcafpiaqjoh.com^
 ||jclrwjceymgec.com^
 ||jcosjpir.com^
+||jcrgmcxyjnk.com^
 ||jd3j7g5z1fqs.com^
 ||jdeekqk-bjqt.fun^
 ||jdoqocy.com^
@@ -18618,6 +18623,7 @@ vkcdnservice.appspot.com^
 ||jyvkwqjremjbj.top^
 ||jyzkut.com^
 ||jzleekzaovelw.top^
+||jzleekzaovzez.top^
 ||jzokkejvjrvrb.top^
 ||jzokkejvjrvwj.top^
 ||jzplabcvvy.com^
@@ -22799,6 +22805,7 @@ vkcdnservice.appspot.com^
 ||outfoxnapalms.com^
 ||outgratingknack.com^
 ||outhaushauviy.xyz^
+||outheelrelict.com^
 ||outhulem.net^
 ||outlandish-pitch.pro^
 ||outlayomnipresentdream.com^
@@ -25056,6 +25063,7 @@ vkcdnservice.appspot.com^
 ||raufajoo.net^
 ||rauheestuma.xyz^
 ||raumipti.net^
+||raunoaptotoaw.com^
 ||raunooligais.net^
 ||raupasee.xyz^
 ||raupsica.net^
@@ -38887,6 +38895,7 @@ vkcdnservice.appspot.com^
 ! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt
 !
 !
+||line-e.com^
 ||shindnx.site^
 ||ads-lite2.net^
 ||mid-round.com^
@@ -46705,6 +46714,7 @@ vkcdnservice.appspot.com^
 ||uuso05081qhs.xyz^
 ||qnwucny.top^
 ||uuso05082qhs.xyz^
+||vthruucceod.com^
 ||ebrid.cn^
 ||wtrotilloye.com^
 ||dnjxds.top^
@@ -51650,7 +51660,6 @@ analytics-*.aasaam.com
 ||multinews.me^
 ||p23hxejm1.com^
 ||thirdads.me^
-||leadnote.me^
 ||ad.kisstvshow.*^
 ||bitcoinadvertise.net^
 ||wap4dollar.com^
@@ -51719,6 +51728,7 @@ analytics-*.aasaam.com
 ||unbentfaced.com^
 ||worthlessbend.com^
 ||creeperplotgrove.com^
+||culinar9sync.com^
 ||decimalcursor.com^
 ||efficientdescent.com^
 ||mywatchtones.com^
@@ -52007,6 +52017,8 @@ analytics-*.aasaam.com
 ! https://github.com/uBlockOrigin/uAssets/issues/16049
 !*$popunder,3p,domain=spankbang.com
 ||ersties.com^
+! https://github.com/uBlockOrigin/uAssets/issues/6296
+||leadnote.me^
 ! <<<<< EasyList Thailand >>>>>
 ! https://github.com/uBlockOrigin/uAssets/issues/27043
 ! https://github.com/AdguardTeam/AdguardFilters/issues/199239
