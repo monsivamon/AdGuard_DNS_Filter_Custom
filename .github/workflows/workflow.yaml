@@ -106,7 +106,7 @@ jobs:
           awk '
           #コメント行,正規表現が絡む行を除外し、フィルタ形式の行のみ対象
           !/^!/ && !/\// && (/^\|\|/ || /^@@/) {
-            # $badfilterを@@に変換
+            # $badfilterを@@に変換(本来この処理は正しいとは言えないがDNSフィルタなのでとりあえずこうする)
             if ($0 ~ /\$badfilter/) {
               sub(/\$badfilter/, "", $0)
               sub(/^\|\|/, "@@||", $0)
@@ -154,8 +154,8 @@ jobs:
       # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
         run: |
+          # ブロックルールの抽出
           awk '
-          # 除外ルール@@は無視
           /^@@/ { 
             next
           }
@@ -166,9 +166,9 @@ jobs:
             sub(/\^$/, "")
             print $0
           }' Filters/tmp_body_filter.txt | sort -u > Filters/tmp_domains_only_before_check_block.txt
-          
+
+          # 許可ルールの抽出
           awk '
-          # 除外ルールの抽出
           /^@@/ { 
             sub(/^@@\|\|/, "")
             sub(/\^\|$/, "")
