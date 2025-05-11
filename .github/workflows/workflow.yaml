@@ -57,10 +57,8 @@ jobs:
           awk '
           #コメント行を除外し、フィルタ形式じゃない行を抽出
           !/^!/ && !/^\|\|/ && !/^@@/ {
-              if (!seen[$0]++) {
-                print
-              }
-          } ' Filters/main_filter.txt | sort > Filters/tmp_before_bad_filter.txt
+            print
+          } ' Filters/main_filter.txt | sort -u > Filters/tmp_before_bad_filter.txt
           
       # クリーンアップ前の異常フィルタを一部修正
       - name: Before Bad Filter modify
@@ -98,7 +96,7 @@ jobs:
           {
             print "||" $0
           }
-          ' Filters/tmp_before_bad_filter.txt | sort > Filters/tmp_before_bad_filter_fix.txt
+          ' Filters/tmp_before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
           cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
 
@@ -154,10 +152,7 @@ jobs:
             }
             # @@は無条件で許可、それ以外でtracking系ワード含むものは除外
             if ($0 ~ /^@@/ || $0 !~ /tracking|tracker|analytics/) {
-              # 重複ではないことを確認
-              if (!seen[$0]++) {
-                print
-              }
+              print
             }
           } ' Filters/main_filter.txt | sort -u > Filters/tmp_body_filter.txt
 
@@ -174,11 +169,16 @@ jobs:
             # || と ^ を削除してドメイン部分だけ残す
             sub(/^\|\|/, "")
             sub(/\^$/, "")
-            # 重複ではないことを確認
-            if (!seen[$0]++) {
-              print $0
-            }
-          }' Filters/tmp_body_filter.txt | sort > Filters/tmp_domains_only_before_check.txt
+            print $0
+          }' Filters/tmp_body_filter.txt | sort -u > Filters/tmp_domains_only_before_check_block.txt
+          
+          awk '
+          # 除外ルールの抽出
+          /^@@/ { 
+            sub(/^@@\|\|/, "")
+            sub(/\^\|$/, "")
+            print $0
+          }' Filters/tmp_body_filter.txt | sort -u > Filters/tmp_domains_only_before_check_allow.txt
 
       # massdns環境構築、DNSアドレスの存在確認実行
       - name: massdns Check
@@ -188,27 +188,34 @@ jobs:
           git clone https://github.com/blechschmidt/massdns.git
           cd massdns
           make  # massdns をビルド
-          # massdns を実行（-r オプションでリゾルバ指定）
+          
+          # massdnsで許可リストに記載のあるドメインが存在しているかを確認
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
-            -w ../Filters/tmp_Exist_raw.txt ../Filters/tmp_domains_only_before_check.txt || true
+            -w ../Filters/tmp_Exist_allow_raw.txt ../Filters/tmp_domains_only_before_check_allow.txt || true
+            
+          # massdnsでブロックリストに記載のあるドメインが存在しているかを確認
+          ./bin/massdns -r lists/resolvers.txt -t A -o S \
+            -w ../Filters/tmp_Exist_block_raw.txt ../Filters/tmp_domains_only_before_check_block.txt || true
 
       # 存在するドメインのみ書き出す
       - name: Check Result modify
         run: |
-          # 成功ドメインだけ整形して出力
+          # 許可リストの成功ドメインだけ整形して出力
+          awk '{
+            sub(/\.$/, "", $1)
+            print "@@||" $1 "^|"
+          }
+          ' Filters/tmp_Exist_allow_raw.txt | sort -u > Filters/tmp_body_filter_allow.txt
+          
+          # ブロックリストの成功ドメインだけ整形して出力
           awk '{
             sub(/\.$/, "", $1)
             print "||" $1 "^"
           }
-          ' Filters/tmp_Exist_raw.txt | sort > Filters/tmp_body_filter_block.txt
-          # チェック時に除外した許可リストを追記
-          awk '
-          /^@@/ { 
-            print $0
-          }' Filters/tmp_body_filter.txt | sort >> Filters/tmp_body_filter_block.txt
+          ' Filters/tmp_Exist_block_raw.txt | sort -u > Filters/tmp_body_filter_block.txt
 
-          # ソート、重複削除
-          sort -u Filters/tmp_body_filter_block.txt > Filters/tmp_body_filter_Complete.txt
+          # フィルタ合成
+          cat Filters/tmp_body_filter_allow.txt Filters/tmp_body_filter_block.txt | sort -u > Filters/tmp_body_filter_Complete.txt
           
       # ヘッダー部分の作成
       - name: Create Header
