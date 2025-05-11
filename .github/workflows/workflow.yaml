@@ -99,11 +99,6 @@ jobs:
           ' Filters/tmp_before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
           cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
-
-      # 解析用に$badfilterの抽出
-      - name: badgrep
-        run: |
-          grep '\$badfilter' Filters/main_filter.txt | sort -u > Filters/badfilter.txt
           
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
