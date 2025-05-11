@@ -234,29 +234,23 @@ jobs:
           cat Filters/tmp_head_filter.txt Filters/tmp_body_filter_Complete.txt > Filters/main_filter.txt
           rm Filters/tmp*.txt
           
-      # 異常フィルタの検出
-      - name: Bad Filter Search
+      # 完成フィルタから異常フィルタを抽出
+      - name: Bad Filter Check
         run: |
           awk '
           #コメント行を除外
           !/^!/ {
-            # @@||で始まらないフィルタを抽出
+            # @@||もしくは||で始まらないフィルタを抽出
             if ($0 !~ /^@@\|\|/ && $0 !~ /^\|\|/) {
-              # 重複ではないことを確認
-              if (!seen[$0]++) {
-                print
-              }
+              print
             }
-          } ' Filters/main_filter.txt > Filters/bad_filter.txt
+          } ' Filters/main_filter.txt | sort -u > Filters/bad_filter.txt
           
-      # 異常フィルタが空の場合、bad_filter.txtを削除
-      - name: Remove Empty Bad Filter
-        run: |
           # ファイル行数が0の場合、bad_filter.txtを削除
           if [ $(wc -l < Filters/bad_filter.txt) -eq 0 ]; then
             rm Filters/bad_filter.txt
           fi
-
+          
       # フィルタをアップロード
       - name: Upload new filter
         run: |
