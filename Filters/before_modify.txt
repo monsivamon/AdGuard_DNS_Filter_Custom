@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-10T18:40:55.869Z
+! Last modified: 2025-05-11T02:24:27.671Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -46235,6 +46235,8 @@ vkcdnservice.appspot.com^
 ||unwucnt.top^
 ||qpqp05101oki.com^
 ||qcogiellq.com^
+||fbhorutgy.com^
+||hur05110kns.com^
 ||hur05101kns.com^
 ||xklv.cn^
 ||jguhqbe.top^
@@ -55072,10 +55074,6 @@ thepiratebay3.com^
 ||pekanbaru.one^
 ! https://github.com/uBlockOrigin/uAssets/issues/26010
 ||securevault.top^
-! https://github.com/uBlockOrigin/uAssets/issues/25519
-! https://github.com/uBlockOrigin/uAssets/issues/26052
-! https://github.com/uBlockOrigin/uAssets/issues/27270
-||orcaslicer.
 ||orca-slicer.
 ||orcaslicers.com^
 ||theorcaslicer.com^
