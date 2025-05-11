@@ -101,6 +101,11 @@ jobs:
           ' Filters/tmp_before_bad_filter.txt | sort > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
           cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
+
+      # 解析用に$badfilterの抽出
+      - name: badgrep
+        run: |
+          grep '\$badfilter' Filters/main_filter.txt | sort -u > Filters/badfilter.txt
           
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
@@ -108,6 +113,11 @@ jobs:
           awk '
           #コメント行,正規表現が絡む行を除外し、フィルタ形式の行のみ対象
           !/^!/ && !/\// && (/^\|\|/ || /^@@/) {
+            # $badfilterを@@に変換
+            if ($0 ~ /\$badfilter/) {
+              sub(/\$badfilter/, "", $0)
+              sub(/^\|\|/, "@@||", $0)
+            }
             # @@|を@@||に置換
             if ($0 ~ /^@@\|[^|]/) {
               sub(/^@@\|/, "@@||", $0)
@@ -124,6 +134,7 @@ jobs:
             if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
               sub(/\$.*$/, "", $0)
             }
+            # @@行の最終処理
             if (/^@@/) {
               # 行末の | がある場合削除
               sub(/\|+$/, "", $0)
@@ -132,6 +143,7 @@ jobs:
                 $0 = $0 "|"
               }
             }
+            # ||行の最終処理
             if (!/^@@/) {
               # 行末の ^ がある場合削除
               sub(/\^+$/, "", $0)
@@ -147,7 +159,7 @@ jobs:
                 print
               }
             }
-          } ' Filters/main_filter.txt | sort > Filters/tmp_body_filter.txt
+          } ' Filters/main_filter.txt | sort -u > Filters/tmp_body_filter.txt
 
       # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
