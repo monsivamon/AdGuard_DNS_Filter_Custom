@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-14T06:51:48.411Z
+! Last modified: 2025-05-14T13:37:58.077Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -22,6 +22,8 @@
 !
 !
 !
+||aucdn.net^
+||s.dt6ycu.com^
 ||zipup.click^
 ||cpmemes.cfd^
 ||fileescd.cfd^
@@ -41053,8 +41055,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 13 May 2025 16:33 UTC+7
-! Version: 2505131633
+! Last modified: 14 May 2025 16:18 UTC+7
+! Version: 2505141618
 ! Blocked: 875 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -41895,8 +41897,8 @@ vkcdnservice.appspot.com^
 !
 ! Title: hostsVN Threat
 ! Description: Only include threat domains
-! Last modified: 13 May 2025 09:24 UTC+7
-! Version: 2505130924
+! Last modified: 14 May 2025 16:18 UTC+7
+! Version: 2505141618
 ! Blocked: 4.750 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
@@ -46530,6 +46532,7 @@ vkcdnservice.appspot.com^
 ||akoo0514uis.com^
 ||bkqa.cn^
 ||jnjslk.top^
+||ymgranque.com^
 ||upufkg.icu^
 ||bycrovalb.com^
 ||hur05130kns.com^
