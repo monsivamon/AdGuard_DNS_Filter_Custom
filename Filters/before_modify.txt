@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-14T18:48:01.120Z
+! Last modified: 2025-05-15T03:29:36.754Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -46534,6 +46534,14 @@ vkcdnservice.appspot.com^
 ||51tongji.trafficmanager.net^
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
+||qimsgi.icu^
+||akoo0515uis.com^
+||wyvw.cn^
+||niu05150jd.top^
+||fhl05150ps.com^
+||opkrerkaidf.com^
+||nalyxg.top^
+||niu05151jd.top^
 ||ssqxuy.icu^
 ||gmendanln.com^
 ||akoo0514uis.com^
@@ -52402,6 +52410,7 @@ thepiratebay3.com^
 ||alwix.com^
 ||pixoff.one^
 ||adelaidavizcaino.com^
+||wild-match-network.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/24602
 ! https://www.virustotal.com/gui/url/ce2b833adda2f862d77398203bbe33ea331097ba2a803d1a763492d2ac0d5a60
 ! https://safeweb.norton.com/report/show?url=discordvip.createsocialcard.top
