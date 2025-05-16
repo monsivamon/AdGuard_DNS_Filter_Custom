@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-15T18:50:44.071Z
+! Last modified: 2025-05-16T03:31:50.480Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -38552,6 +38552,7 @@ vkcdnservice.appspot.com^
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||statbest.in^
 ||movturs.click^
 ||dontmakethem.club^
 ||subaxe.xyz^
@@ -46625,6 +46626,13 @@ vkcdnservice.appspot.com^
 ||51tongji.trafficmanager.net^
 ||67.21.92.*.gif
 ||cnzz.trafficmanager.net^
+||wliksa.icu^
+||akoo0516uis.com^
+||niu05160jd.top^
+||fhl05160ps.com^
+||iptrauaktnua.com^
+||pznnvt.top^
+||kfvq.cn^
 ||qimsgi.icu^
 ||akoo0515uis.com^
 ||wyvw.cn^
@@ -56065,6 +56073,7 @@ thepiratebay3.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/28207
 ! https://github.com/uBlockOrigin/uAssets/issues/28211
 ||users.atw.hu^$badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/1knb7tw/elconfidencialcom_breakage_issue/
 !
 ! Source name: AdGuard DNS filter Unbreaker for Japanese
 ! Source: Filters/dns-unbreak.txt
