@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/maste
 
 ## 🔄 Update Policy
 
-- This filter is automatically updated every 6 hours using GitHub Actions.
+- This filter is automatically updated every 8 hours using GitHub Actions.
 - Each update pulls the latest source rules, verifies domains using massdns, and rebuilds the list.
 - Manual edits or updates may also be made at any time during testing or maintenance.
 
