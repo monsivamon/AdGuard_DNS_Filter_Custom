@@ -1,10 +1,10 @@
 name: Build Filter & modify
 
 on:
-  push:
-  # 6Hごとに自動実行
+  push: {}
   schedule:
-    - cron: '0 */6 * * *'
+    # 8H事に自動実行
+    - cron: '3 1,9,17 * * *'
 
   # 手動実行を許可
   workflow_dispatch:
@@ -196,13 +196,28 @@ jobs:
             print "@@||" $1 "^|"
           }
           ' Filters/tmp_Exist_allow_raw.txt | sort -u > Filters/tmp_body_filter_allow.txt
-          
-          # ブロックリストの成功ドメインだけ整形して出力
-          awk '{
-            sub(/\.$/, "", $1)
-            print "||" $1 "^"
-          }
-          ' Filters/tmp_Exist_block_raw.txt | sort -u > Filters/tmp_body_filter_block.txt
+
+          # 許可リストとブロックリストを比較し、許可リストに記載ある行をブロックリストから除外
+          awk '
+            # 1ファイル目の処理（FNR==NR：最初のファイルにだけ適用される）
+            FNR==NR {
+            # 行末の「.」を削除して通常のドメイン形式に整形
+              sub(/\.$/, "", $1)
+              # 仮想配列に格納
+              allow[$1] = 1
+              next
+            }
+
+            # 2ファイル目の処理
+            {
+              # 同様に整形
+              sub(/\.$/, "", $1)
+              # 仮想配列に含まれていない（≠許可リスト）場合のみ出力
+              if (!($1 in allow)) {
+                print "||" $1 "^"
+              }
+            }
+            ' Filters/tmp_Exist_allow_raw.txt Filters/tmp_Exist_block_raw.txt | sort -u > Filters/tmp_body_filter_block.txt
 
           # フィルタ合成
           cat Filters/tmp_body_filter_allow.txt Filters/tmp_body_filter_block.txt | sort -u > Filters/tmp_body_filter_Complete.txt
