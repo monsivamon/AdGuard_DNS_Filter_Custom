@@ -37,8 +37,6 @@ jobs:
       # フィルタビルド実行
       - name: Build Filter
         run: |
-          # 依存関係を最新にアップグレード
-          yarn upgrade
           # 依存関係をインストール
           yarn install
           # コマンドコケたらスクリプト停止
