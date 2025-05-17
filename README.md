@@ -18,7 +18,6 @@ Please note that I am still learning GitHub and filter creation, so this reposit
 - The filter list is initially generated using the official AdGuard DNS filter compiler.
 - After generation, shell scripts are used to clean up and customize the list.
 - Customizations include:
-  - Removing tracking, analytics, and other categories.
   - Filtering out non-existent domains using `massdns`.
 
 Please note: These modifications are unofficial and may reduce the effectiveness of the original filters.
