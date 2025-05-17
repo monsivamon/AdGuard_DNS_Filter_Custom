@@ -288,7 +288,7 @@
     {
       "name": "Persian Blocker Hosts",
       "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
-      "type": "adblock",
+      "type": "hosts",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "Validate"]
     },
