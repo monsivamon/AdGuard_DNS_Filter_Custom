@@ -343,7 +343,19 @@
     },
     {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
-      "source": "Filters/dns-unbreak.txt",
+      "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt",
+      "type": "adblock",
+      "transformations": ["Validate"]
+    },
+    {
+      "name": "Additional rules",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
+      "type": "adblock",
+      "transformations": ["Validate"]
+    },
+    {
+      "name": "Exception rules",
+      "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt",
       "type": "adblock",
       "transformations": ["Validate"]
     },
@@ -352,18 +364,6 @@
       "source": "Filters/Unique_List.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["Validate"]
-    },
-    {
-      "name": "Additional rules",
-      "source": "Filters/rules.txt",
-      "type": "adblock",
-      "transformations": ["Validate"]
-    },
-    {
-      "name": "Exception rules",
-      "source": "Filters/exceptions.txt",
-      "type": "adblock",
       "transformations": ["Validate"]
     }
   ],
