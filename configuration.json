@@ -9,6 +9,7 @@
       "source": "https://filters.adtidy.org/windows/filters/2.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
@@ -16,6 +17,7 @@
       "source": "https://easylist.to/easylist/easylist.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
@@ -23,21 +25,64 @@
       "source": "https://filters.adtidy.org/android/filters/11.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
-      "name": "AdGuard Spanish/Portuguese filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers_firstparty.txt",
+      "name": "AdGuard Spanish/Portuguese filter",
+      "source": "https://filters.adtidy.org/windows/filters/9.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
-      "name": "AdGuard Spanish/Portuguese filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpanishFilter/sections/adservers.txt",
+      "name": "AdGuard Russian filter",
+      "source": "https://filters.adtidy.org/windows/filters/1.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
+    },
+    {
+      "name": "AdGuard Ukrainian filter",
+      "source": "https://filters.adtidy.org/windows/filters/23.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
+    },
+    {
+      "name": "AdGuard French filter",
+      "source": "https://filters.adtidy.org/windows/filters/16.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
+    },
+    {
+      "name": "AdGuard Japanese filter",
+      "source": "https://filters.adtidy.org/windows/filters/7.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
+    },
+    {
+      "name": "AdGuard Chinese filter",
+      "source": "https://filters.adtidy.org/windows/filters/224.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
+    },
+    {
+      "name": "AdGuard Dutch filter",
+      "source": "https://filters.adtidy.org/windows/filters/8.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
       "name": "AdGuard common Cyrillic filters ad servers",
@@ -49,20 +94,6 @@
     {
       "name": "AdGuard common Cyrillic filters ad servers first-party",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Russian filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/RussianFilter/sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Ukrainian filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/UkrainianFilter/sections/adservers_firstparty.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
@@ -103,64 +134,8 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "AdGuard French filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard French filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/FrenchFilter/sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Japanese filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Japanese filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
       "name": "AdGuard German filter ad servers",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Chinese filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Chinese filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/ChineseFilter/sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Dutch filter ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Dutch filter ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/DutchFilter/sections/adservers_firstparty.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
