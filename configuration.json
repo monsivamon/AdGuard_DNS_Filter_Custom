@@ -156,41 +156,6 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "AdGuard common Cyrillic filters ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard common Cyrillic filters ad servers first-party",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers_firstparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Belarusian language ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Belarusian/sections/filter.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Bulgarian language ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Bulgarian/sections/filter.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdGuard Kazakh language ad servers",
-      "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Kazakh/sections/filter.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
       "name": "Persian Blocker Hosts",
       "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
       "type": "hosts",
@@ -198,23 +163,8 @@
       "transformations": ["RemoveComments", "RemoveModifiers", "RemoveEmptyLines", "ValidateAllowIp"]
     },
     {
-      "name": "AdGuard Japanese filter Plus",
-      "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
       "name": "uBlock filters",
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "uBlock filters – Mobile",
-      "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-mobile.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
@@ -234,10 +184,11 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "Brave Unbreak",
-      "source": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt",
+      "name": "AdGuard Japanese filter Plus",
+      "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
