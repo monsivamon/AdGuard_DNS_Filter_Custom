@@ -202,35 +202,36 @@
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "uBlock filters",
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "uBlock filters – Mobile",
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-mobile.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "uBlock₀ filters – Badware risks",
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "uBlock filters – Unbreak",
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "Brave Unbreak",
