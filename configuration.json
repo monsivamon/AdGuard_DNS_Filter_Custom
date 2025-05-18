@@ -108,6 +108,46 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
+      "name": "ABPindo ad servers",
+      "source": "https://filters.adtidy.org/windows/filters/102.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
+      "name": "AdblockID adservers",
+      "source": "https://filters.adtidy.org/windows/filters/120.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
+      "name": "EasyList Italy",
+      "source": "https://filters.adtidy.org/windows/filters/109.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
+      "name": "EasyList Hebrew ad servers",
+      "source": "https://filters.adtidy.org/windows/filters/108.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
+      "name": "Frellwits Swedish Filter",
+      "source": "https://filters.adtidy.org/windows/filters/243.txt",
+      "type": "hosts",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
       "name": "AdGuard common Cyrillic filters ad servers",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/common-sections/adservers.txt",
       "type": "adblock",
@@ -138,48 +178,6 @@
     {
       "name": "AdGuard Kazakh language ad servers",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Kazakh/sections/filter.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "EasyList Hebrew ad servers",
-      "source": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/adguard_hosts.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp", "Compress"]
-    },
-    {
-      "name": "Frellwits Swedish Filter",
-      "source": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
-      "type": "hosts",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp", "Compress"]
-    },
-    {
-      "name": "EasyList Italy ad servers",
-      "source": "https://raw.githubusercontent.com/easylist/easylistitaly/master/easylistitaly/easylistitaly_adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "ABPindo ad servers",
-      "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "ABPindo ad servers third-party",
-      "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/thirdparty.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "AdblockID adservers",
-      "source": "https://raw.githubusercontent.com/realodix/AdBlockID/master/src/adservers.adfl",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
