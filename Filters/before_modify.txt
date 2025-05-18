@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2025-05-18T08:54:20.407Z
+! Last modified: 2025-05-18T13:11:06.929Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -33948,11 +33948,69 @@
 ! Source name: EasyList
 ! Source: https://easylist.to/easylist/easylist.txt
 !
+||38hgc.com^
+||absinthvernon.top^
+||acrooktait.top^
+||anvilgruelmarrying.com^
+||assured-tool.com^
+||boxcaruveous.top^
+||britishfinestarrangement.com^
+||calcatesituate.top^
+||clicksyncflow.com^
+||clogvocal.com^
+||containingstripesadmonish.com^
+||copaiyepegtops.com^
+||d5xsfddfzb99g.cloudfront.net^
+||determinedsock.com^
+||drierackle.shop^
+||dwwxnmpkjrgohll.com^
+||elytraledger.shop^
+||endivestlr.shop^
+||excepededonef.org^
+||fuwin.sbs^
 ||gaming001.site
 ||get-me-wow.
+||hegemonjujus.shop^
+||herdersfiches.com^
+||hkprsfmyx.xyz^
+||ignitorkneecap.shop^
+||intailmanes.shop^
+||itchymess.pro^
+||izhukvhcxfcon.vip^
+||jbafulwrb.com^
+||jiuwert.online^
+||jqskyncpqpqtb.site^
+||jybaekaqbmvyw.top^
+||lovinghosethus.com^
+||morrabranta.shop^
 ||noopapnoeic.digital
+||offergate-software11.com^
+||owbvbqeaucwvg.global^
+||passionate-employee.pro^
+||plumpobstructionmortal.com^
+||poloimicrohm.top^
+||qfqdbkxmovpli.xyz^
+||qkyahnawba.com^
+||radxabsah.com^
+||relevefr.top^
+||religionhaltnon.com^
+||rinryesopertyva.org^
+||ritelyrampire.shop^
+||rittersunnier.shop^
+||ruralhistorian.com^
+||secretarypleasure.xyz^
+||sizzling-stop.pro^
+||soduniversal.com^
+||suturedinkos.shop^
+||tahrsli.com^
+||turblemohairs.shop^
+||vagancypearl.com^
+||voguelift.biz^
 ||wenoolgo.icu
+||wylmzwklkljav.top^
+||zasestoshe.com^
 ||adservice.google.
+||23.109.170.19^
 ||admothreewallent.com
 ||mimosaavior.top
 ||proffering.xyz
@@ -36497,7 +36555,6 @@
 ||brililantsdates.net^
 ||brilliantsdates.com^
 ||bringsruinedstab.com^
-||britishfinestarrangement.com^
 ||brlliiantsdates.com^
 ||brllllantsdates.net^
 ||brmwmmnleeqma.top^
@@ -54604,16 +54661,7 @@ analytics-*.aasaam.com
 ! Source name: AdGuard Japanese filter Plus
 ! Source: https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt
 !
-! ---------- Ads specific: Others ----------
-! ---------- Ads specific (adult): too few visitors ----------
 ||ads.zippal.com^
-/^https?:\/\/[a-z]{8,15}\.(?:com|xyz)\/$/$xmlhttprequest,third-party,method=head,header=access-control-expose-headers:/X-DirectionPartner-Id/
-! https://github.com/AdguardTeam/AdguardFilters/issues/143447#issuecomment-1438352020
-61.121.245.*
-! ---------- Scam & Redirect ----------
-! ---------- Fix unnecessary blocking ----------
-! https://github.com/uBlockOrigin/uAssets/pull/10149
-! Entries here must be checked case by case
 ||mopub.com^$badfilter
 ||outbrain.com^$badfilter
 ||taboola.com^$badfilter
@@ -55262,8 +55310,6 @@ analytics-*.aasaam.com
 ||tplinkextender.net^
 ! https://github.com/uBlockOrigin/uAssets/issues/4862#issuecomment-486941006
 ||upload4earn.org^
-! https://github.com/uBlockOrigin/uAssets/issues/5805
-||newsfile.club^
 ! https://forums.lanik.us/viewtopic.php?f=62&p=149407#p149406
 ! https://arstechnica.com/information-technology/2019/08/google-play-app-with-100-million-downloads-executed-secret-payloads/
 ||abcdserver.com^
@@ -55314,11 +55360,9 @@ thepiratebay3.com^
 ||streamssitesearch.com^
 ||bingstyle.com^
 ||redirekted.com^
-||blockskipad.com^
 ||adpopblocker.com^
 ||trafficjunction.com^
 ||arclk.net^
-||1111sale.us^
 ||n06.biz^
 ||um-bredirect.com^
 ||glbltraffic.com^
@@ -55333,7 +55377,6 @@ thepiratebay3.com^
 ||elevisions.biz^
 ||harzfriends.de^
 ||hsrvu.com^
-||adtr1.com^
 ||datingapp.live^
 ||adating.link^
 ||bnewsblite.me^
@@ -55418,6 +55461,7 @@ thepiratebay3.com^
 ||valrogrowth.com^
 ||love88.club^
 ||familysexsimulators.io^
+||23.109.87.170^
 ||grakorte.com^
 ||smart-redirecting.com^
 ||elooksjustli.one^
@@ -55483,7 +55527,6 @@ thepiratebay3.com^
 ||shinqueen.com^
 ||altairaquilae.com^
 ||himasearch.shop^
-||reddriko.site^
 ||trripwire.com^
 ||meet-flirts.com^
 ||mltrck.com^
@@ -55492,12 +55535,11 @@ thepiratebay3.com^
 ||pecuniatrck.com^
 ||smart-tds.com^
 ||nicking-unding.com^
+||164.132.74.156^
 ||icetraff.com^
-||girlsml.com^
 ||pussycat1.online^
 ||guardlnkcaptcha.com^
 ||landings.namapper.com^
-||bd4jn7dk9u.com^
 ||throb.fun^
 ||throww.fun^
 ||dattter.shop^
@@ -55506,8 +55548,6 @@ thepiratebay3.com^
 ||mialifestyle.com^
 ||miafann.online^
 ||trckhoul.com^
-||1win-17545.com^
-||onlysexygirl.com^
 ||binomasia.com^
 ||nyeeiye2.click^
 ||trckotang.com^
@@ -55525,14 +55565,12 @@ thepiratebay3.com^
 ||painfont.cyou^
 ||lamilagq.com^
 ||lurk-online.com^
-||foxymilfspo.com^
 ||kissablepopsyv.click^
 ||matcher.one^
 ||onlyhotdgirl.com^
 ||playfulmilfs.com^
 ||wooqi.win^
 ||chemiclk.com^
-||techluki.com^
 ||lovestrive.org^
 ||vcnbbtrack.com^
 ||zodertracker.com^
@@ -55554,10 +55592,8 @@ thepiratebay3.com^
 ||b2base252.top^
 ||smartgethub.com^
 ||pin673.cyou^
-||betcampeao.com^
 ||alwix.com^
 ||pixoff.one^
-||adelaidavizcaino.com^
 ||wild-match-network.com^
 ||girlslovesoulmate.com^
 ||meetandlovenow.com^
@@ -55576,6 +55612,8 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/8cf51404736d06441fdd527108bfb65cf97bd4801698e4a3ff91cfc605baded9
 ||c0nt4ct-me.pages.dev^
 ! https://github.com/uBlockOrigin/uAssets/issues/8378
+! https://github.com/uBlockOrigin/uAssets/issues/8466
+||91.241.60.117^
 ! https://github.com/uBlockOrigin/uAssets/issues/8630
 ||mfilecloud.com^
 ||xsharenode.com^
@@ -55586,9 +55624,7 @@ thepiratebay3.com^
 ||clc-link.me^
 ||gamefree.vip^
 ||gocrazy.gg^
-||murhack.com^
 ||mi-hack.com^
-||wow-site.site^
 ||cheatworld.site^
 ||fusionhacks.pro^
 ||games-blacksoft.com^
@@ -55612,12 +55648,10 @@ thepiratebay3.com^
 ||cloud-pack.org^
 ||cloud-deployments.org^
 ||tech-cloud.org^
-||cloud-access.org^
 ! fake software updaters /redirections
 ||atnpx.com^
 ||best-winplace.life^
 ||checkup08.biz^
-||mfroute.com^
 ||webpushcloud.top^
 ||workerz1.com^
 ||koitushinterneinnehmen.s3.eu-central-1.amazonaws.com^
@@ -55677,7 +55711,6 @@ thepiratebay3.com^
 ||displayoptoffers.com^
 ||qualityhealth.com^
 ||consumerproductsusa.com^
-||get-cracked.com^
 ! https://www.urbeef.de/windows-10-pro-aktivieren-ohne-key/ hacked site
 ||onlinepromotionsusa.com^
 ||qsshc.xyz^
@@ -55694,7 +55727,6 @@ thepiratebay3.com^
 ||studiogiamberardino.it^
 ||eniedu.com^
 ||gamletaarnhuset.no^
-||reepratic.com^
 ! phishing /scam /malware
 ! https://www.virustotal.com/gui/collection/4b1e307754c94e87e17a0c14102b873f17c5d2001f4afa2e58c3a6b98f391710
 ||dogehype.com^
@@ -55748,7 +55780,6 @@ thepiratebay3.com^
 ! https://github.com/blocklistproject/Lists/issues/933
 ||vgfrrtc.click^
 ||ovgtt9j87tgh.world^
-||wisoper.click^
 ||swiftflare.click^
 ||rarz-uploader.com^
 ||uploader-rars.com^
@@ -55757,7 +55788,6 @@ thepiratebay3.com^
 ||lokasjc.cfd^
 ||theipfire.co^
 ||securecracked.info^
-||sushilprajapati.com^
 ||aneurismuox.click^
 ||afiletoget.click^
 ||filexstorage.site^
@@ -55773,12 +55803,9 @@ thepiratebay3.com^
 ||theannoyingsite.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/5605#issuecomment-1060013521
 ||smartklick.biz^
-! https://github.com/uBlockOrigin/uAssets/issues/12117
-||zoosk.online^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/115960
 ! https://www.virustotal.com/gui/url/6a4daf9dfa58864522ae7972ab042cf4bab17a48321b96d1952bd384210adcd2
 ! https://transparencyreport.google.com/safe-browsing/search?url=https:%2F%2Fonpharmvermen.com%2F
-||onpharmvermen.com^
 ||sale24-pills.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/12934
 ! https://malwaretips.com/blogs/remove-hdvideosnet-com/
@@ -55797,8 +55824,6 @@ thepiratebay3.com^
 ||haxsoft.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/15368
 ||zenlytrade.com^
-! https://twitter.com/chaberi/status/1591139355628044288
-||luckypapa.top^
 ! https://twitter.com/harugasumi/status/1591652561182150656
 ||nbsfmradio.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/15777
@@ -55812,14 +55837,11 @@ thepiratebay3.com^
 ||melodydownloader.com^
 ||flymylife.info^
 ||neptunclicks.com^
-||arakusus.com^
 ||imgfil.com^
 ||urlcod.com^
 ||tiurll.com^
 ||urlca.com^
 ||lomogd.com^
-||voutew.com^
-||abukss.com^
 ||konmm.com^
 ||xiuty.com^
 ||oyndr.com^
@@ -55869,8 +55891,6 @@ thepiratebay3.com^
 ! https://twitter.com/ozuma5119/status/1638194144781930496
 ||blisterlngdate.com^
 ||fapello.xyz^
-! https://twitter.com/harugasumi/status/1640690554156507139
-||hohshops.com^
 ! https://twitter.com/masaomi346/status/1649260359763775488
 ||bavaria-cup.ru^
 ! https://twitter.com/8614miyauchi/status/1654845878933557248
@@ -55894,8 +55914,6 @@ thepiratebay3.com^
 ||cordialhoist.top^
 ! https://x.com/masa_katahage/status/1791325878129234223
 ||luckvote.top^
-! https://x.com/harugasumi/status/1792344876081889322
-||kuronekoyamato-jp.com^
 ! https://x.com/NaomiSuzuki_/status/1808400909782995443
 ||npajp.icu^
 ! https://x.com/_3xsun_/status/1809119839036006478
@@ -55934,8 +55952,6 @@ thepiratebay3.com^
 ||lcskincarecenter.com^
 ! https://x.com/masaomi346/status/1886438624067223795
 ||clasm.live^
-! https://x.com/AP_Zenmashi/status/1900801671384678793
-||fklngauc.com^
 ! https://x.com/harugasumi/status/1921004076243853818
 ||trustwallct.cc^
 ! scam sites
@@ -55962,7 +55978,6 @@ thepiratebay3.com^
 ||bestxchat.net^
 ||car-na.jp^
 ||cbcdnkyyxubdsrmg.com^
-||cdypsqghdgrw.com^
 ||ch3l.net^
 ||chl3.net^
 ||date-app.net^
@@ -56029,7 +56044,6 @@ thepiratebay3.com^
 ||love-letter.info^
 ||lovemelo.jp^
 ||luuce.jp^
-||lzogdlorkfssui.net^
 ||machi-match.info^
 ||madnna.jp^
 ||madnna.net^
@@ -56050,7 +56064,6 @@ thepiratebay3.com^
 ||one-chan-love.love^
 ||onega.jp^
 ||onegaga.jp^
-||osubstancenasubstitute.com^
 ||otona-nona.biz^
 ||otonanona.jp^
 ||otonatime.net^
@@ -56100,7 +56113,6 @@ thepiratebay3.com^
 ||jivo-ce.jp^
 ||whimsicalrain.com^
 ||2226wurpatw.tokyo^
-||app.plum375ap.com^
 ||asiansgetnaughty.com^
 ||blackstunners.com^
 ||budhump.com^
@@ -56115,8 +56127,6 @@ thepiratebay3.com^
 ||secure-57v.pages.dev^
 ||slb3cr9dx9.jp^
 ||sukui05.com^
-||4miracle4.jp^
-||amari-ama.com^
 ||bambam-bi.com^
 ||chocochipu-o.com^
 ||chumsline.jp^
@@ -56136,7 +56146,6 @@ thepiratebay3.com^
 ||pa-ir.net^
 ||pdss3a1r.jp^
 ||pfunding-01.com^
-||pororin081.com^
 ||rainbow-fortune.biz^
 ||rainbow-fortune.com^
 ||rainbow-fortune.jp^
@@ -56173,7 +56182,6 @@ thepiratebay3.com^
 ||fukura210317.com^
 ||future-marvellous.com^
 ||gogonews.club^
-||happiness-sign.com^
 ||heart-uranai.com^
 ||iflirts.com^
 ||im-excellent.com^
@@ -56184,7 +56192,6 @@ thepiratebay3.com^
 ||karinaroom.wixsite.com^
 ||l-chat.jp^
 ||login-chat.net^
-||lovekatsu2277.com^
 ||mintiia.com^
 ||mio-love2.wixsite.com^
 ||moon-1light.com^
@@ -56199,7 +56206,6 @@ thepiratebay3.com^
 ||pairpure.jp.net^
 ||photo-gallery-picture2398.com^
 ||poke10ve.com^
-||pocketlove.jp^
 ||ppo.re9t-hmd0.com^
 ||relife0001.com^
 ||relifemail555.com^
@@ -56234,10 +56240,8 @@ thepiratebay3.com^
 ||xxxmake.com^
 ||1litteno.home-walil1.jp^
 ||1st-mail.jp^
-||2507u35ia6mk1.com^
 ||2qpk150djf0ri.jp^
 ||56fv2z8bfv9.com^
-||5jd2tj2idrool.com^
 ||777.funnyy.net^
 ||ai-ne.net^
 ||ai-tas.com^
@@ -56251,7 +56255,6 @@ thepiratebay3.com^
 ||c.onnect.jp^
 ||c930lhsivns1b.jp^
 ||chat111room-09.com^
-||connect-jumbo.com^
 ||cosdate.jp^
 ||cxbvnmyeruw.com^
 ||d-hiyori.com^
@@ -56261,14 +56264,12 @@ thepiratebay3.com^
 ||dinosaur-crown.com^
 ||dreamatch.jp^
 ||edge-campaign-japan.com^
-||en5wr67sag3.com^
 ||equation-of-happiness.com^
 ||eromatchi.jp^
 ||fanta-stic.net^
 ||flirt.com^
 ||fx-protrade.net^
 ||ggcake.tindersplus.net^
-||glitter-girls.net^
 ||gokuhuku.jp^
 ||gyakusimei.com^
 ||h-spe.net^
@@ -56276,7 +56277,6 @@ thepiratebay3.com^
 ||happy-egg.net^
 ||happylife-partner.com^
 ||heartmatch.jp^
-||home-22-time.com^
 ||i5h56ozira7l6.jp^
 ||jdoasjfojuhod.com^
 ||kaiunmegami.jp^
@@ -56321,7 +56321,6 @@ thepiratebay3.com^
 ||stowers-service.com^
 ||sxtown.jp^
 ||syakoba.com^
-||tennshinomitibiki01.com^
 ||unafei-kokusai.com^
 ||upforit.com^
 ||vhills.net^
@@ -56333,7 +56332,6 @@ thepiratebay3.com^
 ||xn--n8jwkyc7fw52nfvd.jp^
 ||xn--z9j635l1gs.jp^
 ||xn--z9jzga6u1506a.jp^
-||xyg.application-sns.com^
 ||you4love.jp^
 ||zmaka.net^
 ||0281.jp^
@@ -56363,7 +56361,6 @@ thepiratebay3.com^
 ||c-y.jp^
 ||celcol.jp^
 ||celebri.jp^
-||choucreme.com^
 ||chy.jp^
 ||cjok.net^
 ||crostol.com^
@@ -56467,7 +56464,6 @@ thepiratebay3.com^
 ||00ebjdbagyqwt.club^
 ||0didjsgheje.club^
 ||5050.fm^
-||6xtpke4.com^
 ||adoptmeantranslate.com^
 ||after-7.net^
 ||aikatuz.jp^
@@ -56486,26 +56482,14 @@ thepiratebay3.com^
 ||cocoro-liberty.com^
 ||d-sr.net^
 ||d-will.net^
-||daylighteel.com^
-||divination-truth.com^
 ||during-the-holiday.com^
-||every-au.com^
 ||every-bisque.com^
 ||every-blanched.com^
 ||every-cute.com^
 ||every-dark.com^
-||every-dodo.com^
 ||every-enjoy.com^
-||every-isb.com^
-||every-line1.com^
-||every-line2.com^
-||every-nejp.com^
-||every-pcpc.com^
 ||every-salmon.com^
 ||every-super.com^
-||every-toroku1.com^
-||every-toroku2.com^
-||every-toroku3.com^
 ||experiencedlawsuit.com^
 ||febdd.info^
 ||fortune-yakata.com^
@@ -56530,7 +56514,6 @@ thepiratebay3.com^
 ||poison-idea.com^
 ||polaris-775.com^
 ||pollutionsatisfyadopt.com^
-||prophecy-of-fate.com^
 ||rosaca-nina.net^
 ||s-space.jp^
 ||spring-sealion.com^
@@ -56557,7 +56540,6 @@ thepiratebay3.com^
 ||dwoetbarcrooplsloiwh.com^
 ||gargar.making-garden.com^
 ||mor.chance-10dayful.com^
-||s.meru.jp^
 ||ytjon-d2s1ah.com^
 ||lets-tip315.com^
 ||loveri.net^
@@ -56590,7 +56572,6 @@ thepiratebay3.com^
 ||loveru.jp^
 ||morale-yellow.com^
 ||t1amo.jp^
-||uggstore.online^
 ||fair.alivio-platform.com^
 ||pair-seat.net^
 ||pairseat.net^
@@ -56625,7 +56606,6 @@ thepiratebay3.com^
 ||pastelism02.jpn.com^
 ||pineapplecake-yummy.com^
 ||ssq.spofbd99.com^
-||tokuyama-kaiun.com^
 ||vy8monlf1t.com^
 ||wifekai.net^
 ||zerocha.jp^
@@ -56634,7 +56614,6 @@ thepiratebay3.com^
 ||ii.iriiss.com^
 ||let.attract1v3.com^
 ||lmoox5.net^
-||paradise.shine-site.com^
 ||utg.ri64-pdmv.com^
 ||getmatch.jp^
 ||hn-mizuki.com^
@@ -56658,16 +56637,6 @@ thepiratebay3.com^
 ||kokocha.site^
 ||hjytu75fro0.jp^
 ||secssnetplan.jp^
-||emyqsvk7zw.com^
-||evqhubkfh8.com^
-||jinuja5zgm.com^
-||ljqq93npbr.com^
-||n9zxgxpdu6.com^
-||pnw0kbzjtt.com^
-||sdlbtwi3lr.com^
-||tvngrq6yat.com^
-||vjybuykaxz4.com^
-||y2sysagetf.com^
 ||san-dast.net^
 ||dedestin0.jp^
 ||legamee.jp^
@@ -56692,7 +56661,6 @@ thepiratebay3.com^
 ||gold-line.online^
 ||cloudmax.jp^
 ||mamakatu42.blogspot.com^
-||princess2022.com^
 ||vivian.jp.net^
 ||cha-nce.net^
 ||mirusiru.online^
@@ -56738,7 +56706,6 @@ thepiratebay3.com^
 ||jukukoi.jp^
 ||jukukoi.me^
 ||buono2023-web.com^
-||michi-fortune.jp^
 ||miemashita.jp^
 ||lovely-lovely.com^
 ||shareno1wish.net^
@@ -56841,7 +56808,6 @@ thepiratebay3.com^
 ||pktbuu.morau.top^
 ||qxb0v.com^
 ||w0o.eu^
-||zj5c3.com^
 ||ilovu.store^
 ||iris-making.com^
 ||lm-mousey-happy.com^
@@ -56851,7 +56817,6 @@ thepiratebay3.com^
 ||nokiseitjnemnew.jp^
 ||vi.violleet.com^
 ||gg.garrnnet.com^
-||super-grander.jp^
 ||fl.floriittee.com^
 ||ll.liberrttyy.com^
 ||6kk2a4t.com^
@@ -56871,7 +56836,6 @@ thepiratebay3.com^
 ||side-joblp.com^
 ||71l0b.com^
 ||f8dt6.com^
-||mphb0.com^
 ||e-chat1.com^
 ||fc67x.com^
 ||cd7z7b.com^
@@ -56895,35 +56859,11 @@ thepiratebay3.com^
 ||ezg-iy.com^
 ||hjr-wq.com^
 ||olt-nw.com^
-||abrhsuoamrnrx.com^
-||agqycbadbofog.com^
-||awagbbxlyqoys.com^
-||blfeiywbthjom.com^
-||brwasnlipggqq.com^
-||bvwozybuqztvg.com^
-||efljiccdztabg.com^
-||fbgajrlmjiotb.com^
-||hneeeixuyivwg.com^
-||hrzonvohdppab.com^
 ||iinfssspoipo.com^
-||jjvkbzdungkop.com^
-||jqbwhhxvcytgh.com^
-||jvuihhlzixawx.com^
-||khrbuumwcntfx.com^
-||kmnvwjrbskybh.com^
-||kswrkbdsejqpm.com^
-||lwjrudzmzygol.com^
-||motsrgidyzoaz.com^
-||nlfhtxehjzeti.com^
-||rsgyndxlwfurm.com^
-||sfxmgzhaeeguq.com^
-||zekhauukqrqwx.com^
 ||mugen-online.com^
-||unlock-the-bg2.com^
 ||yl-0-wf.com^
 ||layer-pj.com^
 ||shop22.fishkillbaptistnurseryschool.org^
-||a-labyrinth.com^
 ||du0.jp^
 ||hapinet.net^
 ||kiseki.com^
@@ -56936,8 +56876,6 @@ thepiratebay3.com^
 ||mai1b0x.com^
 ||majiainc.com^
 ||meet-up.jp^
-||torquetrove.com^
-||getm.site^
 ||kuronekoyamzyato.top^
 ||9npze.com^
 ||gsi3t.com^
@@ -56946,7 +56884,6 @@ thepiratebay3.com^
 ||qf6tm5ug.com^
 ||azbzcz.com^
 ||candycandypop.com^
-||fate-15.com^
 ||loveste.cc^
 ||marketingcareer.jp^
 ||showa-klub.com^
@@ -56959,24 +56896,10 @@ thepiratebay3.com^
 ||lum-i0e0r0e.com^
 ||himitumatch.com^
 ||yy4rhgzd.com^
-||fallenscfwqy2pbin0.jp^
-||genetick4zwtf6c8mh5.jp^
-||harmfuleqwrj14xnvdc.jp^
-||marginz03nx1oe.jp^
-||nextb5vzysjcq8d0.jp^
-||outdoorvzk6la39o7r8.jp^
-||political7450163928.jp^
-||reasonable5786mi4n3srxq.jp^
-||supervision6912305847.jp^
-||tender9041257836.jp^
-||veryverythanks1123.jp^
-||brotherorgan.com^
 ||familymusicman.com^
-||motherguitar.com^
 ||swe.sweet-sweet-sweets.com^
 ||colorfulromance.com^
 ||blue-uranai.com^
-||bluemoon-uranai.com^
 ||bm-bluemoon.com^
 ||kin-un2023.com^
 ||kinun-777.com^
@@ -57011,7 +56934,6 @@ thepiratebay3.com^
 ||desk-dictionary.com^
 ||event-experiment.com^
 ||final-future.com^
-||t-uraaka.site^
 ||jap.cookingsboss.com^
 ||jap.cookinggenuine.com^
 ||ai-referee.com^
@@ -57027,14 +56949,12 @@ thepiratebay3.com^
 ||banquet-barbecue.com^
 ||campus-cardigan.com^
 ||desirable-desktop.com^
-||efficient-election.com^
 ||fantasy-federation.com^
 ||only.hearty-community.com^
 ||mithu02s.com^
 ||impoverishedordealscrutinize.com^
 ||hfykmfd1.com^
 ||urgentrecommendationclimate.com^
-||worlddating365.com^
 ||lien-lienam.com^
 ||rune-luna-moon.com^
 ||blue-could.com^
@@ -57073,7 +56993,6 @@ thepiratebay3.com^
 ||yurika-go0415.com^
 ||agoke0333.info^
 ||dgoke0333.info^
-||golsoe033.info^
 ||icpkw0333.info^
 ||sgoke0333.info^
 ||ic0828op.com^
@@ -57316,12 +57235,9 @@ thepiratebay3.com^
 ||eharmonysingle.online^
 ||errorordufhwe.s3.ap-south-1.amazonaws.com^
 ||websafety.online^
-||cnctddot.com^
 ||mct-niger.com^
 ||stb-media.xyz^
-||compass-holding.com^
 ||theweddingmahotsav.com^
-||detailsreceipts.com^
 ||hodllane.com^
 ||165-227-173-120.plesk.page^
 ||pushlandings.b-cdn.net^
@@ -57345,7 +57261,6 @@ thepiratebay3.com^
 ||lianashepard.autos^
 ||nihongirl.online^
 ||technosoft35.ru^
-||cj7tv5fq8p.com^
 ||infinityserve.life^
 ||microchromejapan.b-cdn.net^
 ||watchdjav.online^
@@ -57353,8 +57268,6 @@ thepiratebay3.com^
 ||childernplay.online^
 ||pc1968.onrender.com^
 ||donghocotatan.com^
-! https://twitter.com/genegene1234561/status/1647164176438280192
-||japanonlinebroadcast.live^
 ! https://www.reddit.com/r/uBlockOrigin/comments/12ng4o8/
 ! https://www.virustotal.com/gui/url/fe6b4bc7a258a92a97ad3216c85d159857ccd581df9b31a50a308ca49f967e34
 ! https://www.virustotal.com/gui/url/0d491da362effc08d2b026f32242046d174165e7995abbde6917ef7864a7556c
@@ -57401,8 +57314,6 @@ thepiratebay3.com^
 ! https://safeweb.norton.com/report/show?url=gamefabrique.com
 ! https://www.urlvoid.com/scan/gamefabrique.com/
 ||gamefabrique.com^
-! https://github.com/uBlockOrigin/uAssets/issues/18208
-||hard-configurator.com^
 ! https://www.virustotal.com/gui/domain/mopiez.com
 ||mopiez.com^
 ! https://www.virustotal.com/gui/domain/goglel.com
@@ -57456,7 +57367,6 @@ thepiratebay3.com^
 ||mingvip.com^
 ||t89ll.com^
 ||kbkb.bet^
-||bxtongji.cc^
 ||04tips.com^
 ||urjump.com^
 ||m8u9f3.com^
@@ -57531,9 +57441,6 @@ thepiratebay3.com^
 ||cloudsonicwave.com^
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/fakebat-delivered-via-several-active-malvertising-campaigns
 ! https://www.virustotal.com/gui/url/1429f749760b6d69d16234f394be11fc61f48df2e1956ecc37f556621abad7e7
-||open-project.org^
-||epicgames-store.org^
-||trelconf.com^
 ||trelconf.net^
 ||noitons.net^
 ! https://www.malwarebytes.com/blog/uncategorized/2024/03/tax-scammer-goes-after-small-business-owners-and-self-employed-people
@@ -57599,6 +57506,13 @@ thepiratebay3.com^
 ! https://urldna.io/scan/6810cfa63b7750001041d5a1
 ! https://www.virustotal.com/gui/url/431593176d4b5b9c6869ed9dd1809a08cbdb3f8687437d149719d774b532de77
 ||singtelmyconnect.com^
+! https://www.virustotal.com/gui/url/2fc292fa96412fa0b8dddcafd6f86408b74dc26c12054f302268698ff0335a6f
+||pormota-coop-ee.com^
+! viva sorte - https://vivasorteoficial.com.br/
+||viva-asorte.com^
+||sorteiosbrasil.netlify.app^
+! https://www.virustotal.com/gui/url/e1dafd5e5db700796220c8edd9b3d567655048482efb03209578073b4c891f26
+||noticiarecentesagora.net.klebeerlopees*.meusitehostgator.com.br^
 ! wetransfer
 ||vvetransfer-lo-web-online.glitch.me^
 ! https://urldna.io/scan/6734cdbe32353732f75caf89
@@ -57618,9 +57532,6 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/621f0b0a930a2e4ca9eb366e160f277ed64ae3fb27fc49c10f8b13965406fc8d
 ! https://www.virustotal.com/gui/url/44547259fcb9d9370026d505ab3e008012d70d63cf9974e1525cca0da5d30d9f
 ||paypal*.blogspot.
-! apple
-||buscaapp.com^
-||pal-24x7-support.xyz^
 ||pulseapp-24x7-service.github.io^
 ! https://urldna.io/scan/6744068e8007f7be43de908c
 ! https://www.virustotal.com/gui/url/c2f79189f12bde8e6f32e61a4b5d7bf1948f04c8eab5a8a11df8c546b7bda019
@@ -57648,7 +57559,6 @@ thepiratebay3.com^
 ||cpanel12wh.bkk1.cloud.z.com^
 ! allegro
 ||allegrostore.cc^
-||allegrostu.com^
 ||allegrocolombia.com^
 ||allegrocns.com^
 ||allegro-reinigung.de^
@@ -57662,15 +57572,11 @@ thepiratebay3.com^
 ||messagerie*.godaddysites.com^
 ||messagerie*.wixsite.com^
 ||messagerie*.yolasite.com^
-! tiktok shop
-||tiktikshopvn.com^
 ! amazon
 ||amazon-*.shop^
 ||amazon-shopping.shop^
-||daroznel.com^
 ||amazon8898.com^
 ||dalabuso.com^
-||gimkax.com^
 ||dalobatter.com^
 ||skae3299.top^
 ||signup-amazon.com^
@@ -57787,7 +57693,6 @@ thepiratebay3.com^
 ||ads-verification-for-pay.vercel.app^
 ||business-manange.com^
 ||report.case-referency.com^
-||facebook-guidelines.com^
 ||certify-issues-details-case.netlify.app^
 ||facebock-page-center.com^
 ||www-mfacebook.
@@ -57837,8 +57742,6 @@ thepiratebay3.com^
 ||community-flagged-
 ! https://www.virustotal.com/gui/url/19c07d4e7c627a1f83900c509ce73b828247b3bb932713383e5569e7e2671882
 ||help-for-work-*.pages.dev^
-! https://www.virustotal.com/gui/url/727aea44e0ab1a53aa0f6471b838d7391f6b4404c388b308ad3add44e5b5d65c
-||metabussines.com^
 ! https://urldna.io/scan/66983eea0498ab650fb7f81a
 ! https://www.virustotal.com/gui/url/24b304e37ceace8f0b2d4ed4587af156618393eabecad1eb1aa1809b9876ceb0
 ||transparency-business.com^
@@ -57878,7 +57781,6 @@ thepiratebay3.com^
 ||befuls.shop^
 ! https://www.virustotal.com/gui/url/5816000c2c9efd6e3103e355e4db79833c78d3b472db28822508c36598195c0a
 ! https://www.virustotal.com/gui/url/2ab2d00623a9c7a0a2be93714e2d870c4524a0c5721448f33ac60eac913b3c5e
-||businessrequestcenter.com^
 ||businesscreatorportal.com^
 ! https://www.virustotal.com/gui/url/cc2450d1ea3d6a4d610b156eac3bbfc31eef82a9536e32875ae90f5374387f04
 ||fb-business.com^
@@ -57896,10 +57798,7 @@ thepiratebay3.com^
 ||lazada.bbc6666.com^
 ! dienmayxanh
 ||mayxanhsupport.com^
-||trungtam-dienmayxanh.com^
 ||sp.zhabite.com^
-||sp.aircsgo.com^
-||st.aircsgo.com^
 ||steam.zssjsq.com^
 ||steamcommunitylog.chez.com^
 ||steam.workshop*.com^
@@ -57941,12 +57840,6 @@ thepiratebay3.com^
 ||register-turnamen.free.nf^
 ||sukien-pubg.io.vn^
 ||napthepubg.mobi^
-! https://urldna.io/scan/66b8bb055b2622c91165b2b6
-! https://www.virustotal.com/gui/url/6b3ea23e4c4efa2fcbe9259409281c002a04671b6e205c3c91abb990fad40efc
-||kraftonevent.com^
-! https://urldna.io/scan/66b8bb222f59b21da15613d1
-! https://www.virustotal.com/gui/url/63830f5c8fcc5abe8544ed1a7ecfcd986274c6a9b1cd1d3df8b47c874ec33730
-||pubgxbest.com^
 ! google
 ||play-quartz-sanctuary.xyz^
 ! microsoft
@@ -58033,16 +57926,12 @@ thepiratebay3.com^
 ||telegerasm.work^
 ||telegeram.work^
 ||webtelegram.eu.org^
-||telaagam.maxisl.vip^
 ||zhongwen-telegram.com^
-||telergaom.top^
 ||telergctm.vip^
 ||teiegram.work^
 ||telegrambotsolution.pages.dev^
 ! https://www.virustotal.com/gui/url/3891030a1d3e7fb7ebac20d4607242e3c30477016bcdad27da7e88c9cdf65d3f
 ||recouphh.top^
-! https://www.virustotal.com/gui/url/fc047acc620a85307852e4580ab5c21468a8fc8a175b5657a05950cd876ee07c
-||recovery-cr.top^
 ! https://www.virustotal.com/gui/url/a33e6ee7dd86f0c86a655a942a7d38fae709e522c38f25bdd51c38cdceee9e06
 ||recovery-gzo.top^
 ! https://www.virustotal.com/gui/url/1c006fc290430f49ae7b3f4915f744f261fdee4617973735b00ee00e8ee34ec2
@@ -58054,6 +57943,7 @@ thepiratebay3.com^
 ! spotify
 ||upgradeyourspotify.cc^
 ||cffsbbhost-aniamaria*.codeanyapp.com^
+||tokenp0ckht.click^
 ||web3mainnetdapp.pages.dev^
 ||web3connectfix.pages.dev^
 ! https://infosec.exchange/@urldna/112246221074509842
@@ -58061,6 +57951,12 @@ thepiratebay3.com^
 ! https://urldna.io/scan/66af69831a242fe968f80145
 ! https://www.virustotal.com/gui/url/c245ab34fb1e8cf41cba99c1fb61dfbfef60d98044ebac3abc65c1b9a150aea4
 ||final-claim.pages.dev^
+! https://urldna.io/scan/66bb2923fc6db4b70d37ece8
+! https://www.virustotal.com/gui/url/6bebec722c703a448f14d1650315b534ee785959080537cebada1d6120883763
+! https://www.virustotal.com/gui/url/4e1f0d563a121e484113dcf1582323732ce110451f33e939985911c248f19c31
+||alienxchain*.pages.dev^
+! https://www.virustotal.com/gui/url/e0f4f24fcaab6c1f540ac141d0c2088d3c5f5f6a2fad4bde212a00a676825ac3
+||xcoinspro.com^
 ! openphish
 ||mmitalianbeef.square.site^
 ||bigbauer.com^
@@ -58074,7 +57970,6 @@ thepiratebay3.com^
 ||globalgrainsadf.com^
 ||vzla-qr.com^
 ||inmotiongmbh.com^
-||undianhadiah.erhinfo.com^
 ||order78916.live^
 ! https://www.virustotal.com/gui/url/ac091676a63040d2e855eeaabe9e13cc18eadc5f644bd494763edde0270be742
 ||chattts-49f1.beszyrecala.workers.dev^
@@ -58137,7 +58032,6 @@ thepiratebay3.com^
 ! https://khonggianmang.vn/uploads/2024_CBT_32_7b55a3e3fc.pdf
 ||hotrokhachhang-
 ||cham-soc-the-
-||govqp.com^
 ! https://khonggianmang.vn/uploads/2024_CBT_38_1dc220bba1.pdf
 ||ebayu.top^
 ! https://khonggianmang.vn/uploads/2024_CBT_41_2e21dc3d54.pdf
@@ -58154,25 +58048,21 @@ thepiratebay3.com^
 ||brvgov.com^
 ! https://khonggianmang.vn/uploads/2024_CBT_45_94e8b27e5a.pdf
 ||tiktok-svip*.com^
-||evaluatetravels.com^
 ||ocbcccreonline.com^
 ||vimoney.credit^
 ||evnsp.com^
 ||evnsspc.com^
 ||sellings-global.com^
 ||zvogo.com^
-||wrgov.com^
 ||vn-chinhphu.com^
 ! https://khonggianmang.vn/uploads/2024_CBT_46_3a94e9ec2e.pdf
 ||khach-hang-
 ||nhantienquocte*.vercel.app^
 ||applecenter.info.vn^
-||mmmbonline.com^
 ||iplus-fianc24h.online^
 ||khuyenmaidacbiet-
 ||uudaidacbiet-
 ||evnspccskh.com^
-||shb-bank.com^
 ||aeoonmallstore.com^
 ||nhanvienhanghoa.com^
 ||dichvutonghop.vip^
@@ -58219,19 +58109,15 @@ thepiratebay3.com^
 ! https://social.immibis.com/notice/Ajz23VfnVrXgQdaxCS
 ||glysinew.com^
 ||conackmar.com^
-||abducke.com^
 ||gstoran.com^
 ||insonoban.com^
 ||bughter.com^
 ! https://social.immibis.com/notice/Ak0oAfQ2fMsvdjfEBs
-||dulge9.com^
 ||rcestershir.com^
-||ouseptu.com^
 ||uresnaus.com^
 ||orundompes.com^
 ||iteparyleb.com^
 ||ermogel.com^
-||ndinast.com^
 ! https://social.immibis.com/notice/Ak34ZeLTmXsX8HNsy8
 ||ontrical.com^
 ||etensiten.com^
@@ -58267,16 +58153,12 @@ thepiratebay3.com^
 ||mirtiat.com^
 ||lernehat.com^
 ! https://social.immibis.com/notice/AkWaR4uBPlljkbZsGG
-||endrowl.com^
-||xceteu.com^
 ||ripliguay.com^
 ! https://social.immibis.com/notice/AkYdomVW9oFnorxFNw
 ||pelastorl.com^
 ||usecurter.com^
-||vb09cl.com^
 ||iscidine.com^
 ! https://social.immibis.com/notice/AknDmYT7hMGsGNVl5M
-||ny4yze.com^
 ||tickovent.com^
 ||aphenunci.com^
 ||sichogyp.su^
@@ -58321,7 +58203,6 @@ thepiratebay3.com^
 ||runningapplications-b7dae-default-rtdb.firebaseio.com^
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/04/active-nitrogen-campaign-delivered-via-malicious-ads-for-putty-filezilla
 ||kunalicon.com^
-||recovernj.com^
 ! https://baochinhphu.vn/canh-bao-mot-so-website-gia-mao-lua-dao-nguoi-dung-internet-can-tranh-102240219171043932.htm
 ||vuabem.com^
 ! https://www.virustotal.com/gui/url/5df7c4ecaa01f24d8ccfdac5be4c0eb09a0a49c705e6b1bcfebd50f261fa5174
@@ -58372,8 +58253,6 @@ thepiratebay3.com^
 ||staticfile.org^
 ||xhsbpza.com^
 ! https://x.com/Polyfill_Global/status/1809122842145141114
-! https://github.com/uBlockOrigin/uAssets/pull/24434
-||polyfill.top^
 ! https://github.com/uBlockOrigin/uAssets/pull/25087
 ||polyfill-js.cn^
 ! https://github.com/uBlockOrigin/uAssets/issues/24248
@@ -58386,7 +58265,6 @@ thepiratebay3.com^
 ||convertwithwave.com^
 ||withsecurify.com^
 ||securifyguard.com^
-||getsecurify.com^
 ! https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/facebook-malvertising-epidemic-unraveling-a-persistent-threat-sys01/
 ! https://www.virustotal.com/gui/file/02b336b42d4d80ed17bf255536ecdf3d28db51bc81cc17926dee458e61f092e5
 ! https://www.virustotal.com/gui/url/ff01e9e3d9b91835d34ba457e2714f407acca9bf14b486b55fd9e6d6c27286f0
@@ -58416,12 +58294,9 @@ thepiratebay3.com^
 ||crowdstrikeclaim.com^
 ||crowdstrikeoutage.com^
 ||crowdstrikefix.zip^
-||crowdstuck.com^
 ! https://www.gdatasoftware.com/blog/2024/06/37947-badspace-backdoor
 ! https://x.com/GroupIB_TI/status/1790230873285242992
-||elamoto.com^
 ||kongtuke.com^
-||egisela.com^
 ||uhsee.com^
 ! https://www.trellix.com/blogs/research/onedrive-pastejacking/
 ||kostumn1.ilabserver.com^
@@ -58436,7 +58311,6 @@ thepiratebay3.com^
 ||ogrencilerbirligi.com^
 ||lcwpaketleme.com^
 ||herkeseuygunisilanlari.com^
-||kariyerfirsatin.com.tr^
 ||cartepak.online^
 ||aryapaketleme.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/24832
@@ -58450,7 +58324,6 @@ thepiratebay3.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/25036
 ||onevanilla.click^
 ||bilbocine.com^
-||unionplus-card.click^
 ||dailysmscollection.org^
 ||surgecardinfo.click^
 ||panoramacharter.click^
@@ -58484,8 +58357,6 @@ thepiratebay3.com^
 ! https://sansec.io/research/cosmicsting-cnext-persistent-backdoor
 ! https://blog.sucuri.net/2024/11/2024-credit-card-theft-season-arrives.html
 ||forimg.net^
-||hobidoch.store^
-||heqipop.space^
 ||cdnstatics.net^
 ||quantunnquest.com^
 ||analytisgroup.com^
@@ -58532,16 +58403,13 @@ thepiratebay3.com^
 ||iconstaff.top^
 ||jquerypackageus.com^
 ||jqueryuslibs.com^
-||jstatic201.com^
 ||lererikal.org^
 ||nothingillegal.bond^
 ||paie-locli.com^
 ||sellerstat.site^
-||shoponlinemelike.shop^
 ||statsseo.com^
 ||statstoday.org^
 ||vincaolet.xyz^
-||webexcelsior.org^
 ||ailurophilestealer.shop^
 ! https://www.reddit.com/r/Dublin/comments/1g3ed75/
 ||payzoneparking.info^
@@ -58682,6 +58550,10 @@ thepiratebay3.com^
 ||anydebrid.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/26814
 ||pubgrlxvote.top^
+! https://github.com/uBlockOrigin/uAssets/issues/26853
+||teleqpnm.cn^
+||ads-overview.com^
+||adsg00gle-v3.vercel.app^
 ! https://github.com/uBlockOrigin/uAssets/issues/26894
 ||unhesiss.shop^
 ! https://github.com/uBlockOrigin/uAssets/issues/26912
@@ -58711,11 +58583,6 @@ thepiratebay3.com^
 ||deepseeklogins.com^
 ||deepseekapk.download^
 ||deepseekapp.download^
-! https://blog.sucuri.net/2025/02/google-tag-manager-skimmer-steals-credit-card-info-from-magento-site.html
-! https://www.virustotal.com/gui/url/d75d7ece986f58c9b63c56e5a753158c2fa9dc927e9cc6a2ca5f2c1cfa2bde3a
-||eurowebmonitortool.com^
-! https://www.reddit.com/r/Scams/comments/1in9l8t/be_careful_posting_your_resume_on_job_boards/
-||sunpass.com-
 ! https://www.reddit.com/r/Scams/comments/1iuso58/need_help_identifying_a_text/
 ||hhcollect.co^
 ||pay-hh.com^
@@ -58743,7 +58610,6 @@ thepiratebay3.com^
 ! https://www.youtube.com/watch?v=NR1hnYbrMwE
 ! https://www.reddit.com/r/losslessscaling/comments/1hzo40l/losslessscalingcom/
 ! https://www.virustotal.com/gui/url/1932ec9ade57ef85981e6d9c78cdea859e312c58b3577ba0730a23f7950ca202
-||lossless-scaling.com^
 ||lossless-scaling.download-fast.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/27798
 ||fiverr-receiving-page.world^
@@ -58760,37 +58626,20 @@ thepiratebay3.com^
 ||hansonherbo.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/28123
 ||manta-network-v2.us^
-||tronilnk.com^
 ||en-trezor.io^
-||trust.wallet-web3.ing^
-||coinomi.ing^
 ||defii-larna.net^
 ||app.deflliama.tech^
 ||coiincmi.com^
-||trusltwcllet.com^
 ||accbing.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/28128
 ||dexsceerner.net^
 ||dexscreener-home.net^
-||traolerjoe.org^
 ||bylfg.org^
-||v2-o-p-e-n-s-e-a.com^
-||susni-swap.com^
 ||swap-ether.site^
-||market-ntf.com^
-||hyperilquid.org^
-||xyz-trade.com^
 ||tangem.ing^
-||tacngcm.com^
 ||raydiumx.org^
 ||ray-swap.net^
-||io-sol.org^
-||w-atomicwallet.com^
-||atomiciwallet.com^
-||base-bridqe.com^
 ||bridge-home.net^
-||v3-dappradar.com^
-||darppadar.com^
 ||mdexswap.live^
 ||thebalan-er.com^
 ||dodoexchange.live^
@@ -58807,40 +58656,27 @@ thepiratebay3.com^
 ||thor-swap.xyz^
 ||v2-mdex.xyz^
 ||rndex.xyz^
-||v2-velodrorne.com^
 ||finance-superchain.net^
 ||helplive-ledger.com^
 ||ledger.limited^
 ||kodiak-finance.org^
-||camelot-swap.com^
 ||exc-v3.com^
 ||camelot-ex.net^
 ||zeddexexchange.live^
 ||rabbltx.xyz^
 ||rabbitx.pro^
 ||alpaca-flnance.com^
-||alpacaflnance.com^
 ||theuni-swap.com^
 ||us-ledger.io^
 ||en-bitcoin.org^
 ||bitccincore.com^
-||radar-home.com^
 ||io-sol.vip^
 ||swap-ether.net^
-||exc-v3.org^
 ||io-v6.bet^
-||spookyswap-v3.com^
-||tcangcm.com^
-||desablums.com^
-||org-earn.com^
-||finance-superchain.org^
 ||app-uni-infos.com^
 ||0maill.com^
-||trusltwcllct.com^
 ||elcctrum.cc^
 ||ray-sol.net^
-||alicante-news.com^
-||trezor.fit^
 ||xrp-electrum.net^
 ||electrummonero.com^
 ||electrum-xmr.net^
@@ -59069,6 +58905,7 @@ thepiratebay3.com^
 ||linkvertise.com^$badfilter
 ! https://github.com/uBlockOrigin/uAssets/issues/7636#issuecomment-1735168592
 2.87.160.7$badfilter
+||2.87.160.7^
 ! https://github.com/uBlockOrigin/uAssets/issues/20256
 ||img.service.belboon.com^$badfilter
 ||partner.service.belboon.com^$badfilter
