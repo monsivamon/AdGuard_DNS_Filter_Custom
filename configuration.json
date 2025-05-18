@@ -241,6 +241,14 @@
       "transformations": ["RemoveModifiers", "Validate"]
     },
     {
+      "name": "Brave Unbreak",
+      "source": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt",
+      "type": "adblock",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "Validate"]
+    },
+    {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt",
       "type": "adblock",
