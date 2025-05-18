@@ -1,6 +1,5 @@
 #  TODO: Check for breakages (used by tamasha.com), investigate into more tracking
 #  TODO: Remove it, Used by dlfox.com
-# ----
 # >> A <<
 # >> B <<
 # >> C <<
@@ -27,7 +26,6 @@
 # >> X <<
 # >> Y <<
 # >> Z <<
-# A hosts file that aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites
 # AdlIran scam
 # Discussion?
 # Example: anaj.ir
@@ -38,13 +36,11 @@
 # Example: sahebkhabar.ir
 # Example: tamasha.com/v/DDlMB
 # Example: uploadgoogle.com
-# For use, simply copy paste this into your computers' HOSTS file. See https://en.wikipedia.org/wiki/Hosts_(file)#Location_in_the_file_system
 # OISD maintainer: If a domain is used for ads, but also is required for "wanted content" (like video playback) it should not be blocked by domain/hosts lists. But rather left to handle by content blockers instead. (uBlock Origin, etc).
 # On zarebin.ir
 # Referral links disguised as movie download links
 # TODO: Investigate
 # TODO: Remove it, Used by marzfun.com
-# This lists only contains domains which are used for ads, tracking or popups. it does not block in-HTML elements.
 # Used by i-video.ir
 # What domain?
 # ^ Example: eghtesadonline.com
@@ -58,9 +54,6 @@
 # ^ Used by irna.ir
 # ^ Used by kojaro.com
 # avaz-kurd.ir, power-music.ir
-# entries:        1121
-# format:         hosts (hosts -- in hosts file format)
-# homepage:       https://github.com/lassekongo83/Frellwits-filter-lists/
 # https://forum.adguard.com/index.php?threads/vigiato-net-resolved.44366/
 # https://github.com/AdguardTeam/AdguardFilters/issues/79983
 # https://github.com/Blockunity/Warning-List/discussions/44
@@ -127,11 +120,9 @@
 # https://twitter.com/Nikolaona/status/1699167838697652322
 # https://webamooz.com/1402/06/25/%D9%84%D8%A7%DA%A9%D8%B3%D9%88%D9%86-laxxson-%DA%A9%D9%84%D8%A7%D9%87%D8%A8%D8%B1%D8%AF%D8%A7%D8%B1%DB%8C-%D9%BE%D8%A7%D9%86%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA/
 # https://webamoozcom.github.io/warning-list/
-# last updated:   2025-05-09 05:22:45 CEST
 # power-music.ir, skmusic.ir, music-week.ir
 # sheypoor.com
 # tavoos.net
-# title:          Frellwit's Swedish Hosts File
 # webgozar.com
 # webgozar.ir
 # آمیتیس?
