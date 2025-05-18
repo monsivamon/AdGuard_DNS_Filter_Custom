@@ -51,7 +51,7 @@ jobs:
           #コメント行を除外し、フィルタ形式じゃない行を抽出
           !/^!/ && !/^\|\|/ && !/^@@/ {
             print
-          } ' Filters/main_filter.txt | sort -u > Filters/tmp_before_bad_filter.txt
+          } ' Filters/main_filter.txt | sort -u > Filters/before_bad_filter.txt
           
       # クリーンアップ前の異常フィルタを一部修正
       - name: Before Bad Filter modify
@@ -89,9 +89,9 @@ jobs:
           {
             print "||" $0
           }
-          ' Filters/tmp_before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
+          ' Filters/before_bad_filter.txt | sort -u > Filters/before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
-          cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
+          cat Filters/before_bad_filter_fix.txt >> Filters/main_filter.txt
           
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
