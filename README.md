@@ -48,6 +48,7 @@ This filter includes references, ideas, and in some cases direct rules from the 
 - [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – AdGuard/uBlock-compatible filter tailored for Japanese websites.
 - [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – Official filter list from the uBlock Origin team.
 - [blechschmidt/massdns](https://github.com/blechschmidt/massdns) – High-performance DNS resolver used here to verify domains.
+- [brave/adblock-lists](https://github.com/brave/adblock-lists/) – brave-unbreak.txt – Partial unbreak rules sourced from Brave’s adblock lists
 
 I deeply respect the original authors and thank them for their contributions.
 
