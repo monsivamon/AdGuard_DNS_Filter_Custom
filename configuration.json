@@ -22,7 +22,7 @@
     },
     {
       "name": "AdGuard Mobile Ads filter",
-      "source": "https://filters.adtidy.org/android/filters/11.txt",
+      "source": "https://filters.adtidy.org/windows/filters/11.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
