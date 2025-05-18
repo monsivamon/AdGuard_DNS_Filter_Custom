@@ -9,21 +9,21 @@
       "source": "https://filters.adtidy.org/windows/filters/2.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
       "name": "EasyList",
       "source": "https://easylist.to/easylist/easylist.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
-      "name": "AdGuard Mobile Ads filter ad servers",
+      "name": "AdGuard Mobile Ads filter",
       "source": "https://filters.adtidy.org/android/filters/11.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+      "transformations": ["RemoveComments", "RemoveModifiers", "TrimLines", "RemoveEmptyLines"]
     },
     {
       "name": "AdGuard Spanish/Portuguese filter ad servers first-party",
