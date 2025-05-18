@@ -147,70 +147,70 @@
       "source": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/adguard_hosts.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate", "Compress"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp", "Compress"]
     },
     {
       "name": "Frellwits Swedish Filter",
       "source": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
       "type": "hosts",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate", "Compress"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp", "Compress"]
     },
     {
       "name": "EasyList Italy ad servers",
       "source": "https://raw.githubusercontent.com/easylist/easylistitaly/master/easylistitaly/easylistitaly_adservers.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "ABPindo ad servers",
       "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/adservers.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "ABPindo ad servers third-party",
       "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/src/advert/thirdparty.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "AdblockID adservers",
       "source": "https://raw.githubusercontent.com/realodix/AdBlockID/master/src/adservers.adfl",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "hostsVN ad servers",
       "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "hostsVN Threat",
       "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/filter.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "Persian Blocker Hosts",
       "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
       "type": "hosts",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "AdGuard Japanese filter Plus",
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "Validate]
     },
     {
       "name": "uBlock filters",
@@ -245,8 +245,7 @@
       "source": "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-unbreak.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
-      "transformations": ["RemoveModifiers", "Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "AdGuard DNS filter Unbreaker for Japanese",
