@@ -195,7 +195,7 @@
       "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
       "type": "hosts",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+      "transformations": ["RemoveComments", "RemoveModifiers", "RemoveEmptyLines", "ValidateAllowIp"]
     },
     {
       "name": "AdGuard Japanese filter Plus",
