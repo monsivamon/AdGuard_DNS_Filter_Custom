@@ -1,7 +1,6 @@
 name: Build Filter & modify
 
 on:
-  push: {}
   schedule:
     # 8H事に自動実行
     - cron: '3 1,9,17 * * *'
