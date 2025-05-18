@@ -29,10 +29,6 @@ jobs:
         run: |
           # Adguard 公式フィルタを取得
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
-          curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt -o Filters/exceptions.txt
-          curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt -o Filters/rules.txt
-          # Yuki2718氏のフィルタも取得
-          curl -sSfL https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/dns-unbreak.txt -o Filters/dns-unbreak.txt
            
       # フィルタビルド実行
       - name: Build Filter
