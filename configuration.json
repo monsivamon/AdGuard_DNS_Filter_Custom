@@ -100,7 +100,7 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "List-KR filter ad servers",
+      "name": "List-KR filter",
       "source": "https://filters.adtidy.org/windows/filters/227.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
@@ -108,7 +108,7 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "ABPindo ad servers",
+      "name": "ABPindo",
       "source": "https://filters.adtidy.org/windows/filters/102.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
@@ -116,7 +116,7 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "AdblockID adservers",
+      "name": "AdblockID",
       "source": "https://filters.adtidy.org/windows/filters/120.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
@@ -143,6 +143,14 @@
       "name": "Frellwits Swedish Filter",
       "source": "https://filters.adtidy.org/windows/filters/243.txt",
       "type": "hosts",
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
+    },
+    {
+      "name": "hostsVN",
+      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers-all.txt",
+      "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
@@ -178,20 +186,6 @@
     {
       "name": "AdGuard Kazakh language ad servers",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/CyrillicFilters/Kazakh/sections/filter.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "hostsVN ad servers",
-      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers.txt",
-      "type": "adblock",
-      "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
-    },
-    {
-      "name": "hostsVN Threat",
-      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/threat/filter.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
