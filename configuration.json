@@ -210,7 +210,7 @@
       "source": "https://raw.githubusercontent.com/Yuki2718/adblock2/main/japanese/jpf-plus.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["RemoveModifiers", "Validate]
+      "transformations": ["RemoveModifiers", "Validate"]
     },
     {
       "name": "uBlock filters",
