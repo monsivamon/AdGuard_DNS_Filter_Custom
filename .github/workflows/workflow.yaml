@@ -51,7 +51,8 @@ jobs:
           #コメント行を除外し、フィルタ形式じゃない行を抽出
           !/^!/ && !/^\|\|/ && !/^@@/ {
             print
-          } ' Filters/main_filter.txt | sort -u > Filters/before_bad_filter.txt
+          }
+          ' Filters/main_filter.txt | sort -u > Filters/tmp_before_bad_filter.txt
           
       # クリーンアップ前の異常フィルタを一部修正
       - name: Before Bad Filter modify
@@ -76,22 +77,22 @@ jobs:
           # 先頭"://"を修正
           /^:[/][/]/ {
             sub(/^:[/][/]/, "||")
-            print $0
+            print
             next
           }
           # 先頭がドットの行を修正
           /^\./ {
             sub(/^\./, "||")
-            print $0
+            print
             next
           }
           # その他の行
           {
             print "||" $0
           }
-          ' Filters/before_bad_filter.txt | sort -u > Filters/before_bad_filter_fix.txt
+          ' Filters/before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
-          cat Filters/before_bad_filter_fix.txt >> Filters/main_filter.txt
+          cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
           
       # フィルタ部分をクリーンアップ
       - name: Filter Clean up
@@ -139,31 +140,27 @@ jobs:
               }
             }
             print
-          } ' Filters/main_filter.txt | sort -u > Filters/tmp_body_filter.txt
+          }
+          ' Filters/main_filter.txt | sort -u > Filters/tmp_body_filter.txt
 
       # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
         run: |
           # ブロックルールの抽出
           awk '
-          /^@@/ { 
-            next
+          /^@@/ {
+            sub(/^@@\|\|/, "")
+            sub(/\^\|$/, "")
+            print > "Filters/tmp_domains_only_before_check_allow.txt"
           }
           # || で始まる行を処理
           /^\|\|/ {
             # || と ^ を削除してドメイン部分だけ残す
             sub(/^\|\|/, "")
             sub(/\^$/, "")
-            print $0
-          }' Filters/tmp_body_filter.txt | sort -u > Filters/tmp_domains_only_before_check_block.txt
-
-          # 許可ルールの抽出
-          awk '
-          /^@@/ { 
-            sub(/^@@\|\|/, "")
-            sub(/\^\|$/, "")
-            print $0
-          }' Filters/tmp_body_filter.txt | sort -u > Filters/tmp_domains_only_before_check_allow.txt
+            print > "Filters/tmp_domains_only_before_check_block.txt"
+          }
+          ' Filters/tmp_body_filter.txt
 
       # massdns環境構築、DNSアドレスの存在確認実行
       - name: massdns Check
