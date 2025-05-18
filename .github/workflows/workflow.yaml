@@ -90,7 +90,7 @@ jobs:
           {
             print "||" $0
           }
-          ' Filters/before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
+          ' Filters/tmp_before_bad_filter.txt | sort -u > Filters/tmp_before_bad_filter_fix.txt
           # 修正したフィルタをメインフィルタに追記
           cat Filters/tmp_before_bad_filter_fix.txt >> Filters/main_filter.txt
           
