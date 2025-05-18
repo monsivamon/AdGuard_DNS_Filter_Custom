@@ -132,7 +132,7 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "EasyList Hebrew ad servers",
+      "name": "EasyList Hebrew",
       "source": "https://filters.adtidy.org/windows/filters/108.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
