@@ -62,6 +62,15 @@ For full terms, please refer to the [LICENSE](./LICENSE) file.
 
 ---
 
+📝 Additional Credits for Brave Adblock List
+This filter also incorporates some rules sourced from Brave’s adblock lists, which are licensed under the Mozilla Public License Version 2.0 (MPL 2.0).
+We comply with MPL 2.0 by clearly acknowledging Brave’s original work and providing attribution.
+The original source can be found here:
+https://github.com/brave/adblock-lists/blob/master/brave-unbreak.txt
+For details on MPL 2.0, see https://mozilla.org/MPL/2.0/.
+
+---
+
 Thank you for visiting this repository!  
 I hope it may be helpful or inspiring in your own filtering efforts.
 
