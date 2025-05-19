@@ -58,7 +58,7 @@ jobs:
           /^! Last modified:/ {
             next 
           }
-          /^include filters-[0-9]{4}\.txt$/ {
+          /^include filters-[0-9][0-9][0-9][0-9]\.txt$/ {
             fname = dir "/" $2
             while ((getline line < fname) > 0) {
               print line
