@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: 2025-05-19 23:35:13 JST
+! Last modified: 2025-05-19 23:49:27 JST
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -11869,6 +11869,7 @@ techdracula.com##ins.adsbygoogle
 
 
 !# Begin include: Filters/tmp_dir/filters-general.txt
+
 ! SECTION: Popular revolving adservers
 
 ! Lockdown
@@ -13596,11 +13597,14 @@ playhydrax.com##+js(rpnt, script, (isNoAds), (true))
 ! !SECTION: Hydrax
 
 ! END: General filters (put filters before this line)
+
 !# End include: Filters/tmp_dir/filters-general.txt
+
 
 ! As of 2020-04-09, new filters will be added to year-based sublists
 
 !# Begin include: Filters/tmp_dir/filters-2020.txt
+
 ! Title: uBlock filters (2020)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -17561,9 +17565,12 @@ nsw2u.*##+js(no-xhr-if, googlesyndication)
 ! https://github.com/uBlockOrigin/uAssets/issues/25434
 ||com/|$xhr,3p,method=head,domain=nsw2u.com
 ||xyz/|$xhr,3p,method=head,domain=nsw2u.com
+
 !# End include: Filters/tmp_dir/filters-2020.txt
 
+
 !# Begin include: Filters/tmp_dir/filters-2021.txt
+
 ! Title: uBlock filters (2021)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -22215,9 +22222,12 @@ onlytech.com##+js(acs, $, test)
 scjhg5oh.fun,a-b-f-dd-aa-bb-cctwd3a.fun,mjukb26l.fun,ghajini-4urg44yg.lol##+js(nowoif)
 scjhg5oh.fun,a-b-f-dd-aa-bb-cctwd3a.fun,mjukb26l.fun,ghajini-4urg44yg.lol##+js(acs, Math, localStorage['\x)
 @@?*=$xhr,1p,strict1p,method=get,domain=mjukb26l.fun|ghajini-4urg44yg.lol|scjhg5oh.fun|a-b-f-dd-aa-bb-cctwd3a.fun
+
 !# End include: Filters/tmp_dir/filters-2021.txt
 
+
 !# Begin include: Filters/tmp_dir/filters-2022.txt
+
 ! Title: uBlock filters (2022)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -26670,9 +26680,12 @@ euro2024direct.ru##+js(acs, document.documentElement, break;case $.)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24377
 ||ss-mndsrv.b-cdn.net^
+
 !# End include: Filters/tmp_dir/filters-2022.txt
 
+
 !# Begin include: Filters/tmp_dir/filters-2023.txt
+
 ! Title: uBlock filters (2023)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -31837,9 +31850,12 @@ dfast.app##+js(nano-stb, countdown, *, 0.001)
 a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun##+js(nowoif)
 a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun##+js(acs, Math, localStorage['\x)
 @@?*=$xhr,1p,strict1p,method=get,domain=a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun
+
 !# End include: Filters/tmp_dir/filters-2023.txt
 
+
 !# Begin include: Filters/tmp_dir/filters-2024.txt
+
 ! Title: uBlock filters (2024)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -36301,9 +36317,12 @@ windowsreport.com##^script:has-text(wpadmngr.com)
 !#else
 windowsreport.com##+js(rmnt, script, wpadmngr.com)
 !#endif
+
 !# End include: Filters/tmp_dir/filters-2024.txt
 
+
 !# Begin include: Filters/tmp_dir/filters-2025.txt
+
 ! Title: uBlock filters (2025)
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -37993,11 +38012,14 @@ cryptofaucet.club###claimform:style(display:block !important)
 cryptofaucet.club##.op2
 cryptofaucet.club###lgl
 cryptofaucet.club##div.cb[style="height: 50px;"]
+
 !# End include: Filters/tmp_dir/filters-2025.txt
+
 
 ! Link shortener filters go into their own dedicated list
 
 !# Begin include: Filters/tmp_dir/ubo-link-shorteners.txt
+
 ! Title: uBlock filters – Link shorteners
 ! Last modified: %timestamp%
 ! Expires: 5 days
@@ -39603,10 +39625,13 @@ zmamobile.com##main > center > a[target="_blank"][rel="nofollow noreferrer noope
 ! https://github.com/uBlockOrigin/uAssets/issues/28064
 3dsfree.org##+js(rpnt, script, 900, 100)
 3dsfree.org##+js(rmnt, script, ctrlKey)
+
 !# End include: Filters/tmp_dir/ubo-link-shorteners.txt
 
 
+
 !# Begin include: Filters/tmp_dir/filters-mobile.txt
+
 ! Title: uBlock filters – Mobile
 ! Last modified: %timestamp%
 ! Description: Filters optimized for uBlock, to be used along EasyList
@@ -39762,4 +39787,6 @@ timesofindia.indiatimes.com##+js(set, Object.prototype.isAdActive, false)
 ! https://github.com/uBlockOrigin/uAssets/issues/20361
 redd.tube##+js(set, Object.prototype.vastOptions, {})
 redd.tube###closeable_widget
+
 !# End include: Filters/tmp_dir/filters-mobile.txt
+
