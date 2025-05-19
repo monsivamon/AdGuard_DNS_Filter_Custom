@@ -28,8 +28,8 @@ jobs:
       - name: Create Ublock Filter
         run: |
           pwd
-          ls -l AdGuard_DNS_Filter_for_myself/Filters/
-          ls -l AdGuard_DNS_Filter_for_myself/Filters/tmp_dir/
+          ls -l Filters/
+          ls -l Filters/tmp_dir/
 
 
           
