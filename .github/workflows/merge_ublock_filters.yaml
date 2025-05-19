@@ -3,7 +3,10 @@ name: Merge Ublock_Filter
 on:
   # 手動実行を許可
   workflow_dispatch:
-
+  
+permissions:
+  contents: write
+  
 env:
   NODE_VERSION: 18.x
 
@@ -14,6 +17,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          persist-credentials: true 
+          
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
