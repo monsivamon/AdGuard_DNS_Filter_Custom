@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: 2025-05-19 23:49:27 JST
+! Last modified: 2025-05-20 07:39:34 JST
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -13178,7 +13178,7 @@ yakisurume.com,yakyufan-asobiba.com,yamsoti.com,yaspage.com,yawm.online,yazilida
 zecchino-doro.it,zerogptai.org,zien.pl,ziminvestors.com,ziontutorial.com,zippyshare.cloud,zippysharecue.com,znanemediablog.com,zyromod.com##+js(trusted-suppress-native-method, eval, '"/chp_?ad/"')
 ||cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css$css,domain=nishankhatri.*
 emperorscan.com,makotoichikawa.net,telephone-soudan.com##+js(aost, document.querySelectorAll, /(?=^(?!.*(https|injectedScript)))/)
-addtobucketlist.com,alternativa104.net,asumesi.com,ayo24.id,barrier-free.net,berich8.com,bitzite.com,blogenginee.com,bloooog.it,blurayufr.*,branditechture.agency,chataigpt.org,coinsrev.com,eliobenedetto.it,examscisco.com,helicomicro.com,iamflorianschulze.com,karwan.tv,kyoto-kanko.net,limontorrents.com,livenewsof.com,medeberiya.site,medeberiya1.com,medeberiyax.com,mscdroidlabs.es,oyundunyasi.net,parrocchiapalata.it,photoshopvideotutorial.com,samovies.net,sevenst.us,sulocale.sulopachinews.com,tabering.net,xn--nbkw38mlu2a.com##+js(aopr, adsBlocked)
+addtobucketlist.com,alternativa104.net,asumesi.com,ayo24.id,barrier-free.net,berich8.com,bitzite.com,blogenginee.com,bloooog.it,blurayufr.*,branditechture.agency,chataigpt.org,coinsrev.com,eliobenedetto.it,examscisco.com,helicomicro.com,iamflorianschulze.com,karwan.tv,kyoto-kanko.net,limontorrents.com,livenewsof.com,medeberiya.site,medeberiya1.com,medeberiyax.com,mscdroidlabs.es,nakiny.com,oyundunyasi.net,parrocchiapalata.it,photoshopvideotutorial.com,samovies.net,sevenst.us,sulocale.sulopachinews.com,tabering.net,xn--nbkw38mlu2a.com##+js(aopr, adsBlocked)
 ||partner.pcloud.com/media/banners/*300250.png
 kodewebsite.com##+js(aopr, jQuery.popunder)
 samaysawara.in##+js(acs, document.addEventListener, google_ad_client)
@@ -24714,7 +24714,6 @@ odum.cl##+js(acs, $, sam)
 ! https://github.com/uBlockOrigin/uAssets/issues/13966
 ! https://github.com/uBlockOrigin/uAssets/issues/1545
 elektroda.pl#@#.advert
-elektroda.pl##*:has(> div > [class$=" active"] > a[href*=".php?"])
 elektroda.pl,elektroda.com,elektroda.de##div[id]:has(> .text-center > div[id^="div-gpt-ad-"] > script:only-child)
 elektroda.de,elektroda.com##section[class]:has(> .text-center > div[id^="div-gpt-ad-"] > script:only-child)
 elektroda.de,elektroda.com##div[style="min-height: 265px;"]:has(> div[class] > .text-center > div[id^="div-gpt-ad-"] > script:only-child)
@@ -29089,8 +29088,8 @@ idoitmyself.xyz##+js(rpnt, script, /devtoolsDetector\.launch\(\)\;/)
 ! https://listeamed.net/v/kKJVORW4oAw53XD
 ! vidguard
 ||acacdn.com^$script,redirect-rule=noopjs
-bembed.net,embedv.net,fslinks.org,listeamed.net,v6embed.xyz,vembed.*,vgplayer.xyz,vid-guard.com##+js(nostif, afterOpen)
-bembed.net,embedv.net,fslinks.org,v6embed.xyz,vembed.*,vgplayer.xyz,vid-guard.com##+js(nowoif)
+bembed.net,embedv.net,fslinks.org,listeamed.net,v6embed.xyz,vembed.*,vgplayer.xyz,vid-guard.com,vidguardto.xyz##+js(nostif, afterOpen)
+bembed.net,embedv.net,fslinks.org,v6embed.xyz,vembed.*,vgplayer.xyz,vid-guard.com,vidguardto.xyz##+js(nowoif)
 listeamed.net##+js(nowoif, !/d/)
 listeamed.net##+js(json-prune, AffiliateAdBlock)
 bembed.net,embedv.net,fslinks.org,listeamed.net,v6embed.xyz,vembed.*,vgplayer.xyz,vid-guard.com##+js(set, PlayerConfig.config.CustomAdSetting, [])
@@ -30251,9 +30250,12 @@ client.falixnodes.net##+js(rmnt, script, Object.keys(window.adngin).length)
 !#endif
 client.falixnodes.net##+js(rpnt, script, typeof window.loadtwo, typeof window.loadtwo === true)
 client.falixnodes.net##+js(rpnt, script, (window.loadtwo, (window.loadtwo === undefined || true || window.googlescriptloaded)
+client.falixnodes.net##+js(rpnt, script, window.location.href = '/disableadblock';)
 client.falixnodes.net##+js(set, window.adngin, {})
 client.falixnodes.net##+js(set, amzn_aps_csm, {})
 client.falixnodes.net##+js(set, amzn_aps_csm.define, noopFunc)
+client.falixnodes.net##+js(set, amzn_aps_csm.init, noopFunc)
+client.falixnodes.net##+js(set, amzn_aps_csm.log, noopFunc)
 client.falixnodes.net##+js(no-fetch-if, adsbygoogle)
 client.falixnodes.net##h6.text-muted:has-text(Advertisement)
 client.falixnodes.net###takeover[style="min-height: 250px;"]
@@ -37666,6 +37668,7 @@ shoot-yalla.me,shoot-yalla-tv.live##+js(rmnt, script, /adbl/i)
 ripplehub.site##+js(rpnt, script, /document.body.appendChild.*;/)
 ripplehub.site##+js(nowoif)
 ripplehub.site###close-ad-button
+footybite.to,totalsportek.*##+js(aeld, , open)
 
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/939
 zone.msn.com##+js(no-fetch-if, googlesyndication, length:40000-60000)
