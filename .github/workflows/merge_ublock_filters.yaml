@@ -77,9 +77,11 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-          # 生成フィルタをアップロード
-          git add "$OUTPUT_FILE"
-          # いつアップロードしたかわかるようにする
-          git commit -m "chore: update ublock filter - ${TODAY}"
-          git push origin master
-          
+          if [ -s "$OUTPUT_FILE" ]; then
+            git add "$OUTPUT_FILE"
+            git commit -m "chore: update ublock filter - ${TODAY}"
+            git push origin master
+          else
+            echo "ERROR: $OUTPUT_FILE is empty or missing. Skip commit."
+          fi
+
