@@ -9,7 +9,8 @@ permissions:
   
 env:
   NODE_VERSION: 18.x
-
+  OUTPUT_FILE: Filters/ublock_filters_merge.txt
+  
 jobs:
   build:
 
@@ -32,7 +33,6 @@ jobs:
           END_YEAR=$(date +%Y)  # 今年を取得
           BASE_URL="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters"
           WORK_DIR="Filters/tmp_dir"
-          OUTPUT_FILE="Filters/ublock_filters_merge.txt"
 
           # 作業用ディレクトリ作成＆初期化
           mkdir -p "$WORK_DIR"
@@ -69,7 +69,7 @@ jobs:
           {
             print 
           }
-          ' "$WORK_DIR/filters.txt" > "$OUTPUT_FILE"
+          ' "$WORK_DIR/filters.txt" > "${OUTPUT_FILE}"
 
       # フィルタをアップロード
       - name: Upload new filter
@@ -82,6 +82,6 @@ jobs:
             git commit -m "chore: update ublock filter - ${TODAY}"
             git push origin master
           else
-            echo "ERROR: $OUTPUT_FILE is empty or missing. Skip commit."
+            echo "ERROR: ${OUTPUT_FILE} is empty or missing. Skip commit."
           fi
 
