@@ -1,6 +1,10 @@
 name: Merge Ublock_Filter
 
 on:
+  schedule:
+    # 8H事に自動実行
+    - cron: '3 22,6,14 * * *'
+    
   # 手動実行を許可
   workflow_dispatch:
   
