@@ -74,8 +74,11 @@ jobs:
                 fname = dir "/" arr[i]
                 print ""
                 print "!# Begin include: " fname
+                print ""
                 while ((getline line < fname) > 0) print line
+                print ""
                 print "!# End include: " fname
+                print ""
                 close(fname)
                 next
               }
