@@ -164,9 +164,10 @@
     },
     {
       "name": "uBlock filters",
-      "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+      "source": "Filters/ublock_filters_merge.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
