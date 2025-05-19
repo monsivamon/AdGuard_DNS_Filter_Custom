@@ -27,6 +27,12 @@ jobs:
           
       - name: Create Ublock Filter
         run: |
+          pwd
+          ls -l AdGuard_DNS_Filter_for_myself/Filters/
+          ls -l AdGuard_DNS_Filter_for_myself/Filters/tmp_dir/
+
+
+          
           # 各種変数の設定
           START_YEAR=2020
           END_YEAR=$(date +%Y)  # 今年を取得
