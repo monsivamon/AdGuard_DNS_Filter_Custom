@@ -1,1 +1,68 @@
+name: Merge Ublock_Filter
 
+on:
+  # 手動実行を許可
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: 18.x
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          
+      - name: Create Ublock Filter
+        run: |
+          # 各種変数の設定
+          START_YEAR=2020
+          END_YEAR=$(date +%Y)  # 今年を取得
+          BASE_URL="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters"
+          WORK_DIR="Filters/tmp_dir"
+          OUTPUT_FILE="Filters/ublock_filters_merge.txt"
+
+          # 作業用ディレクトリ作成＆初期化
+          mkdir -p "$WORK_DIR"
+          rm -f "$OUTPUT_FILE"
+
+          # filters.txt を取得
+          curl -sf "${BASE_URL}/filters.txt" -o "$WORK_DIR/filters.txt"
+
+          # filters-20XX.txt を取得（なければスキップ）
+          for ((YEAR = START_YEAR; YEAR <= END_YEAR; YEAR++)); do
+            curl -sf "${BASE_URL}/filters-${YEAR}.txt" -o "$WORK_DIR/filters-${YEAR}.txt"
+          done
+
+          # JST現在時刻取得
+          TIMESTAMP=$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S JST')
+
+          # include 展開してマージ
+          awk -v ts="$TIMESTAMP" -v dir="$WORK_DIR" '
+          NR == 2 {
+            print "! Last modified: " ts
+            next
+          }
+          /^! Last modified:/ {
+            next 
+          }
+          /^include filters-[0-9]{4}\.txt$/ {
+            fname = dir "/" $2
+            while ((getline line < fname) > 0) {
+              print line
+            }
+            close(fname)
+            next
+          }
+          {
+            print 
+          }
+          ' "$WORK_DIR/filters.txt" > "$OUTPUT_FILE"
+
+          
