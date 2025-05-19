@@ -73,7 +73,10 @@ jobs:
             for (i = 1; i <= n; i++) {
               if ($0 == "!#include " arr[i]) {
                 fname = dir "/" arr[i]
+                print ""
+                print "!# Begin include: " fname
                 while ((getline line < fname) > 0) print line
+                print "!# End include: " fname
                 close(fname)
                 next
               }
