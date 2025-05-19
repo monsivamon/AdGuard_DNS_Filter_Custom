@@ -38,8 +38,11 @@ jobs:
           mkdir -p "$WORK_DIR"
           rm -f "$OUTPUT_FILE"
 
-          # filters.txt を取得
+          # 各種filters.txt を取得
           curl -sf "${BASE_URL}/filters.txt" -o "$WORK_DIR/filters.txt"
+          curl -sf "${BASE_URL}/filters-general.txt" -o "$WORK_DIR/filters-general.txt"
+          curl -sf "${BASE_URL}/ubo-link-shorteners.txt" -o "$WORK_DIR/ubo-link-shorteners.txt.txt"
+          curl -sf "${BASE_URL}/filters-mobile.txt" -o "$WORK_DIR/filters-mobile.txt"
 
           # filters-20XX.txt を取得（なければスキップ）
           for ((YEAR = START_YEAR; YEAR <= END_YEAR; YEAR++)); do
@@ -49,27 +52,38 @@ jobs:
           # JST現在時刻取得
           TIMESTAMP=$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S JST')
 
-          # include 展開してマージ
-          awk -v ts="$TIMESTAMP" -v dir="$WORK_DIR" '
+          # tmp_dir内のファイル名を配列に取得
+          mapfile -t includes < <(ls Filters/tmp_dir)
+
+          # 配列をカンマ区切りの文字列に変換
+          includes_str=$(IFS=,; echo "${includes[*]}")
+
+          awk -v ts="$TIMESTAMP" -v dir="Filters/tmp_dir" -v includes="$includes_str" '
+          BEGIN {
+            n = split(includes, arr, ",")
+          }
           NR == 2 {
             print "! Last modified: " ts
             next
           }
           /^! Last modified:/ {
-            next 
-          }
-          /^!#include filters-[0-9][0-9][0-9][0-9]\.txt$/ {
-            fname = dir "/" $2
-            while ((getline line < fname) > 0) {
-              print line
-            }
-            close(fname)
             next
           }
           {
-            print 
+            for (i = 1; i <= n; i++) {
+              if ($0 == "!#include " arr[i]) {
+                fname = dir "/" arr[i]
+                while ((getline line < fname) > 0) print line
+                close(fname)
+                next
+              }
+            }
+            if ($0 ~ /^!#if env_mobile$/ || $0 ~ /^!#endif$/) {
+              next
+            }
+            print
           }
-          ' "$WORK_DIR/filters.txt" > "${OUTPUT_FILE}"
+          ' "Filters/tmp_dir/filters.txt" > "$OUTPUT_FILE"
 
       # フィルタをアップロード
       - name: Upload new filter
