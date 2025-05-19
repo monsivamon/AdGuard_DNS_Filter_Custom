@@ -29,8 +29,6 @@ jobs:
       - name: Create Ublock Filter
         run: |
           # 各種変数の設定
-          START_YEAR=2020
-          END_YEAR=$(date +%Y)  # 今年を取得
           BASE_URL="https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters"
           WORK_DIR="Filters/tmp_dir"
 
@@ -47,6 +45,7 @@ jobs:
           # それをループでダウンロード
           for file in $includes; do
             curl -sf "${BASE_URL}/${file}" -o "$WORK_DIR/${file}"
+            echo "download ${file}"
           done
           
           # JST現在時刻取得
