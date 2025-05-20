@@ -1,5 +1,5 @@
 ! Title: uBlock filters
-! Last modified: 2025-05-20 15:52:52 JST
+! Last modified: 2025-05-20 21:44:59 JST
 ! Expires: 5 days
 ! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -13606,9 +13606,6 @@ playhydrax.com##+js(rpnt, script, (isNoAds), (true))
 
 !# Begin include: Filters/tmp_dir/filters-2020.txt
 
-! Title: uBlock filters (2020)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! new filters from april 2020 to ->
@@ -17572,9 +17569,6 @@ nsw2u.*##+js(no-xhr-if, googlesyndication)
 
 !# Begin include: Filters/tmp_dir/filters-2021.txt
 
-! Title: uBlock filters (2021)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2021 to ->
@@ -22229,9 +22223,6 @@ scjhg5oh.fun,a-b-f-dd-aa-bb-cctwd3a.fun,mjukb26l.fun,ghajini-4urg44yg.lol##+js(a
 
 !# Begin include: Filters/tmp_dir/filters-2022.txt
 
-! Title: uBlock filters (2022)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2022 to ->
@@ -26692,9 +26683,6 @@ euro2024direct.ru##+js(acs, document.documentElement, break;case $.)
 
 !# Begin include: Filters/tmp_dir/filters-2023.txt
 
-! Title: uBlock filters (2023)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2023 to ->
@@ -31865,9 +31853,6 @@ a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun##+js(acs, Math, localStorage
 
 !# Begin include: Filters/tmp_dir/filters-2024.txt
 
-! Title: uBlock filters (2024)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2024 to ->
@@ -32006,6 +31991,10 @@ xvideos.com##a[href*="/go.php?"][href*="&ad="]
 1337x.*,x1337x.*,1337x.ninjaproxy1.com##[href*="vpn"]
 1337x.*,x1337x.*,1337x.ninjaproxy1.com##[onclick*="vpn"]
 1337x.*,x1337x.*,1337x.ninjaproxy1.com##+js(nowebrtc)
+! https://github.com/uBlockOrigin/uAssets/issues/17184#issuecomment-2893536824
+1337x.*,x1337x.*,1337x.ninjaproxy1.com##+js(nostif, location.href)
+1337x.*,x1337x.*,1337x.ninjaproxy1.com##.js-modal-url:remove()
+1337x.*,x1337x.*,1337x.ninjaproxy1.com###alert-popup:remove()
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7273
 cheatcloud.cc,cheater.ninja,cheatermad.com,cheatsquad.gg##+js(nano-sib, clearInterval)
@@ -36332,9 +36321,6 @@ windowsreport.com##+js(rmnt, script, wpadmngr.com)
 
 !# Begin include: Filters/tmp_dir/filters-2025.txt
 
-! Title: uBlock filters (2025)
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2025 to ->
@@ -38031,6 +38017,9 @@ thefappeningblog.com##a[target="_blank"][href*="?"]:not([href*="thefappeningblog
 thefappeningblog.com##a[href="https://thefappeningbeta.com/a"]
 thefappeningblog.com##.textwidget > a[href][target="_blank"]:not([href*="thefappeningblog.com"])
 
+! https://github.com/uBlockOrigin/uAssets/issues/28416
+infomatricula.pt##+js(nostif, ads)
+
 !# End include: Filters/tmp_dir/filters-2025.txt
 
 
@@ -38038,10 +38027,7 @@ thefappeningblog.com##.textwidget > a[href][target="_blank"]:not([href*="thefapp
 
 !# Begin include: Filters/tmp_dir/ubo-link-shorteners.txt
 
-! Title: uBlock filters – Link shorteners
-! Last modified: %timestamp%
 ! Expires: 5 days
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
@@ -39651,9 +39637,6 @@ zmamobile.com##main > center > a[target="_blank"][rel="nofollow noreferrer noope
 
 !# Begin include: Filters/tmp_dir/filters-mobile.txt
 
-! Title: uBlock filters – Mobile
-! Last modified: %timestamp%
-! Description: Filters optimized for uBlock, to be used along EasyList
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
