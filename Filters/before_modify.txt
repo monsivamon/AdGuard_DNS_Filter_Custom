@@ -3,7 +3,7 @@
 ! Description: AdGuard DNS filter Customized by monsivamon
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE
-! Last modified: 2025-05-20T14:24:01.865Z
+! Last modified: 2025-05-20T14:59:57.843Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.38
 !
@@ -33318,6 +33318,7 @@
 ! Source name: EasyList
 ! Source: https://easylist.to/easylist/easylist.txt
 !
+||dieehxgtp.com^
 ||elhudxvycj.com^
 ||gaming001.site
 ||get-me-wow.
@@ -55213,14 +55214,9 @@
 ! Source name: Additional rules
 ! Source: https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt
 !
-!
-! Tracking
-!
-! This domain does not exist and is used for health checks
 ||abcounter.de^
 ||adc.9news.com.au^
 ||adc.nine.com.au^
-! https://github.com/AdguardTeam/AdguardDNS/issues/52
 ||mobileanalytics.*.amazonaws.com^
 ||affiliate.mercola.com^
 ||affiliate.productreview.com.au^
@@ -55668,9 +55664,6 @@
 ||tracking.ustream.tv^
 ||tracking.yourfilehost.com^
 ||trackpm.shop2market.com^
-!
-! Ads
-!
 ||adocean.cz^
 ||dualstack.adbert-web-lbs-*.elb.amazonaws.com^
 ||vahufapave.com^
@@ -55695,9 +55688,6 @@
 ||torvind.com^
 ||a4.overclockers.ua^
 ||novunu.football-plyus.net^
-!
-! Special block section, requires explanation for the rule
-!
 !
 ! Source name: Exception rules
 ! Source: https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt
