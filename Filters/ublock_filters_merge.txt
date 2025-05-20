@@ -1,12 +1,10 @@
-! Title: uBlock filters
-! Last modified: 2025-05-20 21:44:59 JST
-! Expires: 5 days
-! Description: Filters optimized for uBlock, to be used along EasyList
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Title: Merged uBlock Filters
+! Description: Combined list from uBlock includes
+! Version: 2025-05-20 22:04:57 JST
+! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
+! License: MIT
+
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1408
 *_ad_$media,domain=youtube.com,3p
@@ -13606,12 +13604,8 @@ playhydrax.com##+js(rpnt, script, (isNoAds), (true))
 
 !# Begin include: Filters/tmp_dir/filters-2020.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! new filters from april 2020 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/53254
 *$script,redirect-rule=noopjs,domain=arcai.com
@@ -17569,12 +17563,8 @@ nsw2u.*##+js(no-xhr-if, googlesyndication)
 
 !# Begin include: Filters/tmp_dir/filters-2021.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2021 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/71392
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=ottwow.com,redirect=google-ima.js
@@ -22223,12 +22213,8 @@ scjhg5oh.fun,a-b-f-dd-aa-bb-cctwd3a.fun,mjukb26l.fun,ghajini-4urg44yg.lol##+js(a
 
 !# Begin include: Filters/tmp_dir/filters-2022.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2022 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/rr818d/
 akoam.*##+js(nowoif)
@@ -23671,7 +23657,7 @@ nsfwzone.xyz##+js(aopr, __Y)
 sdefx.cloud##+js(set, D4zz, noopFunc)
 
 ! https://javbest. cc/video/cc5f52c98723a2349c97bfe4c00fd799 vast
-||p.jwpcdn.com/*/vast.js$script
+!||p.jwpcdn.com/*/vast.js$script
 
 ! https://www.intereseducation.com/resources/cambridge-primary-progression-tests-past-papers/ timer
 edufileshare.com##+js(nano-sib, display)
@@ -26683,12 +26669,8 @@ euro2024direct.ru##+js(acs, document.documentElement, break;case $.)
 
 !# Begin include: Filters/tmp_dir/filters-2023.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2023 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://github.com/uBlockOrigin/uAssets/issues/16269
 ! https://shahid4uu. cam => player guccihide. com popups
@@ -31853,12 +31835,8 @@ a-b-c-d-e-f9jeats0w5hf22jbbxcrpnq37qq6nbxjwypsy.fun##+js(acs, Math, localStorage
 
 !# Begin include: Filters/tmp_dir/filters-2024.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2024 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! START: Rules from filters.txt
 
@@ -36321,12 +36299,8 @@ windowsreport.com##+js(rmnt, script, wpadmngr.com)
 
 !# Begin include: Filters/tmp_dir/filters-2025.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 ! New filters from January 2025 to ->
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! START: Rules from filters.txt
 
@@ -38027,12 +38001,7 @@ infomatricula.pt##+js(nostif, ads)
 
 !# Begin include: Filters/tmp_dir/ubo-link-shorteners.txt
 
-! Expires: 5 days
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! gplinks all domains (gplinks.co/EWu8)
 @@*$ghide,domain=gplinks.*|sabkiyojana.com|bookmystrip.com
@@ -39637,11 +39606,7 @@ zmamobile.com##main > center > a[target="_blank"][rel="nofollow noreferrer noope
 
 !# Begin include: Filters/tmp_dir/filters-mobile.txt
 
-! Homepage: https://github.com/uBlockOrigin/uAssets
-! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
-! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
-! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 !----- 2020 -----
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/310
