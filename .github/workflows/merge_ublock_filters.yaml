@@ -70,7 +70,7 @@ jobs:
             print "! Description: Combined list from uBlock includes"
             print "! Version: " ts
             print "! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
-            print "! License: MIT"
+            print "! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
             print ""
           }
           # ヘッダー行っぽいのは全スキップ
