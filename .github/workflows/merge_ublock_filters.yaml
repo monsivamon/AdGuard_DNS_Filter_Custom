@@ -83,7 +83,7 @@ jobs:
               if ($0 ~ "^!#include[ \t]+" arr[i] "$") {
                 # ファイルパスを作成
                 fname = dir "/" arr[i]
-              　# includeしたファイルがどこから始まるかわかるようにする
+                # includeしたファイルがどこから始まるかわかるようにする
                 print ""
                 print "!# Begin include: " fname
                 print ""
