@@ -2,7 +2,7 @@
   "name": "AdGuard_DNS_Filter_for_myself",
   "description": "AdGuard DNS filter Customized by monsivamon",
   "homepage": "https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself",
-  "license": "https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE",
+  "license": "https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE",
   "sources": [
     {
       "name": "AdGuard Base filter",
@@ -160,6 +160,7 @@
       "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
       "type": "hosts",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveComments", "RemoveModifiers", "RemoveEmptyLines", "ValidateAllowIp"]
     },
     {
@@ -175,6 +176,7 @@
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
@@ -182,6 +184,7 @@
       "source": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
