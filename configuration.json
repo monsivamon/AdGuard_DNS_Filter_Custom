@@ -205,20 +205,23 @@
       "name": "Additional rules",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/rules.txt",
       "type": "adblock",
-      "transformations": ["Validate"]
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "Exception rules",
       "source": "https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exceptions.txt",
       "type": "adblock",
-      "transformations": ["Validate"]
+      "exclusions_sources": ["Filters/exclusions.txt"],
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "Unique List",
       "source": "Filters/Unique_List.txt",
       "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
-      "transformations": ["Validate"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     }
   ],
   "transformations": ["Compress", "Deduplicate"],
