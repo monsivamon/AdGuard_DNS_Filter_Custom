@@ -171,17 +171,17 @@ jobs:
           cd massdns
           make  # massdns をビルド
 
-          # massdns用のリゾルバを準備
+          # リゾルバファイル格納フォルダを作成
           mkdir -p lists
-          cat <<EOF > lists/resolvers.txt
-          8.8.8.8
-          8.8.4.4
-          1.1.1.1
-          1.0.0.1
-          9.9.9.9
-          149.112.112.112
-          EOF
-
+          
+          # 信頼できるリゾルバリストを取得
+          curl -sf https://public-dns.info/nameservers.txt > lists/resolvers.txt || true
+          
+          # 取得に失敗したとき用にmassdns用のリゾルバを準備
+          if [ ! -s lists/resolvers.txt ]; then
+            printf "8.8.8.8\n8.8.4.4\n1.1.1.1\n1.0.0.1\n9.9.9.9\n149.112.112.112\n" > lists/resolvers.txt
+          fi
+          
           # massdnsで許可リストに記載のあるドメインが存在しているかを確認
           ./bin/massdns -r lists/resolvers.txt -t A -o S \
             -w ../Filters/tmp_Exist_allow_raw.txt ../Filters/tmp_domains_only_before_check_allow.txt || true
