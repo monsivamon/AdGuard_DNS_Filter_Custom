@@ -28,7 +28,7 @@ Please note: These modifications are unofficial and may reduce the effectiveness
 
 To use this filter in AdGuard (AdGuard Home, AdGuard DNS, etc.), add the following URL to your custom DNS filter list:
 
-https://raw.githubusercontent.com/monsivamon/AdGuard_DNS_Filter_for_myself/master/Filters/main_filter.txt
+https://monsivamon.github.io/AdGuard_DNS_Filter_for_myself/Filters/main_filter.txt
 
 ---
 
