@@ -107,8 +107,8 @@ jobs:
               }
               i++
             }
-            # if envはスキップ
-            if ($0 ~ /^!#if env_mobile$/ || $0 ~ /^!#endif$/) {
+            # if,endif,elseはスキップ
+            if ($0 ~ /^!#if/ || $0 ~ /^!#endif$/ || $0 ~ /^else/) {
               next
             }
             print
