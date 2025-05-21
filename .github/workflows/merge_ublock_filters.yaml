@@ -108,7 +108,7 @@ jobs:
               i++
             }
             # if,endif,elseはスキップ
-            if ($0 ~ /^!#if/ || $0 ~ /^!#endif$/ || $0 ~ /^else/) {
+            if ($0 ~ /^!#if/ || $0 ~ /^!#endif$/ || $0 ~ /^!#else/) {
               next
             }
             print
