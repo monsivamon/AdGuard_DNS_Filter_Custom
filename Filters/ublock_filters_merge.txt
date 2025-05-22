@@ -1,6 +1,6 @@
 ! Title: Merged uBlock Filters
 ! Description: Combined list from uBlock includes
-! Version: 2025-05-22 15:30:21 JST
+! Version: 2025-05-22 23:20:53 JST
 ! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself
 ! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE
 
@@ -13113,7 +13113,6 @@ zecchino-doro.it,zerogptai.org,zien.pl,ziminvestors.com,ziontutorial.com,zippysh
 ||cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css$css,domain=nishankhatri.*
 emperorscan.com,makotoichikawa.net,telephone-soudan.com##+js(aost, document.querySelectorAll, /(?=^(?!.*(https|injectedScript)))/)
 addtobucketlist.com,alternativa104.net,asumesi.com,ayo24.id,barrier-free.net,berich8.com,bitzite.com,blogenginee.com,bloooog.it,blurayufr.*,branditechture.agency,chataigpt.org,coinsrev.com,eliobenedetto.it,examscisco.com,helicomicro.com,iamflorianschulze.com,karwan.tv,kyoto-kanko.net,limontorrents.com,livenewsof.com,medeberiya.site,medeberiya1.com,medeberiyax.com,mscdroidlabs.es,nakiny.com,oyundunyasi.net,parrocchiapalata.it,photoshopvideotutorial.com,samovies.net,sevenst.us,sulocale.sulopachinews.com,tabering.net,xn--nbkw38mlu2a.com##+js(aopr, adsBlocked)
-||partner.pcloud.com/media/banners/*300250.png
 kodewebsite.com##+js(aopr, jQuery.popunder)
 samaysawara.in##+js(acs, document.addEventListener, google_ad_client)
 javcock.com##+js(aopr, popns)
@@ -37544,7 +37543,7 @@ shoot-yalla.me,shoot-yalla-tv.live##+js(rmnt, script, /adbl/i)
 ripplehub.site##+js(rpnt, script, /document.body.appendChild.*;/)
 ripplehub.site##+js(nowoif)
 ripplehub.site###close-ad-button
-footybite.to,totalsportek.*##+js(aeld, , open)
+footybite.to,totalsportek.*,totalsportekhd.com##+js(aeld, , open)
 
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/939
 zone.msn.com##+js(no-fetch-if, googlesyndication, length:40000-60000)
@@ -37911,6 +37910,15 @@ thelinuxcode.com##+js(set-cookie, pum-44957, true)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/28401
 feedly.com##.SponsorPrompt
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1kshv1u/adblock_detection_on_tubticcom/
+tubtic.com##+js(no-fetch-if, mode:no-cors)
+
+! https://github.com/uBlockOrigin/uAssets/issues/28443
+@@||wiadomosci.onet.pl^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/28450
+||vntsm.com^$script,redirect=noopjs,3p,domain=trueachievements.com
 
 !# End include: Filters/tmp_dir/filters-2025.txt
 
@@ -39517,6 +39525,9 @@ zmamobile.com##main > center > a[target="_blank"][rel="nofollow noreferrer noope
 ! https://github.com/uBlockOrigin/uAssets/issues/28064
 3dsfree.org##+js(rpnt, script, 900, 100)
 3dsfree.org##+js(rmnt, script, ctrlKey)
+
+! https://github.com/easylist/easylist/issues/21782
+theuser.cloud##+js(acs, fetch, Math.random)
 
 !# End include: Filters/tmp_dir/ubo-link-shorteners.txt
 
