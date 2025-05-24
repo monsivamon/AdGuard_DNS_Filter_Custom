@@ -57,7 +57,7 @@ jobs:
 
           # mapfile 配列に読み込む (filters.txt 除く)
           mapfile -t includes < <(ls Filters/tmp_dir | grep -v '^filters.txt$')
-          echo "${includes}"
+          echo "${includes[@]}"
 
           # 配列をカンマ区切りの文字列に変換
           includes_str=$(IFS=,; echo "${includes[*]}")
