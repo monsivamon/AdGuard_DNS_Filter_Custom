@@ -107,17 +107,9 @@ jobs:
               sub(/\$badfilter/, "")
               sub(/^\|\|/, "@@||")
             }
-            # @@|を@@||に置換
-            if ($0 ~ /^@@\|[^|]/) {
-              sub(/^@@\|/, "@@||")
-            }
-            # @@-を@@|| に置換
-            if ($0 ~ /^@@-/) {
-              sub(/^@@-/, "@@||")
-            }
-            # ||-を||に変換
-            if ($0 ~ /^\|\|-/) {
-              sub(/^\|\|-/, "||")
+            # @@ではじまり、かつ @@||ではない行は変換ミスだと思われるので修正
+            if ($0 ~ /^@@/ && $0 !~ /^@@\|\|/) {
+              sub(/^@@\|?/, "@@||")
             }
             # $important 以外の修飾子削除
             if ($0 ~ /\$.*$/ && $0 !~ /\$important$/) {
@@ -148,15 +140,19 @@ jobs:
       # host2chのファイルを整形してフィルタへ追記
       - name: Convert host2ch
         run: |
-          awk '
-          # コメントと空行をスキップ
-          /^#/ || NF == 0 {
-            next
-          }
-            # AdGuard形式に変換
-            print "||" $2 "^"
-          }
-          ' Filters/tmp_host2ch.txt | sort -u >> Filters/tmp_body_filter.txt
+          # ファイルのダウンロードに失敗していた場合は何もしない
+          if [ -f "Filters/tmp_host2ch.txt" ]; then
+            awk '
+            # コメントと空行をスキップ
+            /^#/ || NF == 0 {
+              next
+            }
+            {
+              # AdGuard形式に変換
+              print "||" $2 "^"
+            }
+            ' Filters/tmp_host2ch.txt | sort -u >> Filters/tmp_body_filter.txt
+          fi
         
       # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
@@ -235,22 +231,26 @@ jobs:
       - name: Create Header
         run: |
           # 現在の日付と時間をJST形式で取得
-          TODAY="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
-          awk -v ver="! Version: ${TODAY}" '
-          # 7行目までそのまま書き出す
-          NR <= 7 {
-            # そのまま出力
+          Now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+          Today="$(TZ=Asia/Tokyo date '+%Y%m%d')"
+          awk -v ver="${Today}" -v modifi="${Now}" '
+          BEGIN {
+            print "! Title: AdGuard_DNS_Filter_for_myself"
+            print "! Description: AdGuard DNS filter Customized by monsivamon"
+            print "! Version: "ver
+            print "! Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
+            print "! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
+            print "! Last modified: "modifi
+            print "!"
+          }
+          {
             print
-            # 2行目の後にバージョン情報を挿入
-            if (NR == 3) {
-              print ver 
-            }
-          } ' Filters/main_filter.txt > Filters/tmp_head_filter.txt
+          }
+          ' Filters/tmp_body_filter_Complete.txt > Filters/main_filter.txt
 
-      # HeaderとBody合成実行
-      - name: Complete Create Filter
+      # 中間ファイルの削除
+      - name: Unnecessary File Cleanup
         run: |
-          cat Filters/tmp_head_filter.txt Filters/tmp_body_filter_Complete.txt > Filters/main_filter.txt
           rm Filters/tmp*.txt
           
       # 完成フィルタから異常フィルタを抽出
@@ -269,17 +269,22 @@ jobs:
           if [ $(wc -l < Filters/bad_filter.txt) -eq 0 ]; then
             rm Filters/bad_filter.txt
           fi
-          
+
+      # AdAway Host方式に変換    
       - name: Convert Adaway Host
         run: |
-          awk -v now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S')" '
+          # 現在の日付と時間をJST形式で取得
+          Now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
+          Today="$(TZ=Asia/Tokyo date '+%Y%m%d')"
+          awk -v ver="${Today}" -v modifi="${Now}" '
           # ヘッダー作成
           BEGIN {
-            print "# AdGuard_DNS_Filter_for_myself type Host"
-            print "# Description: Converted from AdGuard DNS filter by monsivamon"
+            print "# Title: AdGuard_DNS_Filter_for_myself"
+            print "# Description: AdGuard DNS filter Customized by monsivamon"
+            print "# Version: "ver
             print "# Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
             print "# License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
-            print "# Generated on: " now
+            print "# Last modified: "modifi
             print ""
           }
           # ブロックリストのみ変換の対象とする
@@ -299,5 +304,5 @@ jobs:
           # 生成フィルタをアップロード
           git add Filters/*.txt
           # いつアップロードしたかわかるようにする
-          git commit -m "chore: update adgurad dns type & host type filter - ${TODAY}"
+          git commit -m "chore: update main filter - ${TODAY}"
           git push origin master
