@@ -73,8 +73,8 @@ jobs:
             print "! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
             print ""
           }
-          # ヘッダー行っぽいのは全スキップ
-          /^! (Title|Description|Last modified|Expires|Homepage|License|GitHub issues|GitHub pull requests):/ {
+          # コメント行をスキップ
+          /^!/ {
             next
           }
           {
@@ -91,8 +91,8 @@ jobs:
                 print ""
                 # 最終行に到達するまでループ
                 while ((getline line < fname) > 0) {
-                  # includeしたファイルのヘッダーもスキップ
-                  if (line !~ /^! (Title|Description|Last modified|Expires|Homepage|License|GitHub issues|GitHub pull requests):/) {
+                  # includeしたファイルのコメントもスキップ
+                  if (line !~ /^!/) {
                     print line
                   }
                 }
@@ -106,10 +106,6 @@ jobs:
                 next
               }
               i++
-            }
-            # if,endif,elseはスキップ
-            if ($0 ~ /^!#(if|endif|else)/) {
-              next
             }
             print
           }
