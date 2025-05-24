@@ -279,8 +279,8 @@ jobs:
           awk -v ver="${Today}" -v modifi="${Now}" '
           # ヘッダー作成
           BEGIN {
-            print "# Title: AdGuard_DNS_Filter_for_myself"
-            print "# Description: AdGuard DNS filter Customized by monsivamon"
+            print "# Title: AdGuard_DNS_Filter_for_myself for AdAway"
+            print "# Description: Auto Converted from AdGuard_DNS_Filter_for_myself"
             print "# Version: "ver
             print "# Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
             print "# License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
@@ -293,7 +293,7 @@ jobs:
             gsub(/\^.*$/, "", $0)
             print "0.0.0.0", $0
           }
-          ' Filters/main_filter.txt > Filters/main_filter_type_host.txt
+          ' Filters/main_filter.txt > Filters/main_filter_for_adaway.txt
 
       # フィルタをアップロード
       - name: Upload new filter
