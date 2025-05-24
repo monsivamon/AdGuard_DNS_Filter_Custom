@@ -32,7 +32,7 @@ https://monsivamon.github.io/AdGuard_DNS_Filter_for_myself/Filters/main_filter.t
 
 To use this filter in AdAway, add the following URL to your custom Host filter list:
 
-https://monsivamon.github.io/AdGuard_DNS_Filter_for_myself/Filters/main_filter_type_host.txt
+https://monsivamon.github.io/AdGuard_DNS_Filter_for_myself/Filters/main_filter_for_adaway.txt
 
 ---
 
