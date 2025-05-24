@@ -240,9 +240,12 @@ jobs:
       # ヘッダー部分の作成
       - name: Create Header
         run: |
+        
           # 現在の日付と時間をJST形式で取得
           Now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
           Today="$(TZ=Asia/Tokyo date '+%Y%m%d')"
+
+          ' ヘッダーを追記するだけ
           awk -v ver="${Today}" -v modifi="${Now}" '
           BEGIN {
             print "! Title: AdGuard_DNS_Filter_for_myself"
@@ -283,11 +286,13 @@ jobs:
       # AdAway Host方式に変換    
       - name: Convert Adaway Host
         run: |
+        
           # 現在の日付と時間をJST形式で取得
           Now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
           Today="$(TZ=Asia/Tokyo date '+%Y%m%d')"
+          
+          # ヘッダー作成しながらadguardフィルタをhost方式に変換
           awk -v ver="${Today}" -v modifi="${Now}" '
-          # ヘッダー作成
           BEGIN {
             print "# Title: AdGuard_DNS_Filter_for_myself for AdAway"
             print "# Description: Auto Converted from AdGuard_DNS_Filter_for_myself"
