@@ -156,12 +156,12 @@
       "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
-      "name": "Persian Blocker Hosts",
-      "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
-      "type": "hosts",
+      "name": "Persian Blocker",
+      "source": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlocker.txt",
+      "type": "adblock",
       "exclusions_sources": ["Filters/exclusions.txt"],
       "exclusions": ["/(?!^(\\|\\||@@\\|\\|))^.+/", "$third-party"],
-      "transformations": ["RemoveComments", "RemoveModifiers", "RemoveEmptyLines", "ValidateAllowIp"]
+      "transformations": ["RemoveModifiers", "ValidateAllowIp"]
     },
     {
       "name": "uBlock filters",
