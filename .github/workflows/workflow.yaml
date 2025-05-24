@@ -276,17 +276,13 @@ jobs:
             print "# Generated on: " now
             print ""
           }
-          # コメントと許可リストをスキップ
-          /^!/ || /^@@/ {
-            next
-          }
           # ブロックリストのみ変換の対象とする
-          /^\|\|/ {
+          $0 ~ /^\|\|/ {
             gsub(/^\|\|/, "", $0)
             gsub(/\^.*$/, "", $0)
             print "0.0.0.0", $0
           }
-          ' Filters/main_filter.txt > main_filter_type_host.txt
+          ' Filters/main_filter.txt > Filters/main_filter_type_host.txt
 
       # フィルタをアップロード
       - name: Upload new filter
