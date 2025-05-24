@@ -29,7 +29,7 @@ jobs:
           # Adguard 公式フィルタを取得
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
           # host2ch を取得
-          curl -sSL https://pastebin.com/raw/XF5FP2rG -o Filters/host2ch.txt
+          curl -sSL https://pastebin.com/raw/XF5FP2rG -o Filters/tmp_host2ch.txt || true
            
       # フィルタビルド実行
       - name: Build Filter
@@ -144,7 +144,20 @@ jobs:
             print
           }
           ' Filters/main_filter.txt | sort -u > Filters/tmp_body_filter.txt
-
+          
+      # host2chのファイルを整形してフィルタへ追記
+      - name: Convert host2ch
+        run: |
+          awk '
+          # コメントと空行をスキップ
+          /^#/ || NF == 0 {
+            next
+          }
+            # AdGuard形式に変換
+            print "||" $2 "^"
+          }
+          ' Filters/tmp_host2ch.txt | sort -u >> Filters/tmp_body_filter.txt
+        
       # massdnsチェック用にドメインのみ抽出
       - name: Grep Domain
         run: |
