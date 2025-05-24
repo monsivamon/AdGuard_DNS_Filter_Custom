@@ -73,8 +73,8 @@ jobs:
             print "! License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
             print ""
           }
-          # コメント行をスキップ
-          /^!/ {
+          # 空行と#include以外のコメント行をスキップ
+          /^\s*$/ || (/^!/ && $0 !~ /^!#include/) {
             next
           }
           {
@@ -91,10 +91,11 @@ jobs:
                 print ""
                 # 最終行に到達するまでループ
                 while ((getline line < fname) > 0) {
-                  # includeしたファイルのコメントもスキップ
-                  if (line !~ /^!/) {
-                    print line
+                  # includeしたファイルの空行とinclude以外のコメントをスキップ
+                  if (line ~ /^\s*$/ || (line ~ /^!/ && line !~ /^!#include/)) {
+                    next
                   }
+                  print line
                 }
                 # include したファイルがどこで終わりかわかるようにする
                 print ""
