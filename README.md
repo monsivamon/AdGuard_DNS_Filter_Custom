@@ -52,6 +52,7 @@ This filter includes references, ideas, and in some cases direct rules from the 
 - [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – AdGuard/uBlock-compatible filter tailored for Japanese websites.
 - [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – Official filter list from the uBlock Origin team.
 - [blechschmidt/massdns](https://github.com/blechschmidt/massdns) – High-performance DNS resolver used here to verify domains.
+- [host2ch](https://note.com/hosts2ch) - Host filters for smartphone apps and websites are distributed free of charge to Japan.
 
 I deeply respect the original authors and thank them for their contributions.
 
