@@ -269,8 +269,7 @@ jobs:
           # ヘッダー作成
           BEGIN {
             print "# AdGuard_DNS_Filter_for_myself type Host"
-            print "# Converted from AdGuard DNS filter by monsivamon"
-            print "#"
+            print "# Description: Converted from AdGuard DNS filter by monsivamon"
             print "# Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
             print "# License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
             print "# Generated on: " now
