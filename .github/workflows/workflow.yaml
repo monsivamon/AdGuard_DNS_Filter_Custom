@@ -202,8 +202,8 @@ jobs:
             -w ../Filters/tmp_Exist_block_raw.txt ../Filters/tmp_domains_only_before_check_block.txt || true
 
           # 中身の簡易的な確認
-          head Filters/tmp_Exist_allow_raw.txt
-          head Filters/tmp_Exist_block_raw.txt
+          head ../Filters/tmp_Exist_allow_raw.txt
+          head ../Filters/tmp_Exist_block_raw.txt
           
       # 存在するドメインのみ書き出す
       - name: Check Result modify
