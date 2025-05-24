@@ -55,8 +55,9 @@ jobs:
           # JST現在時刻取得
           TIMESTAMP=$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M:%S JST')
 
-          # tmp_dir内のファイル名を配列に取得
-          mapfile -t includes < <(ls Filters/tmp_dir)
+          # mapfile 配列に読み込む (filters.txt 除く)
+          mapfile -t includes < <(ls Filters/tmp_dir | grep -v '^filters.txt$')
+          echo "${includes}"
 
           # 配列をカンマ区切りの文字列に変換
           includes_str=$(IFS=,; echo "${includes[*]}")
