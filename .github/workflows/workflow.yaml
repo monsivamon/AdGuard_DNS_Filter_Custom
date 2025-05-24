@@ -28,6 +28,8 @@ jobs:
         run: |
           # Adguard 公式フィルタを取得
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
+          # host2ch を取得
+          curl -sSL https://pastebin.com/raw/XF5FP2rG -o Filters/host2ch.txt
            
       # フィルタビルド実行
       - name: Build Filter
