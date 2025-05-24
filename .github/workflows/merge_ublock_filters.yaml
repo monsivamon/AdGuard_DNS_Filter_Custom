@@ -50,6 +50,16 @@ jobs:
           for file in $includes; do
             curl -sf "${BASE_URL}/${file}" -o "$WORK_DIR/${file}"
             echo "download ${file}"
+            # ダウンロードしたファイル内にincludeがあれば更にダウンロード
+            includes_sub=$(grep '^!#include ' "$WORK_DIR/${file}" | awk '{print $2}')
+            for file_sub in $includes_sub; do
+              # ダウンローぢ済みなら２回目のダウンロードはしない
+              path_sub="$WORK_DIR/${file_sub}"
+              if [[ ! -f "$path_sub" ]]; then
+                curl -sf "${BASE_URL}/${file_sub}" -o "$path_sub"
+                echo "download ${file_sub}"
+              fi
+            done
           done
           
           # JST現在時刻取得
