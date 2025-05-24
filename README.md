@@ -15,12 +15,10 @@ Please note that I am still learning GitHub and filter creation, so this reposit
 
 ## 🔧 Filter Creation Process
 
-- The filter list is initially generated using the official AdGuard DNS filter compiler.
-- After generation, shell scripts are used to clean up and customize the list.
-- Customizations include:
-  - Filtering out non-existent domains using `massdns`.
-
-Please note: These modifications are unofficial and may reduce the effectiveness of the original filters.
+- The filter list is first generated using the [AdGuardTeam/HostlistCompiler](https://github.com/AdguardTeam/HostlistCompiler).
+- After that, shell scripts are run to clean up and customize the filter list.
+- These customizations include filtering out non-existent domains by checking them with [massdns](https://github.com/blechschmidt/massdns).
+Please note that these modifications are unofficial and might reduce the effectiveness of the original filters.
 
 ---
 
@@ -48,10 +46,11 @@ https://monsivamon.github.io/AdGuard_DNS_Filter_for_myself/Filters/main_filter_f
 
 This filter includes references, ideas, and in some cases direct rules from the following GPL-licensed projects:
 
+- [AdGuardTeam/HostlistCompiler](https://github.com/AdguardTeam/HostlistCompiler) – A tool to automatically generate DNS-based filters for blocking ads and trackers.
 - [AdGuardTeam/AdGuardSDNSFilter](https://github.com/AdguardTeam/AdGuardSDNSFilter) – DNS-based blocking of ads and tracking.
-- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – AdGuard/uBlock-compatible filter tailored for Japanese websites.
 - [uBlockOrigin/uAssets](https://github.com/uBlockOrigin/uAssets) – Official filter list from the uBlock Origin team.
 - [blechschmidt/massdns](https://github.com/blechschmidt/massdns) – High-performance DNS resolver used here to verify domains.
+- [Yuki2718/adblock2](https://github.com/Yuki2718/adblock2) – AdGuard/uBlock-compatible filter tailored for Japanese websites.
 - [host2ch](https://note.com/hosts2ch) - Host filters for smartphone apps and websites are distributed free of charge to Japan.
 
 I deeply respect the original authors and thank them for their contributions.
