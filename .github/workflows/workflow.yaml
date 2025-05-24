@@ -210,7 +210,6 @@ jobs:
               allow[$1] = 1
               next
             }
-
             # 2ファイル目の処理
             {
               # 同様に整形
@@ -264,6 +263,31 @@ jobs:
             rm Filters/bad_filter.txt
           fi
           
+      - name: Convert Adaway Host
+        run: |
+          awk -v now="$(date '+%Y-%m-%d %H:%M:%S')" '
+          # ヘッダー作成
+          BEGIN {
+            print "# AdGuard_DNS_Filter_for_myself type Host"
+            print "# Converted from AdGuard DNS filter by monsivamon"
+            print "#"
+            print "# Homepage: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself"
+            print "# License: https://github.com/monsivamon/AdGuard_DNS_Filter_for_myself/blob/master/LICENSE"
+            print "# Generated on: " now
+            print ""
+          }
+          # コメントと許可リストをスキップ
+          /^\!/ || /^@@/ {
+            next
+          }
+          # ブロックリストのみ変換の対象とする
+          /^\|\|/ {
+            gsub(/^\|\|/, "", $0)
+            gsub(/\^.*$/, "", $0)
+            print "0.0.0.0", $0
+          }
+          ' Filters/main_filter.txt > main_filter_type_host.txt
+
       # フィルタをアップロード
       - name: Upload new filter
         run: |
@@ -273,5 +297,5 @@ jobs:
           # 生成フィルタをアップロード
           git add Filters/*.txt
           # いつアップロードしたかわかるようにする
-          git commit -m "chore: update filter - ${TODAY}"
+          git commit -m "chore: update adgurad dns type & host type filter - ${TODAY}"
           git push origin master
