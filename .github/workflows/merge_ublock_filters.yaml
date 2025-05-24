@@ -83,7 +83,7 @@ jobs:
             i = 1
             while (i <= n) {
               # "!#include"を発見したときの処理
-              if ($0 ~ "^!#include[ \t]+" arr[i] "$") {
+              if ($0 ~ ("^!#include[ \t]+" arr[i] "$")) {
                 # ファイルパスを作成
                 fname = dir "/" arr[i]
                 # includeしたファイルがどこから始まるかわかるようにする
@@ -93,10 +93,9 @@ jobs:
                 # 最終行に到達するまでループ
                 while ((getline line < fname) > 0) {
                   # includeしたファイルの空行とinclude以外のコメントをスキップ
-                  if (line ~ /^\s*$/ || (line ~ /^!/ && line !~ /^!#include/)) {
-                    next
+                  if (!(line ~ /^\s*$/ || (line ~ /^!/ && line !~ /^!#include/))) {
+                    print line
                   }
-                  print line
                 }
                 # include したファイルがどこで終わりかわかるようにする
                 print ""
