@@ -265,7 +265,7 @@ jobs:
       - name: Unnecessary File Cleanup
         run: |
           # 確認用
-          ls -l
+          ls -la Filters
           # 一時ファイル削除
           rm Filters/tmp*.txt
           
