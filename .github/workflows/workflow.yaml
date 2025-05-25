@@ -245,7 +245,7 @@ jobs:
           Now="$(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M JST')"
           Today="$(TZ=Asia/Tokyo date '+%Y%m%d')"
 
-          ' ヘッダーを追記するだけ
+          # ヘッダーを追記するだけ
           awk -v ver="${Today}" -v modifi="${Now}" '
           BEGIN {
             print "! Title: AdGuard_DNS_Filter_for_myself"
