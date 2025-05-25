@@ -60,8 +60,10 @@ I deeply respect the original authors and thank them for their contributions.
 
 ## ⚖️ License
 
-This project includes components from other repositories licensed under the GNU General Public License v3.0.
-Therefore, this repository is also distributed under the **GPL v3** license.
+This project includes components from other repositories licensed under the GNU General Public License v3.0.  
+Therefore, this repository is also distributed under the GPL v3 license.  
+Some referenced data sources, such as [DNSet/public-dns](https://github.com/DNSet/public-dns), are licensed under GPL v2.  
+Since this project only references their public data and does not include or modify their source code, there is no license conflict.  
 For full terms, please refer to the [LICENSE](./LICENSE) file.
 
 ---
