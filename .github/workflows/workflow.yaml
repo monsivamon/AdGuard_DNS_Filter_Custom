@@ -30,7 +30,7 @@ jobs:
           curl -sSfL https://raw.githubusercontent.com/AdguardTeam/AdGuardSDNSFilter/master/Filters/exclusions.txt -o Filters/exclusions.txt
           # host2ch を取得
           curl -sSL https://pastebin.com/raw/XF5FP2rG -o Filters/tmp_host2ch.txt || true
-           
+          
       # フィルタビルド実行
       - name: Build Filter
         run: |
@@ -185,12 +185,12 @@ jobs:
           # リゾルバファイル格納フォルダを作成
           mkdir -p lists
           
-          # 信頼できるリゾルバリストを取得
+          # massdns用に信頼できるリゾルバリストを取得
           curl -sf https://public-dns.info/nameservers.txt > lists/resolvers.txt || true
           
-          # 取得に失敗したとき用にmassdns用のリゾルバを準備
+          # オリジナルからの取得に失敗したときはリポから取得
           if [ ! -s lists/resolvers.txt ]; then
-            printf "8.8.8.8\n8.8.4.4\n1.1.1.1\n1.0.0.1\n9.9.9.9\n149.112.112.112\n" > lists/resolvers.txt
+            curl -sSfL https://raw.githubusercontent.com/DNSet/public-dns/master/resources/public-dns/nameservers.txt -o lists/resolvers.txt
           fi
           
           # massdnsで許可リストに記載のあるドメインが存在しているかを確認
@@ -264,6 +264,9 @@ jobs:
       # 中間ファイルの削除
       - name: Unnecessary File Cleanup
         run: |
+          # 確認用
+          ls -l
+          # 一時ファイル削除
           rm Filters/tmp*.txt
           
       # 完成フィルタから異常フィルタを抽出
